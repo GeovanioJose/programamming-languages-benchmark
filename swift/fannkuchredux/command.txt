@@ -1,0 +1,1 @@
+./fannkuchredux 12 > /dev/null
