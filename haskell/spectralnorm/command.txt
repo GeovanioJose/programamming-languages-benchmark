@@ -1,0 +1,2 @@
+./spectralnorm +RTS -N4 -RTS 5500 > /dev/null
+

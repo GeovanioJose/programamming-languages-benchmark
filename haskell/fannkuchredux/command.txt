@@ -1,0 +1,1 @@
+./fannkuchredux +RTS -N4 -RTS 12 > /dev/null

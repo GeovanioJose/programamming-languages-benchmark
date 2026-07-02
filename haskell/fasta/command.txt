@@ -1,0 +1,1 @@
+./fasta +RTS -N4 -RTS 25000000 > /dev/null

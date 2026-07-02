@@ -1,0 +1,1 @@
+./binarytrees +RTS -N4 -K128M -H -RTS 21 > /dev/null

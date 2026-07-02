@@ -1,0 +1,1 @@
+./knucleotide +RTS -N4 -K2048M -RTS 0 < ../../input/knucleotide-input25000000.txt > /dev/null

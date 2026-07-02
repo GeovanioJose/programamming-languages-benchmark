@@ -1,0 +1,1 @@
+./pidigits +RTS -N4 -RTS 10000 > /dev/null

@@ -1,0 +1,2 @@
+./revcomp +RTS -N4 -RTS 0 < ../../input/revcomp-input100000001.txt > /dev/null
+
