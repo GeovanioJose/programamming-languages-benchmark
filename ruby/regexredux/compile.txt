@@ -1,0 +1,12 @@
+NOTES:
+64-bit Ubuntu quad core
+ruby 3.2.0
+(2022-12-25
+revision a528908271)
++YJIT [x86_64-linux]
+
+
+Tue, 24 Jan 2023 01:12:01 GMT
+
+COMMAND LINE:
+/opt/src/ruby-3.2.0/bin/ruby --yjit -W0 regexredux.ruby-3.ruby 0 < regexredux-input5000000.txt

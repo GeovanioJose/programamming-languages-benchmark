@@ -1,0 +1,1 @@
+ruby pidigits.ruby-5.rb 10000 > /dev/null

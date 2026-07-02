@@ -1,0 +1,8 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-ruby-2.html
+ 
+COMMAND LINE:
+/opt/src/ruby-3.2.0/bin/ruby --yjit -W0 fannkuchredux.ruby-2.rb 12
+
+PROGRAM OUTPUT:
+3968050
+Pfannkuchen(12) = 65

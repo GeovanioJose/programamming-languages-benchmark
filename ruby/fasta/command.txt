@@ -1,0 +1,1 @@
+ruby fasta.ruby-6.rb 25000000 > /dev/null

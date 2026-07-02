@@ -1,0 +1,4 @@
+ https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-ruby-6.html
+
+COMMAND LINE:
+/opt/src/ruby-3.2.0/bin/ruby --yjit -W0 fasta.ruby-6.rb 25000000

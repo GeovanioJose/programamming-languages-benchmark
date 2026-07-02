@@ -1,0 +1,14 @@
+NOTES:
+64-bit Ubuntu quad core
+ruby 3.2.0
+(2022-12-25
+revision a528908271)
++YJIT [x86_64-linux]
+
+
+Mon, 23 Jan 2023 23:51:33 GMT
+
+COMMAND LINE:
+/opt/src/ruby-3.2.0/bin/ruby --yjit -W0 mandelbrot.ruby-5.rb 16000
+
+(BINARY) PROGRAM OUTPUT NOT SHOWN

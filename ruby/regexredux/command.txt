@@ -1,0 +1,1 @@
+ruby regexredux.ruby-3.rb 0 < ../../input/regexredux-input5000000.txt > /dev/null

@@ -1,0 +1,1 @@
+ruby nbody.ruby-3.rb 50000000 > /dev/null

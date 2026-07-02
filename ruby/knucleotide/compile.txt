@@ -1,0 +1,5 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-ruby-1.html
+
+
+COMMAND LINE:
+/opt/src/ruby-3.2.0/bin/ruby --yjit -W0 knucleotide.rb 0 < knucleotide-input25000000.txt

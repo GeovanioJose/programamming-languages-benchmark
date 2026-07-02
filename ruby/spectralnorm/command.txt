@@ -1,0 +1,1 @@
+ruby spectralnorm.ruby-5.rb 5500 > /dev/null
