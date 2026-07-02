@@ -1,0 +1,1 @@
+./spectralnorm_run 5500 > /dev/null

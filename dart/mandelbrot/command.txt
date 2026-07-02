@@ -1,0 +1,1 @@
+./mandelbrot_run 16000 > /dev/null

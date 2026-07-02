@@ -1,0 +1,1 @@
+./pidigits_run 10000 > /dev/null
