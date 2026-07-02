@@ -1,0 +1,1 @@
+lua5.3 fannkuchredux.lua 12 > /dev/null

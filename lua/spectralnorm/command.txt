@@ -1,0 +1,1 @@
+lua5.3 spectralnorm.lua 5500 > /dev/null

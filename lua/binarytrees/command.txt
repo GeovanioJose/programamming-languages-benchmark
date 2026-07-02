@@ -1,0 +1,1 @@
+lua5.3 binarytrees.lua 21 > /dev/null

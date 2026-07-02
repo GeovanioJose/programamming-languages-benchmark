@@ -1,0 +1,1 @@
+lua5.3 regexredux.lua 0 < ../../input/regexredux-input5000000.txt > /dev/null
