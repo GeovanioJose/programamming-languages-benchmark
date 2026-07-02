@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "program/1.0.0": {
+        "dependencies": {
+          "Microsoft.Experimental.Collections": "1.0.6-e190117-3"
+        },
+        "runtime": {
+          "program.dll": {}
+        }
+      },
+      "Microsoft.Experimental.Collections/1.0.6-e190117-3": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Experimental.Collections.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "program/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Experimental.Collections/1.0.6-e190117-3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S2IfWAo5bnXSgpr8o0LR3aMqo7QD83VQUPbgta6aOYIBq8M85Hpk8hVUco22GFhSRuf4ZhP8jUs2wPlO0Dbdow==",
+      "path": "microsoft.experimental.collections/1.0.6-e190117-3",
+      "hashPath": "microsoft.experimental.collections.1.0.6-e190117-3.nupkg.sha512"
+    }
+  }
+}
