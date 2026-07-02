@@ -1,0 +1,23 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-python3-5.html
+
+MAKE:
+mv fasta.python3-5.python3 fasta.python3-5.py
+pyright .
+No configuration file found.
+No pyproject.toml file found.
+stubPath /home/dunham/all-benchmarksgame/benchmarksgame_i53330/fasta/tmp/typings is not a valid directory.
+Assuming Python platform Linux
+Searching for source files
+Found 1 source file
+pyright 1.1.288
+/home/dunham/all-benchmarksgame/benchmarksgame_i53330/fasta/tmp/fasta.python3-5.py
+  /home/dunham/all-benchmarksgame/benchmarksgame_i53330/fasta/tmp/fasta.python3-5.py:137:13 - error: Operator "*" not supported for "None" (reportOptionalOperand)
+  /home/dunham/all-benchmarksgame/benchmarksgame_i53330/fasta/tmp/fasta.python3-5.py:187:8 - error: Operator "<" not supported for "None" (reportOptionalOperand)
+2 errors, 0 warnings, 0 informations
+Completed in 2.068sec
+make: [/home/dunham/all-benchmarksgame/2000-benchmarksgame/nanobench/makefiles/u64q.programs.Makefile:388: fasta.python3-5.python3_run] Error 1 (ignored)
+
+3.63s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO fasta.python3-5.py 25000000

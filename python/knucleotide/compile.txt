@@ -1,0 +1,27 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-python3-3.html
+
+MAKE:
+mv knucleotide.python3-3.python3 knucleotide.python3-3.py
+pyright .
+No configuration file found.
+No pyproject.toml file found.
+stubPath /home/dunham/all-benchmarksgame/benchmarksgame_i53330/knucleotide/tmp/typings is not a valid directory.
+Assuming Python platform Linux
+Searching for source files
+Found 1 source file
+pyright 1.1.288
+/home/dunham/all-benchmarksgame/benchmarksgame_i53330/knucleotide/tmp/knucleotide.python3-3.py
+  /home/dunham/all-benchmarksgame/benchmarksgame_i53330/knucleotide/tmp/knucleotide.python3-3.py:96:30 - error: "k" is possibly unbound (reportUnboundVariable)
+  /home/dunham/all-benchmarksgame/benchmarksgame_i53330/knucleotide/tmp/knucleotide.python3-3.py:165:24 - error: Operator "*" not supported for types "Literal[128]" and "int | None"
+    Operator "*" not supported for types "Literal[128]" and "None" (reportGeneralTypeIssues)
+  /home/dunham/all-benchmarksgame/benchmarksgame_i53330/knucleotide/tmp/knucleotide.python3-3.py:167:57 - error: Operator "+" not supported for "None" (reportOptionalOperand)
+  /home/dunham/all-benchmarksgame/benchmarksgame_i53330/knucleotide/tmp/knucleotide.python3-3.py:167:19 - error: Operator "//" not supported for types "int" and "int | None"
+    Operator "//" not supported for types "int" and "None" (reportGeneralTypeIssues)
+4 errors, 0 warnings, 0 informations
+Completed in 2.21sec
+make: [/home/dunham/all-benchmarksgame/2000-benchmarksgame/nanobench/makefiles/u64q.programs.Makefile:388: knucleotide.python3-3.python3_run] Error 1 (ignored)
+
+3.91s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO knucleotide.python3-3.py 0 < knucleotide-input25000000.txt

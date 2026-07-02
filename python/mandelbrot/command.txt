@@ -1,0 +1,2 @@
+python3 -OO mandelbrot.python3-7.py 16000 > /dev/null
+

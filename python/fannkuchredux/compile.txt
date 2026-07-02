@@ -1,0 +1,23 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-python3-4.html
+
+    MAKE:
+mv fannkuchredux.python3-4.python3 fannkuchredux.python3-4.py
+pyright .
+No configuration file found.
+No pyproject.toml file found.
+stubPath /home/dunham/all-benchmarksgame/benchmarksgame_i53330/fannkuchredux/tmp/typings is not a valid directory.
+Assuming Python platform Linux
+Searching for source files
+Found 1 source file
+pyright 1.1.288
+0 errors, 0 warnings, 0 informations
+Completed in 2.123sec
+
+3.85s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO fannkuchredux.python3-4.py 12
+
+PROGRAM OUTPUT:
+3968050
+Pfannkuchen(12) = 65

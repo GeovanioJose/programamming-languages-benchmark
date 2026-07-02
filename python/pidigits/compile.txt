@@ -1,0 +1,27 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-python3-5.html
+
+
+MAKE:
+
+sudo pip3 install gmpy2
+
+mv pidigits.python3-5.python3 pidigits.python3-5.py
+pyright .
+No configuration file found.
+No pyproject.toml file found.
+stubPath /home/dunham/all-benchmarksgame/benchmarksgame_i53330/pidigits/tmp/typings is not a valid directory.
+Assuming Python platform Linux
+Searching for source files
+Found 1 source file
+pyright 1.1.288
+/home/dunham/all-benchmarksgame/benchmarksgame_i53330/pidigits/tmp/pidigits.python3-5.py
+  /home/dunham/all-benchmarksgame/benchmarksgame_i53330/pidigits/tmp/pidigits.python3-5.py:9:6 - error: Import "gmpy2" could not be resolved (reportMissingImports)
+1 error, 0 warnings, 0 informations
+Completed in 1.746sec
+make: [/home/dunham/all-benchmarksgame/2000-benchmarksgame/nanobench/makefiles/u64q.programs.Makefile:388: pidigits.python3-5.python3_run] Error 1 (ignored)
+
+3.38s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO pidigits.python3-5.py 10000
+

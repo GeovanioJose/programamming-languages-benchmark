@@ -1,0 +1,24 @@
+ 
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-python3-1.html
+
+MAKE:
+mv nbody.python3 nbody.py
+pyright .
+No configuration file found.
+No pyproject.toml file found.
+stubPath /home/dunham/all-benchmarksgame/benchmarksgame_i53330/nbody/tmp/typings is not a valid directory.
+Assuming Python platform Linux
+Searching for source files
+Found 1 source file
+pyright 1.1.288
+0 errors, 0 warnings, 0 informations
+Completed in 1.839sec
+
+3.73s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO nbody.py 50000000
+
+PROGRAM OUTPUT:
+-0.169075164
+-0.169059907

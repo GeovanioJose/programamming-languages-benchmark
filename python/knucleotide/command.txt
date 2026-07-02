@@ -1,0 +1,2 @@
+python3 -OO knucleotide.python3-3.py 0 < ../../input/knucleotide-input25000000.txt > /dev/null
+

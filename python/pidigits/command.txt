@@ -1,0 +1,2 @@
+python3 -OO pidigits.python3-5.py 10000 > /dev/null
+

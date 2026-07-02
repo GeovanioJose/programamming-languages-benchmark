@@ -1,0 +1,1 @@
+python3 -OO fasta.python3-5.py 25000000 > /dev/null

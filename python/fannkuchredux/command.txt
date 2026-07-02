@@ -1,0 +1,1 @@
+python3 -OO fannkuchredux.python3-4.py 12 > /dev/null

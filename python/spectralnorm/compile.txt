@@ -1,0 +1,4 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-python3-8.html
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO spectralnorm.python3-8.py 5500

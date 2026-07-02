@@ -1,0 +1,19 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-python3-1.html
+
+MAKE:
+mv regexredux.python3 regexredux.py
+pyright .
+No configuration file found.
+No pyproject.toml file found.
+stubPath /home/dunham/all-benchmarksgame/benchmarksgame_i53330/regexredux/tmp/typings is not a valid directory.
+Assuming Python platform Linux
+Searching for source files
+Found 1 source file
+pyright 1.1.288
+0 errors, 0 warnings, 0 informations
+Completed in 2.025sec
+
+3.81s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO regexredux.py 0 < regexredux-input5000000.txt
