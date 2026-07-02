@@ -1,0 +1,2 @@
+./reversecomplement 0 < ../../input/revcomp-input100000001.txt > /dev/null
+

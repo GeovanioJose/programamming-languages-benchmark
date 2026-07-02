@@ -1,0 +1,18 @@
+[package]
+name = "knucleotide"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+futures = "0.1"
+tokio = "1"
+itertools = "0.10"
+num = "0.4"
+tokio-threadpool = "0.1.18"
+hashbrown = "0.14.0"
+
+[[bin]]
+name = "knucleotide"
+path = "knucleotide.rs"
