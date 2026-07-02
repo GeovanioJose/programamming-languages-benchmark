@@ -1,0 +1,130 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_DISPATCHING_CALLS
+RV NO_FINALIZATION
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_CONVERSION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U trees%b		trees.adb		86235d35 OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+U trees%s		trees.ads		aae282e7 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W apache_runtime%s	apache_runtime.ads	apache_runtime.ali
+W apache_runtime.pools%s  apache_runtime-pools.adb  apache_runtime-pools.ali
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D apache_runtime.ads	20231125213337 c9fc7ca9 apache_runtime%s 307:binarytrees.gnat
+D apache_runtime-pools.ads  20231125213337 9ad52141 apache_runtime.pools%s 321:binarytrees.gnat
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D trees.ads		20231125213337 8f7823cd trees%s 187:binarytrees.gnat
+D trees.adb		20231125213337 1b40e7fb trees%b 233:binarytrees.gnat
+G a e
+G c b b b [b trees 247 1 none]
+G c Z s b [item_check trees 203 13 none]
+G c Z s b [create trees 207 13 none]
+G c Z s b [initialize trees 229 25 none]
+G c Z s b [finalize trees 230 25 none]
+G c Z s s [node_poolDF trees 223 9 none]
+G c Z s s [node_poolIP trees 223 9 none]
+G c Z s s [nodeIP trees 218 9 none]
+G c Z b b [new_node trees 253 13 none]
+G r c none [b trees 247 1 none] [initialize apache_runtime__pools 334 13 none]
+G r c none [create trees 207 13 none] [allocate apache_runtime__pools 342 13 none]
+G r c none [initialize trees 229 25 none] [create apache_runtime__pools 336 13 none]
+G r c none [finalize trees 230 25 none] [destroy apache_runtime__pools 340 14 none]
+G r c none [node_poolDF trees 223 9 none] [destroy apache_runtime__pools 340 14 none]
+G r c none [new_node trees 253 13 none] [allocate apache_runtime__pools 342 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 21|197r14 224r10 22|243r6 298r36
+X 3 a-finali.ads
+40K13*Finalization 68e21 21|197w18 224r14
+50H9*Limited_Controlled<12|40R9> 66e55 21|224r27
+X 6 a-unccon.ads
+17+9 Source 22|299r10
+18+9 Target 22|300r10
+20v14*Unchecked_Conversion 22|243w10 298r40
+X 7 binarytrees.gnat
+313K9*Apache_Runtime 320e19 21|198r14 213r8 22|249r28 250r6
+316I9*Apr_Status<integer> 22|249r43 278r25
+318I9*Apr_Size<integer>
+X 8 binarytrees.gnat
+329K24*Pools 350e25 21|198w29 226r25 22|250r21 274r7 279r9 303r10
+331M12*Pool_Type{10|67M9} 21|226r31
+332M12*Pool_Access{10|67M9}
+334V13*Initialize{7|316I9} 22|250s27
+336V13*Create{7|316I9} 22|279s15
+337m7 New_Pool{332M12} 22|280r12
+338m7 Parent{331M12} 22|281r12
+340U14*Destroy 22|274s13
+342V13*Allocate{10|67M9} 22|303s16
+342m23 Pool{331M12} 22|303r26
+342i41 Size{7|318I9} 22|304r26
+X 9 interfac.ads
+38K9*Interfaces 184e15 22|244w6 304r46
+63M9*Unsigned_8 22|304r57
+X 10 system.ads
+37K9*System 156e11 22|245w6 281r24 299r20
+67M9*Address 22|299r27
+69m4*Null_Address{67M9} 22|281r31
+X 21 binarytrees.gnat
+200K9*Trees 215E9 232l5 232e10 22|247b14 306l5 306t10
+202P9*Tree_Node 203r32 209r31 216c9 219r15 220r15 22|253r48 257r31 259r25
+. 287r32 296r48 300r20
+203V13*Item_Check{integer} 203>25 22|287b13 292s21 292s46 294l8 294t18
+203p25 Item{202P9} 22|287b25 289r10 292r33 292r58
+205R9*Node_Pool<3|50R9> 208r14 223c9 227e17 229r51 230r51 22|253r30 256r14
+. 272r51 277r51 296r30
+207V13*Create{202P9} 208>7 209>7 22|255b13 262s33 263s34 270l8 270t14
+208r7 Pool{205R9} 22|256b7 259r48 262r41 263r42
+209i7 Depth{integer} 22|257b7 261r10 262r47 263r48
+215R9 Node 216r33 218c9 221e14 22|304r34
+219p7*Left{202P9} 22|262m25 265m25 289r15 292r38
+220p7*Right{202P9} 22|263m25 265m32 292r63
+226m10*Pool{8|331M12} 22|274r27 280m29 303r39
+229U25 Initialize<3|53p14> 229=37 22|277b25 285l8 285t18
+229r37 Item{205R9} 22|277b37 280m24 280r24
+230U25 Finalize<3|54p14> 230=37 22|272b25 275l8 275t16
+230r37 Item{205R9} 22|272b37 274r22
+X 22 binarytrees.gnat
+249i4 Pools_Status{7|316I9} 251r25
+253V13 New_Node{21|202P9} 253>23 259s38 296b13 305l8 305t16
+253r23 Pool{21|205R9} 296b23 303r34
+259p7 Result{21|202P9} 262r10 265r10 268r14
+278i7 Status{7|316I9} 282r28
+298V16 Node_Convert[6|20]{21|202P9} 302s14
+

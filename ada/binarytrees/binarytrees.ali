@@ -1,0 +1,191 @@
+V "GNAT Lib v10"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P SS ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+RV MAX_TASKS=1+
+
+U binarytrees%b		binarytrees.adb		2eba7818 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+Z system.val_int%s	s-valint.adb		s-valint.ali
+W trees%s		trees.adb		trees.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
+D a-comlin.ads		20230707070819 4aa66568 ada.command_line%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiinau.ads		20230707070819 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-tiinio.adb		20230707070819 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D apache_runtime.ads	20231125213337 c9fc7ca9 apache_runtime%s 307:binarytrees.gnat
+D apache_runtime-pools.ads  20231125213337 9ad52141 apache_runtime.pools%s 321:binarytrees.gnat
+D binarytrees.adb	20231125213337 d59e1f45 binarytrees%b 1:binarytrees.gnat
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
+D system.ads		20230707070819 4635ec04 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-memory.ads		20230707070819 597d6634 system.memory%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
+D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20230707070819 974e87c5 system.wch_con%b
+D trees.ads		20231125213337 8f7823cd trees%s 187:binarytrees.gnat
+G a e
+G c Z b b [binarytrees standard 17 11 none]
+G r s node_pool [binarytrees standard 17 11 none] [node_poolIP trees 223 9 none]
+G r f node_pool [binarytrees standard 17 11 none] [initialize trees 229 25 none]
+G r c none [binarytrees standard 17 11 none] [create trees 207 13 none]
+G r c none [binarytrees standard 17 11 none] [item_check trees 203 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 20|12r6 12r34 13r6 13r34 14r6 14r34 15r6 15r34
+X 2 a-charac.ads
+16K13*Characters 18e19 20|15r10 15r38
+X 3 a-chlat1.ads
+18K24*Latin_1 296e27 20|15w21 15r49
+34e4*HT{character} 20|146r15 172r12 174r12 181r9
+X 4 a-comlin.ads
+36K13*Command_Line 144e21 20|14w10 14r38
+39V13*Argument_Count{natural} 20|21s10 36s10
+52V13*Argument{string} 20|22s33 37s33
+X 8 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 20|13w10 13r38
+X 13 a-textio.ads
+57K13*Text_IO 727e16 20|12w10 12r38
+86I12*Field{integer}
+264U14*New_Line 20|148s10 176s7 184s4
+465U14*Put 20|144s10 146s10 172s7 174s7 179s4 181s4
+X 15 a-tiinio.ads
+80U14*Put 20|145s10[8|18] 147s10[8|18] 171s7[8|18] 173s7[8|18] 175s7[8|18]
+. 180s4[8|18] 183s4[8|18]
+81i7 Item{integer} 20|145r15[8|18] 147r15[8|18] 171r12[8|18] 173r12[8|18]
+. 175r12[8|18] 180r9[8|18] 183r9[8|18]
+82i7 Width{13|86I12} 20|145r38[8|18] 147r30[8|18] 171r44[8|18] 173r45[8|18]
+. 175r33[8|18] 180r28[8|18] 183r24[8|18]
+X 20 binarytrees.gnat
+17U11*Binarytrees 17b11 186l5 186t16
+19V13 Get_Depth{positive} 19b13 26l8 26t17 29s43
+28N4 Min_Depth 30r55 32r57 63r19 64r50 173r20
+29i4 Requested_Depth{positive} 31r55
+30i4 Max_Depth{positive} 32r45 64r30 136r47 156r59 180r17
+32i4 Depth_Iterations{positive} 51r26 52r37 98r38 101r6 104r6
+34V13 Get_Worker_Count{positive} 34b13 42l8 42t24 44s44
+44i4 Worker_Count{positive} 95r45 101r25 104r27
+46T14 Depth_Worker 47d7 47d14 49l8 49e20 54b14 93l8 93t20 106r34 115r27 163r38
+47i7 Start{positive} 61r25
+47i14 Finish{positive} 61r34
+51a4 Results(integer) 90m10 170r13 175r20
+52a4 Iteration_Tracking(positive) 65m10 171r20
+56i7 Depth{natural} 63m10 64r42 78r30 83r31
+57i7 Check{integer} 67m10 85m16 85r25 90r34
+58i7 Iterations{positive} 64m10 65r45 69r24
+61i11 Depth_Iter{integer} 63r32 65r30 90r19
+69i14 I{integer}
+71r16 Short_Lived_Pool{55|205R9} 77r21 82r22
+72p16 Short_Lived_Tree_1{55|202P9} 75m16 86r30
+72p36 Short_Lived_Tree_2{55|202P9} 80m16
+95I12 Worker_Id{positive} 163r24
+97i4 Start_Index{positive} 109r23 111r23 116r19 119m10
+98i4 End_Index{positive} 109m10 111m10 117r20 119r25
+100i4 Iterations_Per_Task{positive} 109r37 111r37
+103i4 Remainder{natural} 108r10 112m10 112r23
+106V13 Create_Worker{46T14} 106b13 121l8 121t21 164s23
+115t14 New_Worker{46T14}
+123r4 Long_Lived_Node_Pool{55|205R9} 156r37
+125p4 Long_Lived_Tree{55|202P9} 156m10 182r25
+127i4 Check{integer} 143m10 147r23 182m4 183r17
+132t12 Stretch_Depth_Task 135b17 149l11 149t29
+136i10 Stretch_Depth{positive} 141r35 145r23
+138r10 Pool{55|205R9} 140r35
+139p10 Stretch_Tree{55|202P9} 143r38
+151t12 Create_Long_Lived_Tree_Task 154b17 157l11 157t38
+163a7 Workers(46T14) 165r28
+170i8 I{integer} 171r40 173r37 175r29
+X 25 system.ads
+67M9*Address
+X 32 s-memory.ads
+53V13*Alloc{25|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{25|67M9} 105i<c,__gnat_realloc>22
+X 40 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 42 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 55 binarytrees.gnat
+200K9*Trees 20|11w6 11r34 138r17 140r12 55|232e10
+202P9*Tree_Node 20|72r57 125r27 139r34
+203V13*Item_Check{integer} 20|86s18 143s26 182s13
+205R9*Node_Pool<6|50R9> 20|71r35 123r27 138r23 55|227e17
+207V13*Create{202P9} 20|76s18 81s19 140s18 156s29
+208r7 Pool{205R9} 20|140r26
+209i7 Depth{integer} 20|78r21 83r22 141r26
+

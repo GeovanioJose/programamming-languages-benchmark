@@ -1,0 +1,149 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U data_input%b		data_input.adb		3271b3cc OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.streams.stream_io%s  a-ststio.adb		a-ststio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.maps%s	a-strmap.adb		a-strmap.ali
+W ada.strings.maps.constants%s  a-stmaco.ads	a-stmaco.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+W line_io%s		line_io.adb		line_io.ali
+Z system%s		system.ads		system.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U data_input%s		data_input.ads		a1e8190c EE NE OO PK
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-ststio.ads		20230707070819 d6d358e8 ada.streams.stream_io%s
+D a-string.ads		20230707070819 90ac6797 ada.strings%s
+D a-strmap.ads		20230707070819 e8bb714a ada.strings.maps%s
+D a-strmap.adb		20230707070819 7e646b75 ada.strings.maps%b
+D a-stmaco.ads		20230707070819 1c0e5368 ada.strings.maps.constants%s
+D a-strsea.ads		20230707070819 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20230707070819 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20230707070819 750cba06 ada.strings.unbounded%b
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D data_input.ads	20231125213338 a1e8190c data_input%s 488:knucleotide.gnat
+D data_input.adb	20231125213338 100f9b29 data_input%b 501:knucleotide.gnat
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
+D line_io.ads		20231125213338 829d6e9c line_io%s 588:knucleotide.gnat
+D line_io.adb		20231125213338 44d6d571 line_io%b 604:knucleotide.gnat
+D system.ads		20230707070819 4635ec04 system%s
+D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20230707070819 b65612c0 system.atomic_counters%b
+D s-bitops.ads		20230707070819 0765e3a3 system.bit_ops%s
+D s-carun8.ads		20230707070819 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+G a e
+G c b b b [b data_input 508 1 none]
+G c Z s b [read data_input 498 13 none]
+G c Z b b [put_line data_input__lio 598 14 512_4]
+G c Z b b [get_line data_input__lio 601 13 512_4]
+G c Z b b [free data_input 522 14 none]
+G c Z b b [read_section data_input 524 14 none]
+G c Z b b [skip_to_section data_input 562 14 none]
+G r i none [b data_input 508 1 none] [line_io standard 594 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 20|502r6 503r6 504r6 506r6 510r8 522r26 554r12
+X 6 a-ioexce.ads
+18K13*IO_Exceptions 30e22 20|503w10 554r16
+26X4*End_Error 20|554r30
+X 9 a-string.ads
+16K13*Strings 35e16 20|502r10 504r10 510r12
+X 10 a-strmap.ads
+38K21*Maps 411e21 20|502r18 582r21
+107A9*Character_Mapping(character)
+X 12 a-stmaco.ads
+38K26*Constants 915e31 20|502w23 582r26
+57a4*Upper_Case_Map{10|107A9} 20|582r36
+X 14 a-strunb.ads
+82K21*Unbounded 756e26 20|504w18 514r18 514r48 540r19 542r19 551r7 555r10
+. 580r7 584r14
+87R9*Unbounded_String<5|43R9> 739e14 20|514r28
+90r4*Null_Unbounded_String{87R9} 20|514r58
+116V13*To_String{string} 20|584s24
+135U14*Append 20|540s29 542s29 551s17 555s20
+137a7 New_Item{string} 20|541r35 542r50
+465U14*Translate 20|580s17
+466r7 Source{87R9} 20|581r10
+467a7 Mapping{10|107A9} 20|582r10
+X 18 a-uncdea.ads
+20u15*Unchecked_Deallocation 20|506w10 522r30
+X 19 knucleotide.gnat
+494K9*Data_Input 500l5 500e15 20|508b14 587l5 587t15
+498V13*Read{string} 20|575b13 585l8 585t12
+X 20 knucleotide.gnat
+511a4 UnixLF{string} 512r32
+512K12 LIO[24|594] 536r38 566r39
+514r4 Data_Buffer{14|87R9} 541m22 541r22 542m37 542r37 551m25 551r25 555m28
+. 555r28 581m20 581r20 584r35
+516e4 Section_Marker{character} 517r43 547r54
+517a4 Section{string} 568r33 569r29 569r46
+521P9 String_Access(string) 522r62 525r20
+522U14 Free[18|20] 552s7 556s10
+524U14 Read_Section 524b14 557l8 557t20 578s7
+525p7 Buffer{521P9} 529m7 531r24 532r24 539r32 541r47 545r16 547r32 551r38
+. 552m13 552r13 555r41 556m16 556r16
+526i7 Read_First{natural} 531m10 538r29 541r59 545r24 547r40 548m13
+527i7 Read_Last{natural} 532m10 538m16 539r19 545r38 548r27 551r51 555r54
+530l7 Get_Data 547r18 550l16 550e24
+536a16 Line{string} 538r42 542r62 545r52
+562U14 Skip_To_Section 562b14 572l8 572t23 577s7
+566a13 Line{string} 568r23 569r24
+X 24 knucleotide.gnat
+594k9*Line_IO 20|505w6 512r23 24|603e12
+601V13*Get_Line{string} 20|536s42[512] 566s43[512]
+

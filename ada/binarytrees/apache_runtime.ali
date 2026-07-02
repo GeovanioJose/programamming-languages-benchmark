@@ -1,0 +1,21 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U apache_runtime%s	apache_runtime.ads	c9fc7ca9 NE OO PU PK
+
+D apache_runtime.ads	20231125213337 c9fc7ca9 apache_runtime%s 307:binarytrees.gnat
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+X 1 binarytrees.gnat
+313K9*Apache_Runtime 320l5 320e19
+316I9*Apr_Status<integer>
+318I9*Apr_Size<integer>
+

@@ -1,0 +1,112 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FINALIZATION
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U text_input%b		text_input.adb		98570fb1 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W line_io%s		line_io.adb		line_io.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U text_input%s		text_input.ads		aad07d96 EE OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+Z system%s		system.ads		system.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D line_io.ads		20231125213341 fc3cbb9e line_io%s 354:revcomp.gnat
+D system.ads		20230707070819 4635ec04 system%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D text_input.ads	20231125213341 fa6c9edf text_input%s 248:revcomp.gnat
+D text_input.adb	20231125213341 7aa73594 text_input%b 281:revcomp.gnat
+G a e
+G c Z s b [initialize text_input 263 25 none]
+G c Z s b [finalize text_input 264 25 none]
+G c Z s b [read_section text_input 266 14 none]
+G c Z s s [free text_input 278 14 none]
+G c Z s s [string_pointerDF text_input 258 9 none]
+G c Z s s [string_pointerIP text_input 258 9 none]
+G r c none [read_section text_input 266 14 none] [get_line line_io 367 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 21|250r6 251r6 258r49 278r26 22|282r6 339r12
+X 3 a-finali.ads
+40K13*Finalization 68e21 21|251w10 258r53
+50H9*Limited_Controlled<12|40R9> 66e55 21|258r66
+X 4 a-ioexce.ads
+18K13*IO_Exceptions 30e22 22|282w10 339r16
+26X4*End_Error 22|339r30
+X 8 a-uncdea.ads
+20u15*Unchecked_Deallocation 21|250w10 278r30
+X 9 revcomp.gnat
+355K9*Line_IO 371e12 22|283w6 310r39
+367V13*Get_Line{string} 22|310s47
+X 12 s-finroo.ads
+42U14*Adjust
+X 21 revcomp.gnat
+253K9*Text_Input 280l5 280e15 22|285b14 353l5 353t15
+257P9*String_Access(string) 260r20 267r32 278r62 22|288r32 294r13
+258R9*String_Pointer<3|50R9> 12|42p14 21|258d25 261e18 263P25 263r53 264P25
+. 264r51 22|343r53 348r51
+258i25*Size{positive} 22|345r48
+260p11*Buffer{257P9} 22|345m14 350m20
+263U25*Initialize<3|53p14> 263=37 22|343b25 346l8 346t18
+263r37 Object{258R9} 22|343b37 345m7 345r41
+264U25*Finalize<3|54p14> 264=35 22|348b25 351l8 351t16
+264r35 Object{258R9} 22|348b35 350m13 350r13
+266U14*Read_Section 267=7 268<7 269<7 270<7 271>7 22|287b14 341l8 341t20
+267p7 Data_Buffer{257P9} 22|288b7 301r45 302r20 303m13 303r49 304r13 330r16
+268i7 Data_Length{natural} 22|289b7 296m7 301r13 304r31 304r57 330r28 330r45
+. 331m16 331r31
+269a7 Next_Header{string} 22|290b7 325r24 326m16
+270i7 Header_Length{natural} 22|291b7 297m7 316m16 327m16
+271i7 Max_Line_Length{natural} 22|292b7 301r27 320r38
+273e4*Section_Marker{character} 22|324r35
+278U14*Free[8|20] 22|305s13 350s7
+X 22 revcomp.gnat
+294p7 Ptr{21|257P9} 302m13 304r47 305m19 305r19
+299l7 Fill_Data_Buffer 317r21 328r21 336l16 336e32
+308q10 Get_Next_Line 334l14 334e27
+310a13 Line{string} 311r55 324r16 324r21 326r71 330r79
+311i13 Present_Line_Length{natural} 315r16 320r16 326r43 327r33 330r57 331r45
+312i13 Strt{natural} 325m16 326r28 326r36
+

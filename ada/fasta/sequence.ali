@@ -1,0 +1,28 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U sequence%s		sequence.ads		a2434cc7 NE OO PU PK
+
+D sequence.ads		20231125213337 a2434cc7 sequence%s 80:fasta.gnat
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s s [nucleotideIP sequence 87 9 none]
+G c Z s s [nucleotide_setIP sequence 96 9 none]
+X 1 fasta.gnat
+81K9*Sequence 83r17 98l5 98e13
+85F9*Real<long_float> 89r11
+87R9*Nucleotide 90e14 96r64
+88e7*C{character}
+89f7*P{85F9}
+92N4*Max_Length_of_Code 94r51
+94I12*Nucleotide_Index{integer} 96r34
+96A9*Nucleotide_Set(87R9)<integer>
+

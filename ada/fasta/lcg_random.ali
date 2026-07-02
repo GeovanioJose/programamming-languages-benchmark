@@ -1,0 +1,34 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U lcg_random%b		lcg_random.adb		d0b9191c NE OO PK GE
+
+U lcg_random%s		lcg_random.ads		a850355c BN EE NE OO PK GE
+
+D lcg_random.ads	20231125213337 a850355c lcg_random%s 268:fasta.gnat
+D lcg_random.adb	20231125213337 78e92c40 lcg_random%b 281:fasta.gnat
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s b [lcg_random standard 274 9 none]
+X 1 fasta.gnat
+272F9 Real 276r34 276r47 2|284r19 293r34 293r47 299r21 299r53
+274k9*LCG_Random 272z9 280l5 280e15 2|282b14 302l5 302t15
+276V13*Gen_Random{272F9} 276>25 2|293b13 300l8 300t18
+276*25 Max{272F9} 2|293b25 299r15
+X 2 fasta.gnat
+286M9 Random_State 288r12 291r12 291r40
+288m4 State{286M9} 298m7 298r17 299r35
+290I9 Signed<integer> 299r27
+294N7 IM 298r38 299r59
+295N7 IA 298r25
+296N7 IC 298r30
+

@@ -1,0 +1,154 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U nbody_pck%b		nbody_pck.adb		835f663c NE OO PK
+
+U nbody_pck%s		nbody_pck.ads		478b8a6e EE NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+W ada.numerics.generic_elementary_functions%s
+Z system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+Z system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
+Z system.machine_code%s	s-maccod.ads		s-maccod.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
+D a-numaux.ads		20230707070819 243fe0b7 ada.numerics.aux%s
+D a-numaux.adb		20230707070819 ac46095f ada.numerics.aux%b
+D a-ngelfu.ads		20230707070819 55716239 ada.numerics.generic_elementary_functions%s
+D a-ngelfu.adb		20230707070819 a9022048 ada.numerics.generic_elementary_functions%b
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D nbody_pck.ads		20231125213339 a9ab2c0d nbody_pck%s 1:nbody.gnat
+D nbody_pck.adb		20231125213339 2af44a31 nbody_pck%b 76:nbody.gnat
+D system.ads		20230707070819 4635ec04 system%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-exnllf.ads		20230707070819 bc7ebbdc system.exn_llf%s
+D s-fatgen.ads		20230707070819 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20230707070819 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20230707070819 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20230707070819 4d5c1475 system.fat_llf%s
+D s-maccod.ads		20230707070819 6d68a701 system.machine_code%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+G a e
+G c Z s s [sqrt nbody_pck__math 52 13 13_4]
+G c Z s s [log nbody_pck__math 75 13 13_4]
+G c Z s s [log nbody_pck__math 79 13 13_4]
+G c Z s s [exp nbody_pck__math 83 13 13_4]
+G c Z s s [Oexpon nbody_pck__math 86 13 13_4]
+G c Z s s [sin nbody_pck__math 94 13 13_4]
+G c Z s s [sin nbody_pck__math 98 13 13_4]
+G c Z s s [cos nbody_pck__math 103 13 13_4]
+G c Z s s [cos nbody_pck__math 107 13 13_4]
+G c Z s s [tan nbody_pck__math 112 13 13_4]
+G c Z s s [tan nbody_pck__math 115 13 13_4]
+G c Z s s [cot nbody_pck__math 120 13 13_4]
+G c Z s s [cot nbody_pck__math 123 13 13_4]
+G c Z s s [arcsin nbody_pck__math 129 13 13_4]
+G c Z s s [arcsin nbody_pck__math 133 13 13_4]
+G c Z s s [arccos nbody_pck__math 137 13 13_4]
+G c Z s s [arccos nbody_pck__math 141 13 13_4]
+G c Z s s [arctan nbody_pck__math 145 13 13_4]
+G c Z s s [arctan nbody_pck__math 152 13 13_4]
+G c Z s s [arccot nbody_pck__math 160 13 13_4]
+G c Z s s [arccot nbody_pck__math 167 13 13_4]
+G c Z s s [sinh nbody_pck__math 175 13 13_4]
+G c Z s s [cosh nbody_pck__math 178 13 13_4]
+G c Z s s [tanh nbody_pck__math 182 13 13_4]
+G c Z s s [coth nbody_pck__math 186 13 13_4]
+G c Z s s [arcsinh nbody_pck__math 190 13 13_4]
+G c Z s s [arccosh nbody_pck__math 193 13 13_4]
+G c Z s s [arctanh nbody_pck__math 198 13 13_4]
+G c Z s s [arccoth nbody_pck__math 202 13 13_4]
+G c Z s s [exp_strict nbody_pck__math 66 13 13_4]
+G c Z s s [local_atan nbody_pck__math 70 13 13_4]
+G c Z s s [dataIP nbody_pck 18 9 none]
+G c Z s b [offset_momentum nbody_pck 67 14 none]
+G c Z s b [energy nbody_pck 71 13 none]
+G c Z s b [advance nbody_pck 73 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|6r6 6r24 7r6 13r24
+X 3 a-numeri.ads
+16K13*Numerics 32e17 9|6w10 6r28 7r10 13r28
+21N4*Pi 9|15r43 15r48
+X 6 a-ngelfu.ads
+39k22*Generic_Elementary_Functions 205e46 9|7w19 13r37
+52V13*Sqrt<long_float> 10|109s32[9|13] 127s33[9|13]
+X 9 nbody.gnat
+9K9*Nbody_Pck 75l5 75e14 10|82b14 148l5 148t14
+11F9*Real<long_float> 13r67 15r29 16r29 19r20 20r20 21r20 69r27 71r27 73r31
+. 10|86r27 93r27 94r30 95r30 117r31 118r35
+13K12*Math[6|39] 10|109r27 127r28
+15f4*Solar_Mass{11F9} 33r62 41r62 49r62 57r62 65r36 10|88r26 89r26 90r26
+16f4*Days_Per_Year{11F9} 30r62 31r62 32r63 38r63 39r62 40r62 46r62 47r62
+. 48r63 54r62 55r62 56r63
+18R9*Data 22e14 26r34 68r27 10|85r27
+19f7*X{11F9} 27m28 35m28 43m28 51m28 59m28 10|105r32 105r47 123r33 123r48
+. 142m21 142r37
+19f10*Y{11F9} 28m28 36m28 44m28 52m28 60m28 10|106r32 106r47 124r33 124r48
+. 143m21 143r37
+19f13*Z{11F9} 29m28 37m28 45m28 53m28 61m28 10|107r32 107r47 125r33 125r48
+. 144m21 144r37
+20f7*Vx{11F9} 30m28 38m28 46m28 54m28 62m28 10|88m14 99r25 99r41 130m27 130r44
+. 134m27 134r44 142r57
+20f11*Vy{11F9} 31m28 39m28 47m28 55m28 63m28 10|89m14 100r29 100r45 131m27
+. 131r44 135m27 135r44 143r57
+20f15*Vz{11F9} 32m28 40m28 48m28 56m28 64m28 10|90m14 101r29 101r45 132m27
+. 132r44 136m27 136r44 144r57
+21f7*Mass{11F9} 33m28 41m28 49m28 57m28 65m28 10|98r35 110r36 110r54 130r65
+. 131r65 132r65 134r65 135r65 136r65
+24E9*Body_Name 24e61 26r20 10|103r17 104r21 104r43 120r16 121r18 122r22 122r44
+. 141r16
+24n23*Sun{24E9} 59r16
+24n28*Jupiter{24E9} 27r16
+24n37*Saturn{24E9} 35r16
+24n45*Uranus{24E9} 43r16
+24n53*Neptune{24E9} 51r16
+26a4*Bodies(18R9) 10|97r16 98r24 99r14 99r30 100r18 100r34 101r18 101r34
+. 105r21 105r36 106r21 106r36 107r21 107r36 110r25 110r43 123r22 123r37 124r22
+. 124r37 125r22 125r37 130m16 130r33 130r54 131m16 131r33 131r54 132m16 132r33
+. 132r54 134m16 134r33 134r54 135m16 135r33 135r54 136m16 136r33 136r54 142m10
+. 142r26 142r46 143m10 143r26 143r46 144m10 144r26 144r46
+67U14*Offset_Momentum 68=7 69>7 69>11 69>15 10|84b14 91l8 91t23
+68r7 Planet{18R9} 10|85b7 88m7 89m7 90m7
+69f7 Px{11F9} 10|86b7 88r21
+69f11 Py{11F9} 10|86b11 89r21
+69f15 Pz{11F9} 10|86b15 90r21
+71V13*Energy{11F9} 10|93b13 115l8 115t14
+73U14*Advance 73>23 10|117b14 146l8 146t15
+73f23 Dt{11F9} 10|117b23 128r23 142r41 143r41 144r41
+X 10 nbody.gnat
+94f7 Dx{9|11F9} 105m15 109r38 109r43
+94f11 Dy{9|11F9} 106m15 109r48 109r53
+94f15 Dz{9|11F9} 107m15 109r58 109r63
+94f19 Distance{9|11F9} 109m15 110r62
+95f7 E{9|11F9} 98m9 98r14 110m15 110r20 114r14
+97e11 I{9|24E9} 98r32 99r22 99r38 100r26 100r42 101r26 101r42 103r12 104r37
+. 105r29 106r29 107r29 110r33
+104e16 J{9|24E9} 105r44 106r44 107r44 110r51
+118f7 Dx{9|11F9} 123m16 127r39 127r44 130r49 134r49
+118f11 Dy{9|11F9} 124m16 127r49 127r54 131r49 135r49
+118f15 Dz{9|11F9} 125m16 127r59 127r64 132r49 136r49
+118f19 Distance{9|11F9} 127m16 128r29
+118f29 Mag{9|11F9} 128m16 130r72 131r72 132r72 134r72 135r72 136r72
+120e11 I{9|24E9} 121r13 122r38 123r30 124r30 125r30 130r24 130r41 131r24
+. 131r41 132r24 132r41 134r62 135r62 136r62
+122e17 J{9|24E9} 123r45 124r45 125r45 130r62 131r62 132r62 134r24 134r41
+. 135r24 135r41 136r24 136r41
+141e11 I{9|24E9} 142r18 142r34 142r54 143r18 143r34 143r54 144r18 144r34
+. 144r54
+

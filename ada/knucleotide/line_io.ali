@@ -1,0 +1,104 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_RECURSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U line_io%b		line_io.adb		1098e305 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.streams.stream_io%s  a-ststio.adb		a-ststio.ali
+Z system%s		system.ads		system.ali
+
+U line_io%s		line_io.ads		829d6e9c BN EB NE OO PK GE
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-ststio.ads		20230707070819 d6d358e8 ada.streams.stream_io%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
+D line_io.ads		20231125213338 829d6e9c line_io%s 588:knucleotide.gnat
+D line_io.adb		20231125213338 44d6d571 line_io%b 604:knucleotide.gnat
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+G a e
+G c Z s b [line_io standard 594 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|606r6 610r8
+X 4 a-stream.ads
+36K13*Streams 87e16 12|606r10 610r12
+42M9*Stream_Element 12|617r35
+44I9*Stream_Element_Offset<long_long_integer> 12|624r36 625r17 628r38 647r24
+54A9*Stream_Element_Array(42M9)<44I9> 12|631r28
+X 5 a-ststio.ads
+39K21*Stream_IO 224e26 12|606w18 612r12 650r19 652r10 677r16 691r21 711r4
+. 712r14
+44P9*File_Type 12|612r22
+47n23*In_File{47E9} 12|712r24
+74U14*Open 12|711s14
+76e7 Mode{47E9} 12|712r6
+77a7 Name{string} 12|713r6
+104U14*Read 12|652s20
+106a7 Item{4|54A9} 12|653r12
+107i7 Last{4|44I9} 12|654r12
+143X4*End_Error 12|650r29 677r26 691r31
+X 11 knucleotide.gnat
+593a4 Separator_Sequence{string} 12|619r29 657r43 666r29 715r52
+594k9*Line_IO 593z4 603l5 603e12 12|608b14 719l5 719t12
+598U14*Put_Line 598>24
+598a24 Item{string}
+601V13*Get_Line{string} 12|643b13 689s41 707l8 707t16
+X 12 knucleotide.gnat
+612p4 Stdin{5|44P9} 652r25 711m20 711r20
+616N4 BUFSIZ 621r57
+619i4 SL{natural} 621r66 623r72 628r60 657r36 701r42
+621I12 Extended_Buffer_Index{positive} 622r28 623r12 623r43 625r39 630r34
+. 639r34 664r14 673r43
+622I12 Buffer_Index{621I12} 640r34 649r20 715r11 716r16 717r12
+624I12 Extended_Bytes_Index{4|44I9} 626r27 627r12 628r10 631r49
+626I12 Bytes_Index{624I12} 653r26
+630A12 Buffer_Data{string}<integer> 633r13
+631A12 Buffer_Bytes{4|54A9}<4|44I9> 634r13
+633a4 Buffer{630A12} 635m26 635r26 657m10 666r16 684r41 698r37 715m4 715r36
+634a4 Bytes{631A12} 635m8 635r8 636m24 636r24 653m20 653r20
+639i4 Position{natural} 656m10 664r39 684r48 685r52 698r44 699r62 701m13
+. 716m4
+640i4 Last{natural} 649r13 655m10 657r17 657r29 682r27 684r60 685r45 717m4
+641b4 End_Of_Input{boolean} 676r10 692m19 718m4
+645U17 Reload 645b17 658l11 658t17 688s16
+647i10 Last_Filled{4|44I9} 654m20 655r26
+661V16 Separator_Position{natural} 661b16 663r24 670l11 670t29 680s25
+664i10 K{621I12} 666r23 667m13 667r18 669r17
+673i7 Next_Separator{natural} 680m7 682r10 698r56 699r45 701r25
+684a13 Result{string} 689r31 693r34
+685A21 XString{string}<integer> 689r23 693r26
+698a13 Result{string} 702r29
+699A21 XString{string}<integer> 702r20
+

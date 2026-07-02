@@ -1,0 +1,90 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_IO
+RV NO_UNCHECKED_CONVERSION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U line_io%b		line_io.adb		32506d42 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.streams.stream_io%s  a-ststio.adb		a-ststio.ali
+W unchecked_conversion%s
+
+U line_io%s		line_io.ads		4b5018c1 BN EE NE OO PK
+Z ada.tags%s		a-tags.adb		a-tags.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-ststio.ads		20230707070819 d6d358e8 ada.streams.stream_io%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
+D line_io.ads		20231125213337 4b5018c1 line_io%s 217:fasta.gnat
+D line_io.adb		20231125213337 65fcb373 line_io%b 231:fasta.gnat
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D unchconv.ads		20230707070819 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [print line_io 220 14 none]
+G c Z s b [close_stdout line_io 222 14 none]
+G c Z s b [open_stdout line_io 224 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|233r6 238r8
+X 4 a-stream.ads
+36K13*Streams 87e16 12|233r10 238r12
+42M9*Stream_Element
+44I9*Stream_Element_Offset<long_long_integer> 12|243r24 244r10 244r47
+54A9*Stream_Element_Array(42M9)<44I9> 12|246r25
+X 5 a-ststio.ads
+39K21*Stream_IO 224e26 12|233w18 240r13 251r7 256r7 261r7 263r18
+44P9*File_Type 12|240r23
+47n32*Out_File{47E9} 12|263r28
+74U14*Open 12|261s17
+75p7 File{44P9} 12|262r10
+76e7 Mode{47E9} 12|263r10
+77a7 Name{string} 12|264r10
+80U14*Close 12|256s17
+114U14*Write 12|251s17
+X 11 fasta.gnat
+218K9*Line_IO 230l5 230e12 12|236b14 267l5 267t12
+220U14*Print 220>21 228r19 12|242b14 252l8 252t13
+220a21 Item{string} 12|242b21 244r32 244r69 245r34 251r42
+222U14*Close_Stdout 12|254b14 257l8 257t20
+224U14*Open_Stdout 12|259b14 265l8 265t19
+226a4*End_of_Line{string}
+X 12 fasta.gnat
+240p4 Stdout{5|44P9} 251r24 256m24 256r24 262m18 262r18
+243I15 Index{4|44I9} 246r47
+245A15 XString{string}<integer> 248r20
+246A15 XBytes{4|54A9}<4|44I9> 249r20
+247V16 To_Bytes[26|20]{4|54A9} 251s32
+X 26 unchconv.ads
+17+9 Source 12|248r10
+18+9 Target 12|249r10
+20v10*Unchecked_Conversion 12|234w6 247r32
+

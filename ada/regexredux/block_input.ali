@@ -1,0 +1,130 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U block_input%b		block_input.adb		770c2e90 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.streams.stream_io%s  a-ststio.adb		a-ststio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c_streams%s  i-cstrea.adb		i-cstrea.ali
+Z system%s		system.ads		system.ali
+
+U block_input%s		block_input.ads		a7b1f911 EE NE OO PK
+W u%s			u.ads			u.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-ststio.ads		20230707070819 d6d358e8 ada.streams.stream_io%s
+D a-string.ads		20230707070819 90ac6797 ada.strings%s
+D a-strmap.ads		20230707070819 e8bb714a ada.strings.maps%s
+D a-strmap.adb		20230707070819 7e646b75 ada.strings.maps%b
+D a-strsea.ads		20230707070819 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20230707070819 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20230707070819 750cba06 ada.strings.unbounded%b
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D block_input.ads	20231125213339 72380614 block_input%s 464:regexredux.gnat
+D block_input.adb	20231125213339 36dafbe2 block_input%b 473:regexredux.gnat
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
+D system.ads		20230707070819 4635ec04 system%s
+D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20230707070819 b65612c0 system.atomic_counters%b
+D s-bitops.ads		20230707070819 0765e3a3 system.bit_ops%s
+D s-carun8.ads		20230707070819 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D u.ads			20231125213339 d589ff05 u%s 84:regexredux.gnat
+G a e
+G c Z s b [read block_input 468 13 none]
+G c Z s b [open_stdin block_input 469 14 none]
+G c Z s b [close_stdin block_input 470 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 19|474r6 479r8
+X 7 a-stream.ads
+36K13*Streams 87e16 19|474r10 479r12
+42M9*Stream_Element
+44I9*Stream_Element_Offset<long_long_integer> 19|485r23 486r23 490r27
+54A9*Stream_Element_Array(42M9)<44I9> 19|494r20
+X 8 a-ststio.ads
+39K21*Stream_IO 224e26 19|474w18 481r10 498r13 508r7 510r18 516r7
+44P9*File_Type 19|481r20
+47n23*In_File{47E9} 19|510r28
+74U14*Open 19|508s17
+75p7 File{44P9} 19|509r10
+76e7 Mode{47E9} 19|510r10
+77a7 Name{string} 19|511r10
+80U14*Close 19|516s17
+104U14*Read 19|498s23
+105p7 File{44P9} 19|498r29
+106a7 Item{7|54A9} 19|499r29
+107i7 Last{7|44I9} 19|500r29
+X 13 a-strunb.ads
+95P9*String_Access(string) 18|468r27 19|483r27 487r25
+X 18 regexredux.gnat
+466K9*Block_Input 472l5 472e16 19|477b14 519l5 519t16
+468V13*Read{13|95P9} 19|483b13 504l8 504t12
+469U14*Open_Stdin 19|506b14 512l8 512t18
+470U14*Close_Stdin 19|514b14 517l8 517t19
+X 19 regexredux.gnat
+481p4 cin{8|44P9} 498r37 509m18 509r18 516m24 516r24
+485i7 Items_To_Read{7|44I9} 490m10 492r47 494r47
+486i7 Items_Read{7|44I9} 500m37
+487p7 Buffer{13|95P9} 492m10 496r34 503r14
+494a13 View{7|54A9} 495m33 495r33 496m17 496r17 499m37
+X 20 interfac.ads
+38K9*Interfaces 19|475r6 484r11 20|184e15
+X 21 i-cstrea.ads
+37K20*C_Streams 19|475w17 484r22 21|315e25
+41M12*FILEs{28|50M12}
+42I12*int{28|53I12}
+68i4*SEEK_END{42I12} 19|489r27
+72V13*stdin{41M12} 19|489s17 490s57 491s18
+153V13*fseek=157:26{28|53I12} 19|489s10
+165V13*ftell=166:26{28|55I9} 19|490s50
+182U14*rewind=182:58 19|491s10
+X 23 system.ads
+67M9*Address
+X 28 s-crtl.ads
+50M12*FILEs{23|67M9}
+53I12*int{integer}
+55I9*long<long_integer>
+X 45 regexredux.gnat
+86K9*U=86:31 18|465w6 468r25 19|483r25 487r23
+

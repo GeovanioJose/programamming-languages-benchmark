@@ -1,0 +1,241 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_ALLOCATORS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RV MAX_TASK_ENTRIES=1
+RV MAX_TASKS=1+
+
+U dna.replacing%b	dna-replacing.adb	bc0fc277 OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_deallocation%s
+W dna%s			dna.ads			dna.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
+Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+W u%s			u.ads			u.ali
+
+U dna.replacing%s	dna-replacing.ads	7ae84976 EE NE OO PK IU
+W dna%s			dna.ads			dna.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
+D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-string.ads		20230707070819 90ac6797 ada.strings%s
+D a-strmap.ads		20230707070819 e8bb714a ada.strings.maps%s
+D a-strmap.adb		20230707070819 7e646b75 ada.strings.maps%b
+D a-strsea.ads		20230707070819 b9bc90ba ada.strings.search%s
+D a-strunb.ads		20230707070819 1656705b ada.strings.unbounded%s
+D a-strunb.adb		20230707070819 750cba06 ada.strings.unbounded%b
+D a-stunau.ads		20230707070819 63b8e84c ada.strings.unbounded.aux%s
+D a-stunau.adb		20230707070819 b934564a ada.strings.unbounded.aux%b
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
+D dna.ads		20231125213339 52a7078b dna%s 1:regexredux.gnat
+D dna-replacing.ads	20231125213339 284f4efd dna.replacing%s 173:regexredux.gnat
+D dna-replacing.adb	20231125213339 ae3a10ad dna.replacing%b 296:regexredux.gnat
+D gnat.ads		20230707070819 b5988c27 gnat%s
+D g-debuti.ads		20230707070819 0311a7bb gnat.debug_utilities%s
+D g-io.ads		20230707070819 9f0d3ab2 gnat.io%s
+D g-io.adb		20230707070819 2b8c3847 gnat.io%b
+D g-spitbo.ads		20230707070819 cd32cd2c gnat.spitbol%s
+D g-spitbo.adb		20230707070819 7ec74497 gnat.spitbol%b
+D g-spipat.ads		20230707070819 9a434fd3 gnat.spitbol.patterns%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
+D system.ads		20230707070819 4635ec04 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20230707070819 b65612c0 system.atomic_counters%b
+D s-bitops.ads		20230707070819 0765e3a3 system.bit_ops%s
+D s-carun8.ads		20230707070819 a903718d system.compare_array_unsigned_8%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
+D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-pooglo.ads		20230707070819 ede33ef8 system.pool_global%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-soflin.adb		20230707070819 f811fd3c system.soft_links%b
+D s-soliin.ads		20230707070819 f1a676b9 system.soft_links.initialize%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
+D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
+D s-strhas.ads		20230707070819 269cd894 system.string_hash%s
+D s-strhas.adb		20230707070819 2e038444 system.string_hash%b
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20230707070818 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20230707070819 974e87c5 system.wch_con%b
+D u.ads			20231125213339 d589ff05 u%s 84:regexredux.gnat
+G a e
+G c Z s b [perform_replacements dna__replacing 177 14 none]
+G c Z b b [find_ub dna__replacing 301 13 none]
+G c Z b b [service dna__replacing 304 14 none]
+G c Z b b [save dna__replacing__service 310 13 none]
+G c Z b b [P4bIP dna__replacing 310 7 none]
+G c Z b b [serviceVIP dna__replacing 304 4 none]
+G c Z b b [safe_split dna__replacing 351 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 23|297r6 334r32
+X 13 a-strunb.ads
+95P9*String_Access(string) 23|310r35 333r22 375r34 376r15 395r19 457r36
+97U14*Free 23|456s9
+X 20 a-uncdea.ads
+20u15*Unchecked_Deallocation 23|297w10 334r36
+X 21 regexredux.gnat
+12K9*DNA 83e8 22|174r9 180r5 23|299r14 463r5
+58r10*Element{30|652R9} 23|442r38 451r36
+59r10*Replacement{28|51R12} 23|441r60 450r48
+62a4*Iub(56R9) 23|441r45 441r50 442r23 442r28 449r21 449r34 450r38 451r26
+82p4*Seq{13|95P9} 23|328r25 341r13 344r43 368r29
+X 22 regexredux.gnat
+174K13*Replacing 21|12k9 22|180l9 180e18 23|299b18 463l9 463t18
+175i4*Number_Of_Tasks{positive} 23|320r45 320r64 321r27 324r21
+177U14*Perform_Replacements 178>7 179<7 23|314b14 349l8 349t28
+178i7 Limit{positive} 23|315b7 320r37 326r37
+179i7 New_Length{natural} 23|315b25 348m7
+X 23 regexredux.gnat
+301V13 Find_UB{positive} 301>22 301>27 326s22 364b13 372l8 372t15
+301i22 Est{positive} 364b22 365r50 367r10 368r34
+301i27 Ub{positive} 364b27 365r62 367r16 370r17
+304T14 Service 305d7 305d33 305d39 305d53 312l8 312e15 317r29 327r26 334r60
+. 344r22 374b14 461l8 461t15
+305i33 From{natural} 434r64 437r20 440r50 448r33 448r55
+305i39 To{natural} 434r61 437r17 440r47 448r30 448r63
+305b53 Bordering{boolean} 438r10
+310Y13 Save 310<19 310<50 340s17 346s15 457b14 460l11 460t15
+310p19 Pointer{13|95P9} 458m10 458r10
+310i50 Last{natural} 459m10 459r10
+317P12 Worker(304T14) 321r47 332r20 334r69
+318i7 Here{positive} 325m10 328r38 336m10 339m13 339r21 341r18 341r26 344r65
+319i7 There{natural} 323m7 325r22 326m10 328r50 337m10 339r28 340m32 341r31
+. 341r57 344r70 346m30 348r21
+320i7 Sz{positive} 326r33
+321a7 Work(317P12) 327m10 338m21 338r21
+324i11 N{integer} 326r31 327r16
+332p10 Wipe{317P12} 344m10 346r10
+333p10 Scratch{13|95P9} 340m23 340r23 341r43 346m21 346r21
+334U20 Free[20|20] 342s13
+338p14 Job=338:21{317P12} 340r13 342r19
+351V13 Safe_Split{natural} 351b13 351>25 362l8 362t18 368s17
+351a25 Near{string} 358r17 359r17
+352i7 N{natural} 354m33 354r33 356m33 356r33 359r30
+353r7 Looking_At{30|652R9} 358r30
+365i7 Limit{natural} 368r41
+375a7 Sub(13|95P9) 389r10 389r48 395r41 400r48 428r19 429r17 430r17 439m10
+. 440m10 446m10 447m10 448r10 456m15 456r15 458r21
+376p7 Rpl{13|95P9} 402r29 402r48 403r60 441m10 450m13
+379i7 Tail{positive} 389r27 389r35 390m10 390r18 398r25 400r16 400r24 401r16
+. 402r21 403m10 403r48 427m10 443r30 452r23
+380i7 Start{positive} 396r43 400r62 404m10 428m10
+381i7 Hit{natural} 387r41 389r62 389r71 396r37 400r71 410r41 414m25 414r25
+. 420m21 420r21
+382i7 Stop{natural} 387r34 404r48 410r48 413m18 413r18 416m25 416r25 423m25
+. 423r25 426m10
+384b7 Source{boolean} 389r19 389r53 395r50 400r53 428r24 429r22 430r22 436m7
+. 439r15 440r19 444m10 444r34 448r15 453m13 453r27 456r24 458r26
+386V16 Last_Repl{boolean} 386b16 392l11 392t20 417r19
+387i10 L{natural} 389r40 389r75 390r23
+394V16 Next_Repl{boolean} 394b16 406l11 406t20 424r19
+395p10 Dest=395:41{13|95P9} 400r10 401r10
+396i10 L1{natural} 400r29 401r21 402r26 403r55
+408U17 Run_Matcher 408b17 408>30 408>53 431l11 431t22 442s10 451s13
+408r30 Iub_Pattern{30|652R9} 422r17
+408i53 Ub{positive} 429r36 430r36
+410V19 Ge{boolean} 421r19
+412r10 Suffix{30|652R9} 430r48
+419r10 Code{30|652R9} 429r48
+433i7 Ub{positive} 437m7 442r47 443m10 451r45 452m13 459r21
+434i7 Need{positive} 446r42 447r42
+449i14 Job{integer} 450r43 451r31
+457p20 Pointer{13|95P9}
+457i51 Last{natural}
+X 28 g-spitbo.ads
+56V13*S=57:36{string} 23|441s42 450s35
+X 30 g-spipat.ads
+652R9*Pattern<5|43R9> 23|353r29 408r44 412r28 419r26 30|1156e14
+704V14*"&"{652R9} 23|354s23 356s23 414s15 415s15 416s15 417s15 421s15 422s15
+. 423s15 424s15
+706V14*"&"{652R9} 23|356s43
+712V14*"or"{652R9} 23|355s12
+763V14*"+"{652R9} 23|417s18 421s18 424s18
+800V13*Break{652R9} 23|354s11 356s11
+872V13*Rest{652R9} 23|415s17
+889V13*Setcur{652R9} 23|354s25 356s25 414s17 416s17 420s13 423s17
+911V13*Tab{652R9} 23|413s13
+965V13*Match{boolean} 23|358s10
+967r7 Pat{652R9} 23|358r23
+1011U14*Match 23|429s10 430s10
+1013r7 Pat{652R9} 23|429r41 430r41
+X 58 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 80 regexredux.gnat
+86K9*U=86:31 23|298w6 310r33 333r20 375r32 376r13 395r17 456r7 457r34
+

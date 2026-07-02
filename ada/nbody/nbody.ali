@@ -1,0 +1,115 @@
+V "GNAT Lib v10"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U nbody%b		nbody.adb		da879b5c NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.float_aux%s  a-tiflau.adb		a-tiflau.ali
+Z ada.text_io.float_io%s
+W nbody_pck%s		nbody_pck.adb		nbody_pck.ali
+Z system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.adb		s-valint.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-comlin.ads		20230707070819 4aa66568 ada.command_line%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
+D a-ngelfu.ads		20230707070819 55716239 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiflau.ads		20230707070819 c0393f21 ada.text_io.float_aux%s
+D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
+D a-tiflio.adb		20230707070819 fd9b1cfc ada.text_io.float_io%b
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
+D nbody.adb		20231125213339 977e0754 nbody%b 149:nbody.gnat
+D nbody_pck.ads		20231125213339 a9ab2c0d nbody_pck%s 1:nbody.gnat
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-fatgen.ads		20230707070819 49cbaf86 system.fat_gen%s
+D s-fatgen.adb		20230707070819 28cd35f5 system.fat_gen%b
+D s-fatlfl.ads		20230707070819 378cba9f system.fat_lflt%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+D s-wchcon.adb		20230707070819 974e87c5 system.wch_con%b
+G a e
+G c Z b b [nbody standard 159 11 none]
+G r c none [nbody standard 159 11 none] [offset_momentum nbody_pck 67 14 none]
+G r c none [nbody standard 159 11 none] [energy nbody_pck 71 13 none]
+G r c none [nbody standard 159 11 none] [advance nbody_pck 73 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 17|155r6 155r28 156r6 156r28
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 17|155w10 155r32
+52V13*Argument{string} 17|167s43
+X 9 a-textio.ads
+57K13*Text_IO 727e16 17|156w10 156r32
+86I12*Field{integer} 17|164r27 164r45 165r14
+264U14*New_Line 17|181s4 188s4
+X 11 a-tiflio.ads
+46k21*Float_IO 112e25 17|161r23
+82U14 Put 17|165r38[161]
+X 17 nbody.gnat
+159U11*Nbody 159b11 189l5 189t10
+161K12 RIO[11|46] 165r34
+163U14 Put=165:38 180s4 187s4
+164f7 Item{18|11F9}
+164i20 Fore{9|86I12}
+164i39 Aft{9|86I12}
+165i7 Exp{9|86I12}
+167i4 N{integer} 183r18
+169f4 Px{18|11F9} 173m7 173r13 178r35
+169f8 Py{18|11F9} 174m7 174r13 178r39
+169f12 Pz{18|11F9} 175m7 175r13 178r43
+172e8 I{18|24E9} 173r26 173r42 174r26 174r42 175r26 175r42
+183i8 K{integer}
+X 18 nbody.gnat
+9K9*Nbody_Pck 17|157w6 157r28 18|75e14
+11F9*Real<long_float> 17|161r33 164r14 169r17
+20f7*Vx{11F9} 17|173r29
+20f11*Vy{11F9} 17|174r29
+20f15*Vz{11F9} 17|175r29
+21f7*Mass{11F9} 17|173r45 174r45 175r45
+24E9*Body_Name 17|172r13 18|24e61
+24n23*Sun{24E9} 17|178r29
+26a4*Bodies(18R9) 17|173r18 173r34 174r18 174r34 175r18 175r34 178m21 178r21
+67U14*Offset_Momentum 17|178s4
+71V13*Energy{11F9} 17|180s9 187s9
+73U14*Advance 17|184s7
+

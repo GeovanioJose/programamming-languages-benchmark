@@ -1,0 +1,129 @@
+V "GNAT Lib v10"
+M P W=b
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U pidigits%b		pidigits.adb		6204697d NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+Z system.val_uns%s	s-valuns.adb		s-valuns.ali
+L "-lgmp"
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-comlin.ads		20230707070819 4aa66568 ada.command_line%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D pidigits.adb		20231125213339 7c831d8e pidigits%b 1:pidigits.gnat
+D system.ads		20230707070819 4635ec04 system%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-valuns.ads		20230707070819 35067db9 system.val_uns%s
+G a e
+G c Z b b [pidigits standard 15 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 6|11r6 11r31
+X 2 a-comlin.ads
+36K13*Command_Line 144e21 6|11w10 11r35
+39V13*Argument_Count{natural} 6|105s6
+52V13*Argument{string} 6|106s38
+X 4 interfac.ads
+38K9*Interfaces 184e15 6|13r6 22r27 26r27 33r57 36r69 42r72 45r72 51r48 54r60
+. 57r34 60r55 70r23 70r58 71r23 71r58 76r12 79r31 80r31 87r29 88r29 89r9
+. 101r7 106r10 117r9 118r15 119r24
+X 5 i-c.ads
+18K20*C 230e17 6|13w17 22r38 26r38 33r68 36r80 42r83 45r83 51r59 54r71 57r45
+. 60r66 70r34 70r69 71r34 71r69 76r23 79r42 80r42 87r40 88r40 89r20 101r18
+. 106r21 117r20 118r26 119r35
+35I9*int<integer> 6|26r40 54r73
+43M9*unsigned 6|22r40 42r85 45r85 57r47 60r68 70r71 71r71 76r25 79r44 80r44
+. 87r42 88r42 90r10 101r20 106r23 118r28 119r37
+45M9*unsigned_long 6|33r70 36r82 51r61 70r36 71r36 95r26 96r26 97r26
+X 6 pidigits.gnat
+15U11*Pidigits 15b11 151l5 151t13
+19K11 GMP_Mini 65l7 65e15 66r7
+20a9 Print_String{string} 138r18 147r18
+22M10 mp_limb_t<5|43M9> 23r27
+23P10 mp_ptr(22M10) 27r17
+25R10 mpz_t 28e15 30r35 33r42 36r37 36r53 39r34 39r56 42r40 42r56 45r40 45r56
+. 48r37 48r59 51r34 54r31 54r46 68r31
+26i7 mp_alloc{5|35I9}
+26i17 mp_size{5|35I9}
+27p7 mp_d{23P10}
+30U15*mpz_init 30<25 31b<c,__gmpz_init>22 109s3 110s3
+30r25 Dest{25R10}
+33U15*mpz_init_set_ui 33<32 33>49 34b<c,__gmpz_init_set_ui>22 112s3 113s3
+. 114s3
+33r32 Dest{25R10}
+33m49 Src{5|45M9}
+36U15*mpz_mul_ui 36<27 36>44 36>60 37b<c,__gmpz_mul_ui>22 73s5 83s5 84s5
+. 95s5 96s5 97s5
+36r27 Dest{25R10}
+36r44 Src1{25R10}
+36m60 Src2{5|45M9}
+39U15*mpz_add 39<24 39>41 39>47 40b<c,__gmpz_add>22 74s5
+39r24 Dest{25R10}
+39r41 Src1{25R10}
+39r47 Src2{25R10}
+42U15*mpz_addmul_ui 42<30 42>47 42>63 43b<c,__gmpz_addmul_ui>22 94s5
+42r30 Dest{25R10}
+42r47 Src1{25R10}
+42m63 Src2{5|43M9}
+45U15*mpz_submul_ui 45<30 45>47 45>63 46b<c,__gmpz_submul_ui>22 82s5
+45r30 Dest{25R10}
+45r47 Src1{25R10}
+45m63 Src2{5|43M9}
+48U15*mpz_tdiv_q 48<27 48>44 48>50 49b<c,__gmpz_tdiv_q>22 75s5
+48r27 Dest{25R10}
+48r44 Src1{25R10}
+48r50 Src2{25R10}
+51V14*mpz_get_ui{5|45M9} 51>26 52b<c,__gmpz_get_ui>22 76s34
+51r26 Src{25R10}
+54V14*mpz_cmp{5|35I9} 54>23 54>38 55b<c,__gmpz_cmp>22 126s10
+54r23 Src{25R10}
+54r38 Ref{25R10}
+57U15*Put_Char 57>25 58b<c,putchar>22 135s7 145s11
+57m25 Val{5|43M9}
+60U15*Put_Line 60>25 60>45 61b<c,printf>22 138s9 147s8
+60a25 Format{string}
+60m45 Data{5|43M9}
+68r3 Tmp1{25R10} 73m16 74r19 75m16 76r45 109m12
+68r9 Tmp2{25R10} 74m13 75r22 110m12
+68r15 Acc{25R10} 74r25 82m19 83m16 83r21 94m19 95m16 95r21 112m19 126r23
+68r20 Den{25R10} 75r28 82r24 96m16 96r21 113m19
+68r25 Num{25R10} 73r22 84m16 84r21 94r24 97m16 97r21 114m19 126r18
+70V12 Extract{5|43M9} 70>20 71b12 77l7 77t14 130s12 131s15
+70m20 X{5|45M9} 71b20 73r27
+79U13 Eliminate 79>24 80b13 85l7 85t16 140s7
+79m24 D{5|43M9} 80b24 82r29
+87U13 Consume 87>22 88b13 98l7 98t14 124s7
+87m22 K{5|43M9} 88b22 92r11 97r40
+90m5 K2{5|43M9} 92m5 95r40 96r40
+101m3 N{5|43M9} 104m3 106m5 122r15
+118m5 D{5|43M9} 130m7 131r10 135r16 140r17
+118m8 K{5|43M9} 123m7 123r12 124r15
+118m11 I{5|43M9} 122r11 136m7 136r12 137r10 138r32 143r8 144r40 147r32
+119m5 Space{5|43M9} 145r21
+121L7 Work_Loop 127r14 132r14
+144i12 X{integer}
+

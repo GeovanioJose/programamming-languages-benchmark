@@ -1,0 +1,53 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_UNCHECKED_CONVERSION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U string_fragments%b	string_fragments.adb	c1370d23 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+
+U string_fragments%s	string_fragments.ads	ccd70d13 BN EE NE OO PK GE
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D string_fragments.ads	20231125213338 ccd70d13 string_fragments%s 417:knucleotide.gnat
+D string_fragments.adb	20231125213338 037b275f string_fragments%b 431:knucleotide.gnat
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s b [string_fragments standard 422 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 4|433r6 448r27
+X 2 a-unccon.ads
+20v14*Unchecked_Conversion 4|433w10 448r31
+X 3 knucleotide.gnat
+421i4 Max_String_Length{positive} 424r37 4|444r29 480r27
+422k9*String_Fragments 421z4 430l5 430e21 4|435b14 487l5 487t21
+424A12*Fragment{string}<integer> 426r50 427r34 428r31 4|442r34 444r14 450r31
+. 477r50 478r16
+426V13*To_Fragment{424A12} 426>26 4|477b13 485l8 485t19
+426a26 Source{string} 4|477b26 480r10 483r20 483r38
+427V13*Null_Fragment{424A12} 4|442b13 445l8 445t21
+428V14*"="{boolean} 428>18 428>24 4|450b14 474l9 474t11
+428a18 Left{424A12} 4|450b18 453r34 461r21 469r13
+428a24 Right{424A12} 4|450b24 455r18 461r50 469r24
+X 4 knucleotide.gnat
+437N4 Bytes_Per_Word 438r28 439r25 440r32 452r25 464r25 465r25
+438M9 Uns 439r8 448r58
+440A12 Str{string}<integer> 448r53
+448V13 To_Uns[2|20]{438M9} 461s13 461s42
+451i7 Strt{integer} 461r26 461r56 464m10 464r18 468r16
+452i7 Fnsh{integer} 460r20 461r32 461r62 465m10 465r18
+453i7 Last{integer} 455r10 460r27 468r24
+468i11 I{integer} 469r18 469r30
+478a7 Result{3|424A12} 483m7 484r14
+

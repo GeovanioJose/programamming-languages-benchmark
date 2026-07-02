@@ -1,0 +1,55 @@
+V "GNAT Lib v10"
+A -O3
+A -fomit-frame-pointer
+A -gnatN
+A -gnatp
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U apache_runtime.pools%b  apache_runtime-pools.adb  9e061ad5 NE OO PK
+W apache_runtime%s	apache_runtime.ads	apache_runtime.ali
+
+U apache_runtime.pools%s  apache_runtime-pools.ads  151cb1ec EE NE OO PK
+W apache_runtime%s	apache_runtime.ads	apache_runtime.ali
+W system%s		system.ads		system.ali
+
+D apache_runtime.ads	20231125213337 c9fc7ca9 apache_runtime%s 307:binarytrees.gnat
+D apache_runtime-pools.ads  20231125213337 9ad52141 apache_runtime.pools%s 321:binarytrees.gnat
+D apache_runtime-pools.adb  20231125213337 04d33b94 apache_runtime.pools%b 351:binarytrees.gnat
+D system.ads		20230707070819 4635ec04 system%s
+G a e
+G c Z s s [initialize apache_runtime__pools 334 13 none]
+G c Z s b [create apache_runtime__pools 336 13 none]
+G c Z s s [destroy apache_runtime__pools 340 14 none]
+G c Z s s [allocate apache_runtime__pools 342 13 none]
+X 1 binarytrees.gnat
+313K9*Apache_Runtime 320e19 2|329r9 350r5 3|357r14 382r5
+316I9*Apr_Status<integer> 2|334r31 338r34 3|362r55 372r14
+318I9*Apr_Size<integer> 2|342r48
+X 2 binarytrees.gnat
+329K24*Pools 1|313k9 2|346E34 350l20 350e25 3|357b29 382l20 382t25
+331M12*Pool_Type{4|67M9} 338r16 340r30 342r30 3|361r16 371r16
+332M12*Pool_Access{4|67M9} 337r18 3|360r18 370r18
+334V13*Initialize{1|316I9} 346b<c,apr_initialize>22
+336V13*Create{1|316I9} 337>7 338>7 3|369b13 380l8 380t14
+337m7 New_Pool{332M12} 3|370b7 376r10
+338m7 Parent{331M12} 3|371b7 377r10
+340U14*Destroy 340>23 347b<c,apr_pool_destroy>22
+340m23 Pool{331M12}
+342V13*Allocate{4|67M9} 342>23 342>41 348b<c,apr_palloc>22
+342m23 Pool{331M12}
+342i41 Size{1|318I9}
+X 3 binarytrees.gnat
+359V13 Create_Ex{1|316I9} 360>7 361>7 362>7 362>19 363b<c,apr_pool_create_ex>22
+. 375s14
+360m7 New_Pool{2|332M12}
+361m7 Parent{2|331M12}
+362m7 Reserved_1{4|67M9}
+362m19 Reserved_2{4|67M9}
+X 4 system.ads
+37K9*System 2|327w6 331r25 332r27 342r65 3|362r32 378r10 379r10 4|156e11
+67M9*Address 2|331r32 332r34 342r72 3|362r39
+69m4*Null_Address{67M9} 3|378r17 379r17
+

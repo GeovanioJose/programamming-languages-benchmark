@@ -1,0 +1,1 @@
+./fasta 25000000 > /dev/null
