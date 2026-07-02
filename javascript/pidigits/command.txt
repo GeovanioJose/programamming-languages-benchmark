@@ -1,0 +1,1 @@
+node pidigits.node-4.js 10000 > /dev/null

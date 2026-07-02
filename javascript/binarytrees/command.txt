@@ -1,0 +1,1 @@
+node binarytrees.js 21 > /dev/null

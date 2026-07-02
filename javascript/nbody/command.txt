@@ -1,0 +1,1 @@
+node nbody.node-6.js 50000000 > /dev/null

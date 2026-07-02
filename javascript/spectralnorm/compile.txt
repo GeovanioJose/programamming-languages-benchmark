@@ -1,0 +1,12 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-node-6.html
+
+MAKE:
+cp -L spectralnorm.node-6.node spectralnorm.node-6.js
+
+0.13s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/node-v19.4.0/bin/node spectralnorm.node-6.js 5500
+
+PROGRAM OUTPUT:
+1.274224153

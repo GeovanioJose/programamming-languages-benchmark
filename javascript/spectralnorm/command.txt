@@ -1,0 +1,1 @@
+node spectralnorm.node-6.js 5500 > /dev/null

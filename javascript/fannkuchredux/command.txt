@@ -1,0 +1,1 @@
+node fannkuchredux.node-5.js 12 > /dev/null

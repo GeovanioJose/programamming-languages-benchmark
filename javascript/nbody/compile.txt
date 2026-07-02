@@ -1,0 +1,13 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-node-6.html
+
+MAKE:
+cp -L nbody.node-6.node nbody.node-6.js
+
+0.16s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/node-v19.4.0/bin/node nbody.node-6.js 50000000
+
+PROGRAM OUTPUT:
+-0.169075164
+-0.169059907

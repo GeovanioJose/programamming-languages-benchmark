@@ -1,0 +1,8 @@
+FOI PRECISO INSTALAR UMA BIBLIOTECA COM NPM
+
+sudo apt-get install libgmp-dev
+
+npm install mpzjs
+
+LINK:
+https://www.npmjs.com/package/mpzjs

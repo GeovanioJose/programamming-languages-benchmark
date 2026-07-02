@@ -1,0 +1,1 @@
+node revcomp.node-7.js 0 < ../../input/revcomp-input100000001.txt > /dev/null

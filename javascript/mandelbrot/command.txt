@@ -1,0 +1,1 @@
+node mandelbrot.node-3.js 16000 > /dev/null
