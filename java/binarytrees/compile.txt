@@ -1,0 +1,11 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-java-7.html
+
+MAKE:
+mv binarytrees.java-7.java binarytrees.java
+/opt/src/jdk-19.0.2/bin/javac -d . -cp . binarytrees.java
+
+1.61s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/jdk-19.0.2/bin/java  -cp . binarytrees 21
+

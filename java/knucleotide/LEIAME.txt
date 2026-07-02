@@ -1,0 +1,3 @@
+foi preciso colocar uma biclioteca para que ele pudesse ler um import diferente. Com isso, o código e as instruçoes de compilação estão dentro da pasta *fastutil-master/src*
+
+Link do repositório usado: https://github.com/karussell/fastutil/blob/master/src/it/unimi/dsi/fastutil/longs/Long2IntOpenHashMap.java

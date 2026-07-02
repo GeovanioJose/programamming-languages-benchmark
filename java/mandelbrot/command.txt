@@ -1,0 +1,1 @@
+java -cp . mandelbrot 16000 > /dev/null

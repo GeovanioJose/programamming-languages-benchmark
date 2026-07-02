@@ -1,0 +1,10 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-java-5.html
+
+MAKE:
+mv nbody.java-5.java nbody.java
+/opt/src/jdk-19.0.2/bin/javac -d . -cp . nbody.java
+
+1.50s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/jdk-19.0.2/bin/java  -cp . nbody 50000000

@@ -1,0 +1,12 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-java-1.html
+
+MAKE:
+mv knucleotide.java knucleotide.java
+mv: 'knucleotide.java' and 'knucleotide.java' are the same file
+make: [/home/dunham/all-benchmarksgame/2000-benchmarksgame/nanobench/makefiles/u64q.programs.Makefile:264: knucleotide.java_run] Error 1 (ignored)
+/opt/src/jdk-19.0.2/bin/javac -d . -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide.java
+
+2.09s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/jdk-19.0.2/bin/java  -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide 0 < knucleotide-input25000000.txt

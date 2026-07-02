@@ -1,0 +1,10 @@
+ https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-java-3.html
+
+ MAKE:
+mv spectralnorm.java-3.java spectralnorm.java
+/opt/src/jdk-19.0.2/bin/javac -d . -cp . spectralnorm.java
+
+1.40s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/jdk-19.0.2/bin/java  -cp . spectralnorm 5500

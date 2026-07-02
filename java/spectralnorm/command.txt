@@ -1,0 +1,1 @@
+java  -cp . spectralnorm 5500 > /dev/null

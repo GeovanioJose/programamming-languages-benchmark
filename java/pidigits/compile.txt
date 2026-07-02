@@ -1,0 +1,12 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-java-1.html
+
+MAKE:
+mv pidigits.java pidigits.java
+mv: 'pidigits.java' and 'pidigits.java' are the same file
+make: [/home/dunham/all-benchmarksgame/2000-benchmarksgame/nanobench/makefiles/u64q.programs.Makefile:264: pidigits.java_run] Error 1 (ignored)
+/opt/src/jdk-19.0.2/bin/
+
+1.49s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/jdk-19.0.2/bin/java -Djava.library.path=Include/java -cp . pidigits 10000

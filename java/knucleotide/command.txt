@@ -1,0 +1,1 @@
+java -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide 0 < ../../input/knucleotide-input25000000.txt > /dev/null

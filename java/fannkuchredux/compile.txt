@@ -1,0 +1,12 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-java-1.html
+
+MAKE:
+mv fannkuchredux.java fannkuchredux.java
+mv: 'fannkuchredux.java' and 'fannkuchredux.java' are the same file
+make: [/home/dunham/all-benchmarksgame/2000-benchmarksgame/nanobench/makefiles/u64q.programs.Makefile:264: fannkuchredux.java_run] Error 1 (ignored)
+/opt/src/jdk-19.0.2/bin/javac -d . -cp . fannkuchredux.java
+
+2.77s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/jdk-19.0.2/bin/java  -cp . fannkuchredux 12

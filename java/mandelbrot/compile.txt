@@ -1,0 +1,10 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-java-2.html
+
+MAKE:
+mv mandelbrot.java-2.java mandelbrot.java
+/opt/src/jdk-19.0.2/bin/javac -d . -cp . mandelbrot.java
+
+1.52s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/jdk-19.0.2/bin/java  -cp . mandelbrot 16000
