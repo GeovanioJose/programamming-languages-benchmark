@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dYCHMYWyxZmJLwMXdBLe/GqHG+N92ZdVCntnR5gsCZI2oCsIP45SCf8TWN9eMRiB3fcqVad4PDQfBo0FGTpRlA==",
+  "success": true,
+  "projectFilePath": "/home/neon/Downloads/programming-languages-benchmark/f#/regexredux/program/program.fsproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

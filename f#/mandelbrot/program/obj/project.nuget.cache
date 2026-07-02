@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MCA9EiZiNnEunKjJFE4BbBGeqfTnN+3rdLMito0JKJegyoHq5q7wwgpX2MDgeu2NqCNY1WQzPkpxBCJjaQE2Dw==",
+  "success": true,
+  "projectFilePath": "/home/neon/Downloads/programming-languages-benchmark/f#/mandelbrot/program/program.fsproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

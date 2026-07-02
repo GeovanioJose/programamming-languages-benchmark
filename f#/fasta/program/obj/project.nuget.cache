@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gFqsUZw+vNZxVMVRwMFwubR+wtuvcRolfX5nGKM/W1w3ktym6rWvO0wb8Nhe6yFbCx84jnQjlxNFdAMjnmbE1g==",
+  "success": true,
+  "projectFilePath": "/home/neon/Downloads/programming-languages-benchmark/f#/fasta/program/program.fsproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

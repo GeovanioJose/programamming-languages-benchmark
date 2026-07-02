@@ -1,0 +1,1 @@
+./program/bin/Debug/net7.0/program 0 < ../../input/regexredux-input5000000.txt > /dev/null

@@ -1,0 +1,1 @@
+./program/bin/Debug/net7.0/program 16000 > /dev/null

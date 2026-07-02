@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "upbr4mCkWq+rn6O3rpGckKuBGGyROsCLp2HEEc6R31kvsuSrY8FyIEz1oMOWp3hByNaJWQo5sYI1Wj4+fIf0gg==",
+  "success": true,
+  "projectFilePath": "/home/neon/Downloads/programming-languages-benchmark/f#/knucleotide/program/program.fsproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/fsharp.core/7.0.0/fsharp.core.7.0.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.experimental.collections/1.0.6-e190117-3/microsoft.experimental.collections.1.0.6-e190117-3.nupkg.sha512"
+  ],
+  "logs": []
+}
