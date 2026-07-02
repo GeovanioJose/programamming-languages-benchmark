@@ -1,0 +1,12 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-gcc-5.html
+
+MAKE:
+sudo apt install libpcre2-dev
+
+/usr/bin/gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge -fopenmp regexredux.gcc-5.c -o regexredux.gcc-5.gcc_run -lpcre2-8
+rm regexredux.gcc-5.c
+
+2.62s to complete and log all make actions
+
+COMMAND LINE:
+./regexredux.gcc-5.gcc_run 0 < regexredux-input5000000.txt

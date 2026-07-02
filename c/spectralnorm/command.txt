@@ -1,0 +1,1 @@
+./spectralnorm.gcc-3.gcc_run 5500 > /dev/null

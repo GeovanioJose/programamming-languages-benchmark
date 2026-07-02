@@ -1,0 +1,9 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-gcc-2.html
+MAKE:
+/usr/bin/gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge  pidigits.gcc-2.c -o pidigits.gcc-2.gcc_run -lgmp
+rm pidigits.gcc-2.c
+
+2.29s to complete and log all make actions
+
+COMMAND LINE:
+./pidigits.gcc-2.gcc_run 10000

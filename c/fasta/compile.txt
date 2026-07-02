@@ -1,0 +1,40 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-gcc-9.html
+
+MAKE:
+/usr/bin/gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge -fopenmp fasta.gcc-9.c -o fasta.gcc-9.gcc_run
+fasta.gcc-9.c: In function ‘main’:
+fasta.gcc-9.c:214:3: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  214 |   write(1, header1, sizeof(header1)-1);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fasta.gcc-9.c:217:3: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  217 |   write(1, header2, sizeof(header2)-1);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fasta.gcc-9.c:220:3: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  220 |   write(1, header3, sizeof(header3)-1);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fasta.gcc-9.c: In function ‘repeat_fasta’:
+fasta.gcc-9.c:124:36: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  124 |   for (i=0; i< whole_buffers; i++) write(1, buffer2, buflen2);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+fasta.gcc-9.c:128:3: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  128 |   write(1, buffer2, data_remaining + embedded_newlines);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fasta.gcc-9.c:132:25: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  132 |   if (n % LINELEN != 0) write(1, "\n", 1);
+      |                         ^~~~~~~~~~~~~~~~~
+fasta.gcc-9.c: In function ‘random_fasta’:
+fasta.gcc-9.c:180:5: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  180 |     write(1, buffer, (LINELEN+1)*BUFLINES);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fasta.gcc-9.c:197:3: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  197 |   write(1, buffer, lines*(LINELEN+1)+partials);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fasta.gcc-9.c:200:25: warning: ignoring return value of ‘write’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  200 |   if (n % LINELEN != 0) write(1, "\n", 1);
+      |                         ^~~~~~~~~~~~~~~~~
+rm fasta.gcc-9.c
+
+2.44s to complete and log all make actions
+
+COMMAND LINE:
+./fasta.gcc-9.gcc_run 25000000

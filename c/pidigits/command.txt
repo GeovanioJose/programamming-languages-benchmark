@@ -1,0 +1,1 @@
+./pidigits.gcc-2.gcc_run 10000 > /dev/null

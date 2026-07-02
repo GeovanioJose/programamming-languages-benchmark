@@ -1,0 +1,6 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-gcc-5.html
+
+
+gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge -fopenmp fannkuchredux.gcc-5.c -o fannkuchredux.gcc-5.gcc_run
+
+./fannkuchredux.gcc-5.gcc_run 12

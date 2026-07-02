@@ -1,0 +1,12 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/revcomp-gcc-8.html
+
+
+MAKE:
+/usr/bin/gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge -pthread revcomp.gcc-8.c -o revcomp.gcc-8.gcc_run
+rm revcomp.gcc-8.c
+
+2.47s to complete and log all make actions
+
+COMMAND LINE:
+./revcomp.gcc-8.gcc_run 0 < revcomp-input5000000.txt
+

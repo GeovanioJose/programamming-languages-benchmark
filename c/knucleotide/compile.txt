@@ -1,0 +1,13 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-gcc-1.html
+
+MAKE:
+sudo apt install libminimap2-dev
+
+/usr/bin/gcc -pthread -pipe -O3 -fomit-frame-pointer -march=native -std=c99 knucleotide.gcc.c -o knucleotide.gcc_run
+rm knucleotide.c
+
+2.92s to complete and log all make actions
+
+COMMAND LINE:
+./knucleotide.gcc_run 0 < knucleotide-input25000000.txt
+

@@ -1,0 +1,10 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-gcc-2.html
+
+MAKE:
+/usr/bin/gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge -fopenmp -I/usr/include/apr-1.0 binarytrees.gcc-2.c -o binarytrees.gcc-2.gcc_run -lapr-1
+rm binarytrees.gcc-2.c
+
+2.83s to complete and log all make actions
+
+COMMAND LINE:
+./binarytrees.gcc-2.gcc_run 21

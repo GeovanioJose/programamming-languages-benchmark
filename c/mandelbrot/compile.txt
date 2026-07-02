@@ -1,0 +1,10 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-gcc-8.html
+
+MAKE:
+/usr/bin/gcc -pipe -Wall -O3 -fomit-frame-pointer -march=ivybridge -fopenmp mandelbrot.gcc-8.c -o mandelbrot.gcc-8.gcc_run
+rm mandelbrot.gcc-8.c
+
+2.38s to complete and log all make actions
+
+COMMAND LINE:
+./mandelbrot.gcc-8.gcc_run 16000

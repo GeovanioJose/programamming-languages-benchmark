@@ -1,0 +1,1 @@
+./fasta.gcc-9.gcc_run 25000000 > /dev/null
