@@ -1,0 +1,2 @@
+./mandelbrot.gfortran_run 16000 > /dev/null
+

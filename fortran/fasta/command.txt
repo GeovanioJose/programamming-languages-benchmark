@@ -1,0 +1,1 @@
+./fasta.gfortran_run 25000000 > /dev/null

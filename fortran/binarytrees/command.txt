@@ -1,0 +1,1 @@
+./binarytrees_gfortran_run 21 > /dev/null

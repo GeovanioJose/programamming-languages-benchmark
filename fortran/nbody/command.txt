@@ -1,0 +1,2 @@
+./nbody.gfortran_run 50000000 > /dev/null
+

@@ -1,0 +1,2 @@
+./pidigits.gfortran_run 10000 > /dev/null
+

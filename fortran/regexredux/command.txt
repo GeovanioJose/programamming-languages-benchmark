@@ -1,0 +1,1 @@
+./regexredux.gfortran_run > /dev/null
