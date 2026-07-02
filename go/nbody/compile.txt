@@ -1,0 +1,9 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-go-3.html
+
+MAKE:
+/opt/src/go1.20/go/bin/go build -o nbody.go-3.go_run nbody.go-3.go
+
+4.61s to complete and log all make actions
+
+COMMAND LINE:
+./nbody.go-3.go_run 50000000

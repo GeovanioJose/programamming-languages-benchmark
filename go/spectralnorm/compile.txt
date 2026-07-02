@@ -1,0 +1,10 @@
+ 
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-go-4.html
+
+MAKE:
+/opt/src/go1.20/go/bin/go build -o spectralnorm.go-4.go_run spectralnorm.go-4.go
+
+4.52s to complete and log all make actions
+
+COMMAND LINE:
+./spectralnorm.go-4.go_run 5500

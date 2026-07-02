@@ -1,0 +1,9 @@
+Foi preciso alterar uma variavel do go que não estava deixando instalar o que era preciso para rodar o codigo.
+
+Link do codigo usado:
+https://github.com/ncw/gmp
+
+Link da solução do problema:
+https://stackoverflow.com/questions/66894200/error-message-go-go-mod-file-not-found-in-current-directory-or-any-parent-dire
+
+usando 'go env -w GO111MODULE=auto'

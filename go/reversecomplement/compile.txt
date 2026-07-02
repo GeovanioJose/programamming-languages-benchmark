@@ -1,0 +1,9 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/revcomp-go-6.html
+
+MAKE:
+/opt/src/go1.20/go/bin/go build -o revcomp.go-6.go_run revcomp.go-6.go
+
+4.74s to complete and log all make actions
+
+COMMAND LINE:
+./revcomp.go-6.go_run 0 < revcomp-input100000001.txt

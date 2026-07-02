@@ -1,0 +1,11 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-go-7.html
+
+
+MAKE:
+/opt/src/go1.20/go/bin/go build -o knucleotide.go-7.go_run knucleotide.go-7.go
+
+4.52s to complete and log all make actions
+
+COMMAND LINE:
+./knucleotide.go-7.go_run 0 < knucleotide-input25000000.txt
+

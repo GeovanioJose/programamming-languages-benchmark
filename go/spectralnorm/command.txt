@@ -1,0 +1,1 @@
+./spectralnorm.go-4.go_run 5500 > /dev/null

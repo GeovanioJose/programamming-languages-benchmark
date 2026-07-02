@@ -1,0 +1,9 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-go-2.html
+
+MAKE:
+/opt/src/go1.20/go/bin/go build -o binarytrees.go-2.go_run binarytrees.go-2.go
+
+5.46s to complete and log all make actions
+
+COMMAND LINE:
+./binarytrees.go-2.go_run 21

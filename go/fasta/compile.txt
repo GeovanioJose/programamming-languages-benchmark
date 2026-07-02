@@ -1,0 +1,9 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-go-2.html
+
+MAKE:
+/opt/src/go1.20/go/bin/go build -o fasta.go-2.go_run fasta.go-2.go
+
+4.80s to complete and log all make actions
+
+COMMAND LINE:
+./fasta.go-2.go_run 25000000

@@ -1,0 +1,9 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-go-5.html
+
+MAKE:
+/opt/src/go1.20/go/bin/go build -o regexredux.go-5.go_run regexredux.go-5.go
+
+7.84s to complete and log all make actions
+
+COMMAND LINE:
+./regexredux.go-5.go_run 0 < regexredux-input5000000.txt
