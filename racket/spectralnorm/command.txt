@@ -1,0 +1,2 @@
+racket spectralnorm.racket 5500 > /dev/null
+

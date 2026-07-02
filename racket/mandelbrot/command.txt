@@ -1,0 +1,1 @@
+racket mandelbrot.racket 16000 > /dev/null

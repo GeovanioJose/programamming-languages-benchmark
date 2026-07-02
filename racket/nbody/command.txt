@@ -1,0 +1,1 @@
+racket nbody.racket 50000000 > /dev/null
