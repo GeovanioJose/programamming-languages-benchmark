@@ -1,0 +1,14 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-gpp-9.html
+
+MAKE:
+/usr/bin/g++ -c -pipe -O3 -fomit-frame-pointer -march=ivybridge  -std=c++17 nbody.gpp-9.c++ -o nbody.gpp-9.c++.o && /usr/bin/g++ nbody.gpp-9.c++.o -o nbody.gpp-9.gpp_run
+rm nbody.gpp-9.c++
+
+3.29s to complete and log all make actions
+
+COMMAND LINE:
+./nbody.gpp-9.gpp_run 50000000
+
+PROGRAM OUTPUT:
+-0.169075164
+-0.169059907

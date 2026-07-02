@@ -1,0 +1,1 @@
+./mandelbrot.gpp-0.gpp_run 16000 > /dev/null

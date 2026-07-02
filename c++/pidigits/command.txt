@@ -1,0 +1,1 @@
+./pidigits.gpp-4.gpp_run 10000 > /dev/null

@@ -1,0 +1,11 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-gpp-6.html
+
+MAKE:
+/usr/bin/g++ -c -pipe -O3 -fomit-frame-pointer -march=ivybridge  -std=c++17 regexredux.gpp-6.c++ -o regexredux.gpp-6.c++.o &&  \
+        /usr/bin/g++ regexredux.gpp-6.c++.o -o regexredux.gpp-6.gpp_run -lpcre2-8 -lpthread
+rm regexredux.gpp-6.c++
+
+5.51s to complete and log all make actions
+
+COMMAND LINE:
+./regexredux.gpp-6.gpp_run 0 < regexredux-input5000000.txt

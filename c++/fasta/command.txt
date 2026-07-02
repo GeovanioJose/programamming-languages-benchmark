@@ -1,0 +1,1 @@
+./fasta.gpp-6.gpp_run 25000000 > /dev/null

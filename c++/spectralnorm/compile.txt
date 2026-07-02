@@ -1,0 +1,26 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-gpp-8.html
+
+MAKE:
+/usr/bin/g++ -c -pipe -O3 -fomit-frame-pointer -march=ivybridge  -fopenmp -O0 spectralnorm.gpp-8.c++ -o spectralnorm.gpp-8.c++.o && /usr/bin/g++ spectralnorm.gpp-8.c++.o -o spectralnorm.gpp-8.gpp_run -fopenmp
+spectralnorm.gpp-8.c++: In instantiation of ‘v2dt eval_A_xmm(int, int) [with bool inc_i = false; v2dt = __vector(2) double]’:
+spectralnorm.gpp-8.c++:108:34:   required from here
+spectralnorm.gpp-8.c++:85:14: warning: narrowing conversion of ‘d1’ from ‘int’ to ‘double’ [-Wnarrowing]
+   85 |    v2dt r = {d1, d2};
+      |              ^~
+spectralnorm.gpp-8.c++:85:18: warning: narrowing conversion of ‘d2’ from ‘int’ to ‘double’ [-Wnarrowing]
+   85 |    v2dt r = {d1, d2};
+      |                  ^~
+spectralnorm.gpp-8.c++: In instantiation of ‘v2dt eval_A_xmm(int, int) [with bool inc_i = true; v2dt = __vector(2) double]’:
+spectralnorm.gpp-8.c++:127:33:   required from here
+spectralnorm.gpp-8.c++:85:14: warning: narrowing conversion of ‘d1’ from ‘int’ to ‘double’ [-Wnarrowing]
+   85 |    v2dt r = {d1, d2};
+      |              ^~
+spectralnorm.gpp-8.c++:85:18: warning: narrowing conversion of ‘d2’ from ‘int’ to ‘double’ [-Wnarrowing]
+   85 |    v2dt r = {d1, d2};
+      |                  ^~
+rm spectralnorm.gpp-8.c++
+
+2.98s to complete and log all make actions
+
+COMMAND LINE:
+./spectralnorm.gpp-8.gpp_run 5500

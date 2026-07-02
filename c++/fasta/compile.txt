@@ -1,0 +1,13 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-gpp-6.html
+
+Wed, 25 Jan 2023 01:47:58 GMT
+
+MAKE:
+/usr/bin/g++ -c -pipe -O3 -fomit-frame-pointer -march=ivybridge  -std=c++11 -O2 fasta.gpp-6.c++ -o fasta.gpp-6.c++.o &&  \
+        /usr/bin/g++ fasta.gpp-6.c++.o -o fasta.gpp-6.gpp_run -lpthread
+rm fasta.gpp-6.c++
+
+4.01s to complete and log all make actions
+
+COMMAND LINE:
+./fasta.gpp-6.gpp_run 25000000

@@ -1,0 +1,1 @@
+./knucleotide.gpp-2.gpp_run 0 < ../../input/knucleotide-input25000000.txt > /dev/null

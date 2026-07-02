@@ -1,0 +1,12 @@
+https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-gpp-4.html
+
+MAKE:
+/usr/bin/g++ -c -pipe -O3 -fomit-frame-pointer -march=ivybridge  -std=c++14 -g pidigits.gpp-4.c++ -o pidigits.gpp-4.c++.o &&  \
+        /usr/bin/g++ pidigits.gpp-4.c++.o -o pidigits.gpp-4.gpp_run -lgmp -lgmpxx
+rm pidigits.gpp-4.c++
+
+5.38s to complete and log all make actions
+
+COMMAND LINE:
+./pidigits.gpp-4.gpp_run 10000
+

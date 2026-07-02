@@ -1,0 +1,5 @@
+INSTALAR
+
+sudo apt install libboost-thread-dev
+sudo apt install libpcre2-dev
+
