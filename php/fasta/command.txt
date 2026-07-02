@@ -1,0 +1,1 @@
+php fasta.php 25000000 > /dev/null

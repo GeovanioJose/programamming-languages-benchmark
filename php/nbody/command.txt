@@ -1,0 +1,1 @@
+php nbody.php 50000000 > /dev/null

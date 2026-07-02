@@ -1,0 +1,1 @@
+php pidigits.php 10000 > /dev/null

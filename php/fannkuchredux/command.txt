@@ -1,0 +1,1 @@
+php fannkuchredux.php 12 > /dev/null

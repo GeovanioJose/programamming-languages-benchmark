@@ -1,0 +1,1 @@
+php binarytrees.php 21 > /dev/null
