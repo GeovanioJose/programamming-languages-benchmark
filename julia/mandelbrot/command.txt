@@ -1,0 +1,1 @@
+julia -O3 --cpu-target=ivybridge --math-mode=ieee  -- mandelbrot.julia 16000 > /dev/null

@@ -1,0 +1,1 @@
+julia -O3 --cpu-target=ivybridge --math-mode=ieee  --  binarytrees.julia 21 > /dev/null

@@ -1,0 +1,2 @@
+julia -O3 --cpu-target=ivybridge --math-mode=ieee  -- revcomp.julia 0 < ../../input/revcomp-input100000001.txt > /dev/null
+

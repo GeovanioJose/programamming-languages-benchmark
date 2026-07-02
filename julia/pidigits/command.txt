@@ -1,0 +1,2 @@
+julia -O3 --cpu-target=ivybridge --math-mode=ieee  -- pidigits.julia 10000 > /dev/null
+

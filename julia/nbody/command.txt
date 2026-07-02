@@ -1,0 +1,1 @@
+julia -O3 --cpu-target=ivybridge --math-mode=ieee  -- nbody.julia 50000000 > /dev/null

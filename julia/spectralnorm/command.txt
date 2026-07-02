@@ -1,0 +1,2 @@
+julia -O3 --cpu-target=ivybridge --math-mode=ieee  -- spectralnorm.julia 5500 > /dev/null
+

@@ -1,0 +1,1 @@
+julia -O3 --cpu-target=ivybridge --math-mode=ieee  -- fasta.julia 25000000 > /dev/null

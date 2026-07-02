@@ -1,0 +1,19 @@
+ https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-python3-4.html
+
+MAKE:
+mv binarytrees.python3-4.python3 binarytrees.python3-4.py
+pyright .
+No configuration file found.
+No pyproject.toml file found.
+stubPath /home/dunham/all-benchmarksgame/benchmarksgame_i53330/binarytrees/tmp/typings is not a valid directory.
+Assuming Python platform Linux
+Searching for source files
+Found 1 source file
+pyright 1.1.288
+0 errors, 0 warnings, 0 informations
+Completed in 1.875sec
+
+3.51s to complete and log all make actions
+
+COMMAND LINE:
+/opt/src/Python-3.11.1/bin/python3 -OO binarytrees.python3-4.py 21
