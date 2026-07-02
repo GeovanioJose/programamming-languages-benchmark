@@ -1,0 +1,1 @@
+erl -smp enable -noshell -run  fasta main 25000000 > /dev/null

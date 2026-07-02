@@ -1,0 +1,1 @@
+erl -smp enable -noshell -run  pidigits main 10000 > /dev/null

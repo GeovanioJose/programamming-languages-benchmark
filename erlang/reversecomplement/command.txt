@@ -1,0 +1,2 @@
+erl -smp enable -noshell -run  revcomp main 0 < ../../input/revcomp-input100000001.txt > /dev/null
+

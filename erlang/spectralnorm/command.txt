@@ -1,0 +1,2 @@
+erl -smp enable -noshell -run  spectralnorm main 5500 > /dev/null
+
