@@ -1,0 +1,1 @@
+./nbody --n=50000000 > /dev/null

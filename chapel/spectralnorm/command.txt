@@ -1,0 +1,2 @@
+./spectralnorm --n=5500 > /dev/null
+

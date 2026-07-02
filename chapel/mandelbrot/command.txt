@@ -1,0 +1,1 @@
+./mandelbrot --n=16000 > /dev/null
