@@ -1,0 +1,2 @@
+perl knucleotide.perl 0 < ../../input/knucleotide-input25000000.txt > /dev/null
+

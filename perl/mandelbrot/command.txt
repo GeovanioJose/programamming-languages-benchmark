@@ -1,0 +1,2 @@
+perl mandelbrot.perl 16000 > /dev/null
+

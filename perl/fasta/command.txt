@@ -1,0 +1,1 @@
+perl fasta.perl 25000000 > /dev/null

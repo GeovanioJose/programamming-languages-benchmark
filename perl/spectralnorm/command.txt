@@ -1,0 +1,2 @@
+perl spectralnorm.perl-4.perl 5500 > /dev/null
+

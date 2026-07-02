@@ -1,0 +1,2 @@
+perl revcomp.perl-4.perl 0 < ../../input/revcomp-input100000001.txt > /dev/null
+

@@ -1,0 +1,2 @@
+perl pidigits.perl 10000 > /dev/null
+

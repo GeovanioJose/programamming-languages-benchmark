@@ -1,0 +1,2 @@
+perl regexredux.perl-4.perl 0 < ../../input/regexredux-input5000000.txt > /dev/null
+
