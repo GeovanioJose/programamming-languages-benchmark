@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 M P W=b
 A -O3
 A -fomit-frame-pointer
@@ -13,13 +13,12 @@ RV NO_NESTED_FINALIZATION
 RV NO_SECONDARY_STACK
 RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
-RV SPARK_05
 
 U fasta%b		fasta.adb		f2e8a1cf NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
-Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W gnat%s		gnat.ads		gnat.ali
 W gnat.float_control%s	g-flocon.ads		g-flocon.ali
 W sequence%s		sequence.ads		sequence.ali
@@ -28,37 +27,52 @@ W sequence.data%s	sequence-data.ads	sequence-data.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
-Z system.val_int%s	s-valint.adb		s-valint.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
 
-D ada.ads		20230707070819 76789da1 ada%s
-D a-comlin.ads		20230707070819 4aa66568 ada.command_line%s
-D a-except.ads		20230707070819 a7106115 ada.exceptions%s
-D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
-D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
-D a-tags.ads		20230707070819 491b781d ada.tags%s
-D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D fasta.adb		20231125213337 4709da9e fasta%b 1:fasta.gnat
-D gnat.ads		20230707070819 b5988c27 gnat%s
-D g-flocon.ads		20230707070819 e3483c37 gnat.float_control%s
-D sequence.ads		20231125213337 a2434cc7 sequence%s 80:fasta.gnat
-D sequence-creation.ads	20231125213337 60ae441e sequence.creation%s 52:fasta.gnat
-D sequence-data.ads	20231125213337 7ca16610 sequence.data%s 27:fasta.gnat
-D system.ads		20230707070819 4635ec04 system%s
-D s-exctab.ads		20230707070819 54135002 system.exception_table%s
-D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
-D s-flocon.ads		20230707070819 e0fc433c system.float_control%s
-D s-flocon.adb		20230707070819 fbd42517 system.float_control%b
-D s-memory.ads		20230707070819 597d6634 system.memory%s
-D s-parame.ads		20230707070819 48ec542b system.parameters%s
-D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
-D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
-D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
-D s-stalib.adb		20230707070819 f2fe2716 system.standard_library%b
-D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
-D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
-D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
+D ada.ads		20240801081713 76789da1 ada%s
+D a-comlin.ads		20240801081713 4aa66568 ada.command_line%s
+D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240801081713 bf4f806b ada.finalization%s
+D a-stream.ads		20240801081713 119b8fb3 ada.streams%s
+D a-string.ads		20240801081713 90ac6797 ada.strings%s
+D a-sttebu.ads		20240801081713 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D fasta.adb		20260703013917 4709da9e fasta%b 1:fasta.gnat
+D gnat.ads		20240801081713 b5988c27 gnat%s
+D g-flocon.ads		20240801081713 e3483c37 gnat.float_control%s
+D interfac.ads		20240801081713 9111f9c1 interfaces%s
+D sequence.ads		20260703013917 a2434cc7 sequence%s 80:fasta.gnat
+D sequence-creation.ads	20260703013917 60ae441e sequence.creation%s 52:fasta.gnat
+D sequence-data.ads	20260703013917 7ca16610 sequence.data%s 27:fasta.gnat
+D system.ads		20240801081714 14286b0f system%s
+D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
+D s-finroo.ads		20240801081713 4ff27390 system.finalization_root%s
+D s-flocon.ads		20240801081713 e0fc433c system.float_control%s
+D s-flocon.adb		20240801081713 fbd42517 system.float_control%b
+D s-memory.ads		20240801081713 18949c1a system.memory%s
+D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
+D s-putima.ads		20240801081713 17291fe4 system.put_images%s
+D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240801081713 df77073e system.soft_links%s
+D s-stache.ads		20240801081713 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
+D s-stalib.adb		20240801081713 eb464a47 system.standard_library%b
+D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
+D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20240801081714 8bab724f system.val_int%s
+D s-valspe.ads		20240801081714 b0fcd073 system.val_spec%s
+D s-valuns.ads		20240801081714 f7ddb71d system.val_uns%s
+D s-valuei.ads		20240801081714 d9377ca5 system.value_i%s
+D s-vaispe.ads		20240801081714 8280550e system.value_i_spec%s
+D s-vaispe.adb		20240801081714 dbcabb05 system.value_i_spec%b
+D s-valueu.ads		20240801081714 a38d32a6 system.value_u%s
+D s-vauspe.ads		20240801081714 89269ba5 system.value_u_spec%s
+D s-vauspe.adb		20240801081714 8524adb4 system.value_u_spec%b
+D s-vs_int.ads		20240801081714 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20240801081714 e7f47a27 system.vs_uns%s
 G a e
 G c Z b b [fasta standard 12 11 none]
 G r s environment [fasta standard 12 11 none] [environmentIP sequence__creation 68 9 none]
@@ -66,39 +80,39 @@ G r f environment [fasta standard 12 11 none] [initialize sequence__creation 74 
 G r c none [fasta standard 12 11 none] [make_repeat_fasta sequence__creation 63 14 none]
 G r c none [fasta standard 12 11 none] [make_random_fasta sequence__creation 58 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 8|8r6 14r45
+16K9*Ada 20e8 11|8r6 14r45
 X 2 a-comlin.ads
-36K13*Command_Line 144e21 8|8w10 14r49
-52V13*Argument{string} 8|14s62
-X 8 fasta.gnat
+36K13*Command_Line 144e21 11|8w10 14r49
+52V13*Argument{string} 11|14s62
+X 11 fasta.gnat
 12U11*Fasta 12b11 26l5 26t10
 14i4 N{positive} 22r53 23r56 24r69
-18r4 Runner{12|68R9}
-X 9 gnat.ads
-34K9*GNAT 8|9r6 20r4 9|57e9
-X 10 g-flocon.ads
-38K14*Float_Control=38:43 8|9w11 20r9
-X 11 fasta.gnat
-81K9*Sequence 8|10r6 10r21 16r8 16r23 11|98e13
+18r4 Runner{16|68R9}
+X 12 gnat.ads
+37K9*GNAT 11|9r6 20r4 12|60e9
+X 13 g-flocon.ads
+38K14*Float_Control=38:43 11|9w11 20r9
+X 15 fasta.gnat
+81K9*Sequence 11|10r6 10r21 16r8 16r23 15|98e13
 96A9*Nucleotide_Set(87R9)<integer>
-X 12 fasta.gnat
-56K18*Creation 8|10w30 16r32 12|79e22
-58U14*Make_Random_Fasta 8|23s4 24s4
-63U14*Make_Repeat_Fasta 8|22s4
-68R9*Environment<4|50R9> 8|18r13 12|69e22
-X 13 fasta.gnat
-28K18*Data 8|10w15 16r17 13|51e18
-32a4*Homosapiens{11|96A9} 8|24r56
-36a4*IUB{11|96A9} 8|23r51
-42a4*ALU{string} 8|22r48
-X 14 system.ads
+X 16 fasta.gnat
+56K18*Creation 11|10w30 16r32 16|79e22
+58U14*Make_Random_Fasta 11|23s4 24s4
+63U14*Make_Repeat_Fasta 11|22s4
+68R9*Environment<4|50R9> 11|18r13 16|69e22
+X 17 fasta.gnat
+28K18*Data 11|10w15 16r17 17|51e18
+32a4*Homosapiens{15|96A9} 11|24r56
+36a4*IUB{15|96A9} 11|23r51
+42a4*ALU{string} 11|22r48
+X 18 system.ads
 67M9*Address
-X 17 s-flocon.ads
-39U14*Reset 8|20s23
-X 19 s-memory.ads
-53V13*Alloc{14|67M9} 103i<c,__gnat_malloc>22
-68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{14|67M9} 105i<c,__gnat_realloc>22
-X 25 s-stalib.adb
-93U14 Break_Start 94i<c,__gnat_break_start>22
+X 21 s-flocon.ads
+39U14*Reset 11|20s23
+X 23 s-memory.ads
+51V13*Alloc{18|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{18|67M9} 103i<c,__gnat_realloc>22
+X 30 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
 

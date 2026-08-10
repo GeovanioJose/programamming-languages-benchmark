@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 A -O3
 A -fomit-frame-pointer
 A -gnatN
@@ -13,69 +13,73 @@ RV NO_RECURSION
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
-RV SPARK_05
 
 U line_io%b		line_io.adb		1098e305 NE OO PK GE
 W ada%s			ada.ads			ada.ali
 W ada.streams%s		a-stream.adb		a-stream.ali
 W ada.streams.stream_io%s  a-ststio.adb		a-ststio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z system%s		system.ads		system.ali
 
 U line_io%s		line_io.ads		829d6e9c BN EB NE OO PK GE
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 
-D ada.ads		20230707070819 76789da1 ada%s
-D a-except.ads		20230707070819 a7106115 ada.exceptions%s
-D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
-D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
-D a-ststio.ads		20230707070819 d6d358e8 ada.streams.stream_io%s
-D a-tags.ads		20230707070819 491b781d ada.tags%s
-D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20230707070819 5ab55268 interfaces%s
-D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
-D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
-D line_io.ads		20231125213338 829d6e9c line_io%s 588:knucleotide.gnat
-D line_io.adb		20231125213338 44d6d571 line_io%b 604:knucleotide.gnat
-D system.ads		20230707070819 4635ec04 system%s
-D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
-D s-exctab.ads		20230707070819 54135002 system.exception_table%s
-D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
-D s-parame.ads		20230707070819 48ec542b system.parameters%s
-D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
-D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
-D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
-D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
-D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D ada.ads		20240801081713 76789da1 ada%s
+D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
+D a-ioexce.ads		20240801081713 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240801081713 119b8fb3 ada.streams%s
+D a-ststio.ads		20240801081713 d6d358e8 ada.streams.stream_io%s
+D a-string.ads		20240801081713 90ac6797 ada.strings%s
+D a-sttebu.ads		20240801081713 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240801081713 9111f9c1 interfaces%s
+D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
+D i-cstrea.adb		20240801081713 ede7ccf4 interfaces.c_streams%b
+D line_io.ads		20260703013917 829d6e9c line_io%s 588:knucleotide.gnat
+D line_io.adb		20260703013917 44d6d571 line_io%b 604:knucleotide.gnat
+D system.ads		20240801081714 14286b0f system%s
+D s-crtl.ads		20240801081713 beb39b9e system.crtl%s
+D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240801081713 dc5161d4 system.file_control_block%s
+D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
+D s-putima.ads		20240801081713 17291fe4 system.put_images%s
+D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240801081713 df77073e system.soft_links%s
+D s-stache.ads		20240801081713 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
+D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
 G a e
 G c Z s b [line_io standard 594 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 12|606r6 610r8
+16K9*Ada 20e8 15|606r6 610r8
 X 4 a-stream.ads
-36K13*Streams 87e16 12|606r10 610r12
-42M9*Stream_Element 12|617r35
-44I9*Stream_Element_Offset<long_long_integer> 12|624r36 625r17 628r38 647r24
-54A9*Stream_Element_Array(42M9)<44I9> 12|631r28
+36K13*Streams 87e16 15|606r10 610r12
+42M9*Stream_Element 15|617r35
+44I9*Stream_Element_Offset<long_long_integer> 15|624r36 625r17 628r38 647r24
+54A9*Stream_Element_Array(42M9)<44I9> 15|631r28
 X 5 a-ststio.ads
-39K21*Stream_IO 224e26 12|606w18 612r12 650r19 652r10 677r16 691r21 711r4
+39K21*Stream_IO 224e26 15|606w18 612r12 650r19 652r10 677r16 691r21 711r4
 . 712r14
-44P9*File_Type 12|612r22
-47n23*In_File{47E9} 12|712r24
-74U14*Open 12|711s14
-76e7 Mode{47E9} 12|712r6
-77a7 Name{string} 12|713r6
-104U14*Read 12|652s20
-106a7 Item{4|54A9} 12|653r12
-107i7 Last{4|44I9} 12|654r12
-143X4*End_Error 12|650r29 677r26 691r31
-X 11 knucleotide.gnat
-593a4 Separator_Sequence{string} 12|619r29 657r43 666r29 715r52
-594k9*Line_IO 593z4 603l5 603e12 12|608b14 719l5 719t12
+44P9*File_Type 15|612r22
+47n23*In_File{47E9} 15|712r24
+74U14*Open 15|711s14
+76e7 Mode{47E9} 15|712r6
+77a7 Name{string} 15|713r6
+104U14*Read 15|652s20
+106a7 Item{4|54A9} 15|653r12
+107i7 Last{4|44I9} 15|654r12
+143X4*End_Error 15|650r29 677r26 691r31
+X 14 knucleotide.gnat
+593a4 Separator_Sequence{string} 15|619r29 657r43 666r29 715r52
+594k9*Line_IO 593z4 603l5 603e12 15|608b14 719l5 719t12
 598U14*Put_Line 598>24
 598a24 Item{string}
-601V13*Get_Line{string} 12|643b13 689s41 707l8 707t16
-X 12 knucleotide.gnat
+601V13*Get_Line{string} 15|643b13 689s41 707l8 707t16
+X 15 knucleotide.gnat
 612p4 Stdin{5|44P9} 652r25 711m20 711r20
 616N4 BUFSIZ 621r57
 619i4 SL{natural} 621r66 623r72 628r60 657r36 701r42

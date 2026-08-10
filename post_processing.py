@@ -16,13 +16,13 @@ for i in range(len(languages)):
         df_runtime = pd.read_csv("{0}/{1}/out/runtime.csv".format(languages[i], problems[j]),sep=",", encoding="utf-8")
         
         #removendo linhas invalidas
-        df.drop(df[df.psys < 0].index, inplace=True)
+        df.drop(df[df.package < 0].index, inplace=True)
 
         #removendo outliers
         # Encontrar os índices do maior e do menor valor
 
-        idx_max = df['psys'].idxmax()
-        idx_min = df['psys'].idxmin()
+        idx_max = df['package'].idxmax()
+        idx_min = df['package'].idxmin()
 
         # Remover as linhas correspondentes ao maior e ao menor valor
         df = df.drop([idx_max, idx_min])
@@ -54,9 +54,9 @@ for i in range(len(languages)):
         avg_total = (trimmed_total.mean() / 1000000).round(2)
 
         # Coluna 'psys'
-        sorted_psys = df['psys'].sort_values()
-        trimmed_psys = sorted_psys.iloc[3:-3]
-        avg_psys = (trimmed_psys.mean() / 1000000).round(2)
+        #sorted_psys = df['psys'].sort_values()
+        #trimmed_psys = sorted_psys.iloc[3:-3]
+        #avg_psys = (trimmed_psys.mean() / 1000000).round(2)
 
         # Coluna 'package'
         sorted_package = df['package'].sort_values()
@@ -104,16 +104,16 @@ for i in range(len(languages)):
         with open('results/{0}.csv'.format(problems[j]), 'a', newline='') as file:
             writer = csv.writer(file)
             if(i == 0):
-                writer.writerow(["languages","avg_total","avg_psys","avg_package","avg_core","avg_uncore","avg_dram","avg_runtime","avg_watts","avg_max_memory","avg_cpu_temp"])
-            writer.writerow([languages[i], avg_total, avg_psys, avg_package,avg_core,avg_uncore,avg_dram, avg_runtime, avg_watts, avg_max_memory, avg_cpu_temp])
+                writer.writerow(["languages","avg_total","avg_package","avg_core","avg_uncore","avg_dram","avg_runtime","avg_watts","avg_max_memory","avg_cpu_temp"])
+            writer.writerow([languages[i], avg_total, avg_package,avg_core,avg_uncore,avg_dram, avg_runtime, avg_watts, avg_max_memory, avg_cpu_temp])
             file.close()
 
         #by_languages
         with open('results/languages/{0}.csv'.format(languages[i]), 'a', newline='') as file:
             writer = csv.writer(file)
             if(j == 0):
-                writer.writerow(["problems","avg_total","avg_psys","avg_package","avg_core","avg_uncore","avg_dram","avg_runtime","avg_watts","avg_max_memory","avg_cpu_temp"])
-            writer.writerow([problems[j], avg_total, avg_psys, avg_package,avg_core,avg_uncore,avg_dram, avg_runtime, avg_watts, avg_max_memory, avg_cpu_temp])
+                writer.writerow(["problems","avg_total","avg_package","avg_core","avg_uncore","avg_dram","avg_runtime","avg_watts","avg_max_memory","avg_cpu_temp"])
+            writer.writerow([problems[j], avg_total, avg_package,avg_core,avg_uncore,avg_dram, avg_runtime, avg_watts, avg_max_memory, avg_cpu_temp])
             file.close()
 #cost
 for i in range(len(languages)):

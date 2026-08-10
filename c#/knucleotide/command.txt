@@ -1,1 +1,1 @@
-./program/bin/Debug/net7.0/program 0 < ../../input/knucleotide-input25000000.txt > /dev/null
+./program/bin/Debug/net8.0/program 0 < ../../input/knucleotide-input25000000.txt > /dev/null

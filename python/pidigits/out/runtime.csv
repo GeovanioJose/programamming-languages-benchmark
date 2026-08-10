@@ -1,101 +1,201 @@
 runtime,cpu_usage,memory
-0.93,99%,10880
-0.93,99%,11136
-0.93,99%,11008
-0.93,100%,11264
-0.93,99%,10752
-0.93,99%,10880
-0.93,100%,10752
-0.93,99%,10996
-0.94,99%,10752
-0.93,99%,11136
-0.93,99%,10752
-0.93,99%,11136
-0.93,99%,10880
-0.93,99%,10880
-0.93,99%,10860
-0.93,99%,11136
-1.77,99%,10880
-2.40,99%,10880
-0.93,99%,11136
-0.93,99%,11008
-0.93,100%,10880
-0.93,99%,11136
-0.93,99%,10752
-0.93,99%,10880
-1.01,99%,11008
-2.39,99%,11136
-1.63,99%,10752
-0.93,99%,11008
-0.93,99%,11008
-0.93,99%,10880
-0.93,99%,10984
-0.93,99%,10880
-0.93,99%,10880
-0.93,99%,10996
-0.93,99%,11108
-0.93,99%,10880
-0.93,99%,11008
-1.92,99%,10752
-2.28,99%,10980
-0.93,99%,10880
-0.93,99%,10880
-0.92,99%,11136
-1.11,99%,10880
-2.37,99%,10880
-1.53,99%,10880
-0.93,99%,11000
-0.93,99%,11136
-0.93,99%,11008
-0.93,99%,11008
-0.93,99%,10832
-0.93,99%,10880
-0.93,99%,11264
-0.94,99%,11008
-0.93,99%,11264
-0.94,99%,10880
-0.94,99%,10880
-0.93,99%,10980
-2.05,99%,11004
-2.14,99%,10752
-0.93,99%,10880
-0.93,100%,10880
-0.94,99%,10996
-0.93,99%,11008
-0.93,99%,11008
-0.93,99%,11008
-0.93,99%,11244
-0.93,99%,10880
-0.93,99%,11132
-0.93,99%,11136
-1.39,99%,10752
-2.39,99%,10880
-1.25,99%,10880
-0.93,99%,10752
-0.93,99%,11008
-0.93,99%,11120
-0.93,99%,10880
-0.93,99%,11264
-0.93,99%,11008
-0.93,99%,10880
-0.93,99%,10860
-0.93,99%,11136
-0.93,99%,11008
-0.93,99%,11248
-0.94,99%,11136
-0.94,99%,11008
-0.95,99%,10880
-0.93,99%,10880
-0.94,99%,10880
-0.93,99%,11136
-0.94,99%,10880
-0.93,99%,11008
-0.94,99%,10880
-1.07,99%,10880
-2.38,99%,11008
-1.59,99%,10880
-0.93,99%,10880
-0.93,99%,11136
-0.93,99%,11008
-0.93,100%,11232
-0.94,99%,10868
+Command exited with non-zero status 1
+0.10,90%,16792
+Command exited with non-zero status 1
+0.09,100%,16792
+Command exited with non-zero status 1
+0.09,100%,16768
+Command exited with non-zero status 1
+0.09,100%,16696
+Command exited with non-zero status 1
+0.09,98%,16704
+Command exited with non-zero status 1
+0.09,98%,16696
+Command exited with non-zero status 1
+0.09,98%,16856
+Command exited with non-zero status 1
+0.09,98%,16948
+Command exited with non-zero status 1
+0.09,100%,16948
+Command exited with non-zero status 1
+0.09,98%,16796
+Command exited with non-zero status 1
+0.09,97%,16656
+Command exited with non-zero status 1
+0.09,97%,16784
+Command exited with non-zero status 1
+0.09,100%,16796
+Command exited with non-zero status 1
+0.09,100%,16780
+Command exited with non-zero status 1
+0.09,98%,16892
+Command exited with non-zero status 1
+0.09,98%,16856
+Command exited with non-zero status 1
+0.09,100%,16720
+Command exited with non-zero status 1
+0.09,98%,16804
+Command exited with non-zero status 1
+0.09,98%,16956
+Command exited with non-zero status 1
+0.09,97%,16752
+Command exited with non-zero status 1
+0.09,100%,16812
+Command exited with non-zero status 1
+0.09,100%,16788
+Command exited with non-zero status 1
+0.09,100%,16792
+Command exited with non-zero status 1
+0.09,98%,16780
+Command exited with non-zero status 1
+0.09,100%,16804
+Command exited with non-zero status 1
+0.09,97%,16788
+Command exited with non-zero status 1
+0.09,98%,16656
+Command exited with non-zero status 1
+0.09,98%,16792
+Command exited with non-zero status 1
+0.09,97%,16628
+Command exited with non-zero status 1
+0.09,98%,16772
+Command exited with non-zero status 1
+0.09,100%,16764
+Command exited with non-zero status 1
+0.09,100%,16760
+Command exited with non-zero status 1
+0.09,98%,16792
+Command exited with non-zero status 1
+0.09,98%,16812
+Command exited with non-zero status 1
+0.09,98%,16796
+Command exited with non-zero status 1
+0.09,100%,16792
+Command exited with non-zero status 1
+0.09,100%,16896
+Command exited with non-zero status 1
+0.09,98%,16796
+Command exited with non-zero status 1
+0.09,98%,16856
+Command exited with non-zero status 1
+0.09,100%,16792
+Command exited with non-zero status 1
+0.09,98%,16776
+Command exited with non-zero status 1
+0.09,100%,16856
+Command exited with non-zero status 1
+0.09,98%,16792
+Command exited with non-zero status 1
+0.10,100%,16796
+Command exited with non-zero status 1
+0.09,98%,16960
+Command exited with non-zero status 1
+0.09,98%,16944
+Command exited with non-zero status 1
+0.09,98%,16772
+Command exited with non-zero status 1
+0.09,98%,16792
+Command exited with non-zero status 1
+0.09,98%,16804
+Command exited with non-zero status 1
+0.09,100%,16572
+Command exited with non-zero status 1
+0.09,100%,16772
+Command exited with non-zero status 1
+0.09,98%,16708
+Command exited with non-zero status 1
+0.09,98%,16860
+Command exited with non-zero status 1
+0.10,99%,16800
+Command exited with non-zero status 1
+0.09,98%,16692
+Command exited with non-zero status 1
+0.09,100%,16788
+Command exited with non-zero status 1
+0.09,98%,16800
+Command exited with non-zero status 1
+0.09,98%,16792
+Command exited with non-zero status 1
+0.09,98%,16784
+Command exited with non-zero status 1
+0.09,98%,16788
+Command exited with non-zero status 1
+0.09,98%,16804
+Command exited with non-zero status 1
+0.09,98%,16892
+Command exited with non-zero status 1
+0.09,98%,16728
+Command exited with non-zero status 1
+0.09,98%,16876
+Command exited with non-zero status 1
+0.09,100%,16756
+Command exited with non-zero status 1
+0.10,100%,16944
+Command exited with non-zero status 1
+0.09,100%,16880
+Command exited with non-zero status 1
+0.09,98%,16896
+Command exited with non-zero status 1
+0.09,100%,16904
+Command exited with non-zero status 1
+0.09,98%,16956
+Command exited with non-zero status 1
+0.09,97%,16676
+Command exited with non-zero status 1
+0.09,100%,16876
+Command exited with non-zero status 1
+0.09,100%,16796
+Command exited with non-zero status 1
+0.09,100%,16944
+Command exited with non-zero status 1
+0.09,98%,16788
+Command exited with non-zero status 1
+0.09,98%,16792
+Command exited with non-zero status 1
+0.09,98%,16796
+Command exited with non-zero status 1
+0.09,98%,16868
+Command exited with non-zero status 1
+0.09,98%,16748
+Command exited with non-zero status 1
+0.09,100%,16956
+Command exited with non-zero status 1
+0.09,100%,16624
+Command exited with non-zero status 1
+0.09,97%,16948
+Command exited with non-zero status 1
+0.09,98%,16796
+Command exited with non-zero status 1
+0.09,98%,16792
+Command exited with non-zero status 1
+0.09,98%,16956
+Command exited with non-zero status 1
+0.09,100%,16860
+Command exited with non-zero status 1
+0.09,98%,16932
+Command exited with non-zero status 1
+0.09,97%,16640
+Command exited with non-zero status 1
+0.09,100%,16788
+Command exited with non-zero status 1
+0.09,100%,16740
+Command exited with non-zero status 1
+0.09,100%,16772
+Command exited with non-zero status 1
+0.09,98%,16784
+Command exited with non-zero status 1
+0.09,98%,16716
+Command exited with non-zero status 1
+0.09,100%,16796
+Command exited with non-zero status 1
+0.09,98%,16784
+Command exited with non-zero status 1
+0.09,97%,16668
+Command exited with non-zero status 1
+0.09,98%,16772
+Command exited with non-zero status 1
+0.09,98%,16956
+Command exited with non-zero status 1
+0.09,98%,16696
+Command exited with non-zero status 1
+0.09,100%,16788

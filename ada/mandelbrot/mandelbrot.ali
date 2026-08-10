@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 M P W=b
 A -O3
 A -fomit-frame-pointer
@@ -26,21 +26,20 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV NO_OBSOLESCENT_FEATURES
-RV SPARK_05
 RV MAX_TASK_ENTRIES=2
 RV MAX_TASKS=1+
 RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
 
-U mandelbrot%b		mandelbrot.adb		cde19c11 NE OO SU
+U mandelbrot%b		mandelbrot.adb		064537b8 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.streams%s		a-stream.adb		a-stream.ali
 W ada.streams.stream_io%s  a-ststio.adb		a-ststio.ali
-Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W interfaces%s		interfac.ads		interfac.ali
 Z system%s		system.ads		system.ali
-Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
 Z system.parameters%s	s-parame.adb		s-parame.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
@@ -48,78 +47,93 @@ Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
-Z system.val_int%s	s-valint.adb		s-valint.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
 
-D ada.ads		20230707070819 76789da1 ada%s
-D a-comlin.ads		20230707070819 4aa66568 ada.command_line%s
-D a-except.ads		20230707070819 a7106115 ada.exceptions%s
-D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
-D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
-D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
-D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
-D a-ststio.ads		20230707070819 d6d358e8 ada.streams.stream_io%s
-D a-tags.ads		20230707070819 491b781d ada.tags%s
-D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20230707070819 5ab55268 interfaces%s
-D i-c.ads		20230707070819 5421119b interfaces.c%s
-D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
-D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
-D mandelbrot.adb	20231125213339 0b21f3f9 mandelbrot%b 1:mandelbrot.gnat
-D system.ads		20230707070819 4635ec04 system%s
-D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
-D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
-D s-exctab.ads		20230707070819 54135002 system.exception_table%s
-D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
-D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
-D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
-D s-linux.ads		20230707070818 ed0b8aee system.linux%s
-D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
-D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
-D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
-D s-parame.ads		20230707070819 48ec542b system.parameters%s
-D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
-D s-soflin.adb		20230707070819 f811fd3c system.soft_links%b
-D s-soliin.ads		20230707070819 f1a676b9 system.soft_links.initialize%s
-D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
-D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
-D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
-D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
-D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
-D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
-D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
-D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
-D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
-D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
-D s-tasren.ads		20230707070818 a67a9949 system.tasking.rendezvous%s
-D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
-D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
-D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
+D ada.ads		20240801081713 76789da1 ada%s
+D a-comlin.ads		20240801081713 4aa66568 ada.command_line%s
+D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240801081713 bf4f806b ada.finalization%s
+D a-ioexce.ads		20240801081713 40018c65 ada.io_exceptions%s
+D a-reatim.ads		20240801081713 d11673fd ada.real_time%s
+D a-stream.ads		20240801081713 119b8fb3 ada.streams%s
+D a-ststio.ads		20240801081713 d6d358e8 ada.streams.stream_io%s
+D a-string.ads		20240801081713 90ac6797 ada.strings%s
+D a-sttebu.ads		20240801081713 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240801081713 9111f9c1 interfaces%s
+D i-c.ads		20240801081713 aac316ce interfaces.c%s
+D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
+D i-cstrea.adb		20240801081713 ede7ccf4 interfaces.c_streams%b
+D mandelbrot.adb	20260703013919 0b21f3f9 mandelbrot%b 1:mandelbrot.gnat
+D system.ads		20240801081714 14286b0f system%s
+D s-atacco.ads		20240801081713 5868e3ba system.address_to_access_conversions%s
+D s-c_time.ads		20250315014742 400b4acf system.c_time%s
+D s-crtl.ads		20240801081713 beb39b9e system.crtl%s
+D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240801081713 dc5161d4 system.file_control_block%s
+D s-finroo.ads		20240801081713 4ff27390 system.finalization_root%s
+D s-imagei.ads		20240801081713 5e131ce0 system.image_i%s
+D s-imgint.ads		20240801081713 67e4edfb system.img_int%s
+D s-linux.ads		20250315014742 96312dab system.linux%s
+D s-multip.ads		20240801081713 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250315014742 bf28ea52 system.os_constants%s
+D s-osinte.ads		20250315014742 a8f58951 system.os_interface%s
+D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
+D s-putima.ads		20240801081713 17291fe4 system.put_images%s
+D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240801081713 df77073e system.soft_links%s
+D s-soflin.adb		20240801081713 d38e2ecb system.soft_links%b
+D s-soliin.ads		20240801081713 f1a676b9 system.soft_links.initialize%s
+D s-stache.ads		20240801081713 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20240801081713 5be75682 system.stack_usage%s
+D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
+D s-tasinf.ads		20240801081713 528dde74 system.task_info%s
+D s-taspri.ads		20240801081713 4ec891e7 system.task_primitives%s
+D s-taprop.ads		20240801081713 6eefbe12 system.task_primitives.operations%s
+D s-taskin.ads		20240801081713 ebc4edbe system.tasking%s
+D s-taprob.ads		20240801081713 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20240801081713 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20240801081713 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20240801081713 cca55c94 system.tasking.stages%s
+D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20240801081714 8bab724f system.val_int%s
+D s-valspe.ads		20240801081714 b0fcd073 system.val_spec%s
+D s-valuns.ads		20240801081714 f7ddb71d system.val_uns%s
+D s-valuei.ads		20240801081714 d9377ca5 system.value_i%s
+D s-vaispe.ads		20240801081714 8280550e system.value_i_spec%s
+D s-vaispe.adb		20240801081714 dbcabb05 system.value_i_spec%b
+D s-valueu.ads		20240801081714 a38d32a6 system.value_u%s
+D s-vauspe.ads		20240801081714 89269ba5 system.value_u_spec%s
+D s-vauspe.adb		20240801081714 8524adb4 system.value_u_spec%b
+D s-vs_int.ads		20240801081714 06b6b724 system.vs_int%s
+D s-vs_uns.ads		20240801081714 e7f47a27 system.vs_uns%s
 G a e
 G c Z b b [mandelbrot standard 15 11 none]
 X 1 ada.ads
-16K9*Ada 20e8 15|10r6 10r33 13r6 13r33
+16K9*Ada 20e8 18|10r6 10r33 13r6 13r33
 X 2 a-comlin.ads
-36K13*Command_Line 144e21 15|10w10 10r37
-52V13*Argument{string} 15|23s55 197s12 197s33
+36K13*Command_Line 144e21 18|10w10 10r37
+52V13*Argument{string} 18|23s55 197s12 197s33
 X 7 a-stream.ads
-36K13*Streams 87e16 15|13r10 13r37
-42M9*Stream_Element 15|129r36 145r33
-44I9*Stream_Element_Offset<long_long_integer> 15|26r28 26r61 41r13 51r18
-54A9*Stream_Element_Array(42M9)<44I9> 15|27r28 200r25
+36K13*Streams 87e16 18|13r10 13r37
+42M9*Stream_Element 18|129r36 145r33
+44I9*Stream_Element_Offset<long_long_integer> 18|26r28 26r61 41r13 51r18
+54A9*Stream_Element_Array(42M9)<44I9> 18|27r28 200r25
 X 8 a-ststio.ads
-39K21*Stream_IO 224e26 15|13w18 195r19 204r10 204r34 205r10 208r13
-44P9*File_Type 15|195r29
-47n32*Out_File{47E9} 15|204r44
-74U14*Open 15|204s20
-114U14*Write 15|205s20 208s23
-X 11 interfac.ads
-38K9*Interfaces 184e15 15|12w6 12r33
-63M9*Unsigned_8 15|49r18 50r62
-81V13*Shift_Left{63M9} 15|109s31 111s31 116s31 118s31 143s40
-X 15 mandelbrot.gnat
+39K21*Stream_IO 224e26 18|13w18 195r19 204r10 204r34 205r10 208r13
+44P9*File_Type 18|195r29
+47n32*Out_File{47E9} 18|204r44
+74U14*Open 18|204s20
+114U14*Write 18|205s20 208s23
+X 14 interfac.ads
+38K9*Interfaces 233e15 18|12w6 12r33
+70M9*Unsigned_8 18|49r18 50r62
+91V13*Shift_Left{70M9} 18|109s31 111s31 116s31 118s31 143s40
+X 18 mandelbrot.gnat
 15U11*Mandelbrot 15b11 213l5 213t15
 17F9 Real<long_float> 24r27 24r41 56r32 56r55 57r32 57r55 58r23 59r23 60r24
 . 61r24 63r24 65r32 65r55 66r32 66r55 67r23 68r23 69r24 70r24 72r24
@@ -149,9 +163,9 @@ X 15 mandelbrot.gnat
 43p40 Result{28P9} 51r43 129r19 145r16 162r24
 45I15 Instruction_Stream_Index{integer} 46r22 50r33 54r31
 48m7 Bit_Num{18M9} 125m16 125r27 127r19 147m16
-49m7 Byte_Acc{11|63M9} 109m19 109r43 111m19 111r43 113r40 116m19 116r43 118m19
+49m7 Byte_Acc{14|70M9} 109m19 109r43 111m19 111r43 113r40 116m19 116r43 118m19
 . 118r43 120r40 130m19 143r52 146m16
-50a7 Byte_Acc_Storage(11|63M9) 113m16 120m16 123r22 129r52 143m16 145r49
+50a7 Byte_Acc_Storage(14|70M9) 113m16 120m16 123r22 129r52 143m16 145r49
 51i7 Last{7|44I9} 128m19 128r27 129r27 144m16 144r24 145r24
 53i11 Y<integer> 57r61 66r61
 54i14 X{integer} 56r63 65r63
@@ -189,7 +203,7 @@ X 15 mandelbrot.gnat
 198p10 Buffer{28P9} 207m46 207r46 208r38
 200a10 Header_Bytes{7|54A9} 201m30 201r30 202m14 202r14 205r35
 206i14 P{integer} 207r21
-X 33 s-stausa.ads
-208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
-273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 39 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
 

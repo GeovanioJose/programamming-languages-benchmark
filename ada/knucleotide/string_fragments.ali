@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 A -O3
 A -fomit-frame-pointer
 A -gnatN
@@ -10,7 +10,6 @@ RV NO_EXCEPTIONS
 RV NO_UNCHECKED_CONVERSION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
-RV SPARK_05
 
 U string_fragments%b	string_fragments.adb	c1370d23 NE OO PK GE
 W ada%s			ada.ads			ada.ali
@@ -18,11 +17,11 @@ W ada.unchecked_conversion%s
 
 U string_fragments%s	string_fragments.ads	ccd70d13 BN EE NE OO PK GE
 
-D ada.ads		20230707070819 76789da1 ada%s
-D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D string_fragments.ads	20231125213338 ccd70d13 string_fragments%s 417:knucleotide.gnat
-D string_fragments.adb	20231125213338 037b275f string_fragments%b 431:knucleotide.gnat
-D system.ads		20230707070819 4635ec04 system%s
+D ada.ads		20240801081713 76789da1 ada%s
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D string_fragments.ads	20260703013917 ccd70d13 string_fragments%s 417:knucleotide.gnat
+D string_fragments.adb	20260703013917 037b275f string_fragments%b 431:knucleotide.gnat
+D system.ads		20240801081714 14286b0f system%s
 G a e
 G c Z s b [string_fragments standard 422 9 none]
 X 1 ada.ads

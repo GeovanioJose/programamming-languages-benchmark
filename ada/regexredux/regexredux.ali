@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 M P W=b
 A -O3
 A -fomit-frame-pointer
@@ -11,6 +11,7 @@ RV NO_ALLOCATORS
 RV NO_IO
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
 RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_TASK_HIERARCHY
@@ -18,13 +19,12 @@ RV NO_TASKING
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
-RV SPARK_05
 RV MAX_TASKS=1+
 
-U regexredux%b		regexredux.adb		627685d3 NE OO SU
+U regexredux%b		regexredux.adb		f86d1760 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
-Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W block_input%s		block_input.adb		block_input.ali
 W dna%s			dna.ads			dna.ali
@@ -41,91 +41,126 @@ Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 W u%s			u.ads			u.ali
 
-D ada.ads		20230707070819 76789da1 ada%s
-D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
-D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
-D a-except.ads		20230707070819 a7106115 ada.exceptions%s
-D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
-D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
-D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
-D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
-D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
-D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
-D a-string.ads		20230707070819 90ac6797 ada.strings%s
-D a-strmap.ads		20230707070819 e8bb714a ada.strings.maps%s
-D a-strmap.adb		20230707070819 7e646b75 ada.strings.maps%b
-D a-strsea.ads		20230707070819 b9bc90ba ada.strings.search%s
-D a-strunb.ads		20230707070819 1656705b ada.strings.unbounded%s
-D a-strunb.adb		20230707070819 750cba06 ada.strings.unbounded%b
-D a-stunau.ads		20230707070819 63b8e84c ada.strings.unbounded.aux%s
-D a-stunau.adb		20230707070819 b934564a ada.strings.unbounded.aux%b
-D a-tags.ads		20230707070819 491b781d ada.tags%s
-D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
-D a-tiinau.ads		20230707070819 8114c8e4 ada.text_io.integer_aux%s
-D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
-D a-tiinio.adb		20230707070819 df9cd7af ada.text_io.integer_io%b
-D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
-D block_input.ads	20231125213339 72380614 block_input%s 464:regexredux.gnat
-D dna.ads		20231125213339 52a7078b dna%s 1:regexredux.gnat
-D dna-matching.ads	20231125213339 195ab426 dna.matching%s 164:regexredux.gnat
-D dna-replacing.ads	20231125213339 284f4efd dna.replacing%s 173:regexredux.gnat
-D gnat.ads		20230707070819 b5988c27 gnat%s
-D g-debuti.ads		20230707070819 0311a7bb gnat.debug_utilities%s
-D g-io.ads		20230707070819 9f0d3ab2 gnat.io%s
-D g-io.adb		20230707070819 2b8c3847 gnat.io%b
-D g-spitbo.ads		20230707070819 cd32cd2c gnat.spitbol%s
-D g-spitbo.adb		20230707070819 7ec74497 gnat.spitbol%b
-D g-spipat.ads		20230707070819 9a434fd3 gnat.spitbol.patterns%s
-D interfac.ads		20230707070819 5ab55268 interfaces%s
-D i-c.ads		20230707070819 5421119b interfaces.c%s
-D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
-D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
-D preprocessing.ads	20231125213339 c5014505 preprocessing%s 148:regexredux.gnat
-D regexredux.adb	20231125213339 a45e52f9 regexredux%b 87:regexredux.gnat
-D system.ads		20230707070819 4635ec04 system%s
-D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
-D s-atocou.ads		20230707070819 b45c2d8d system.atomic_counters%s
-D s-atocou.adb		20230707070819 b65612c0 system.atomic_counters%b
-D s-bitops.ads		20230707070819 0765e3a3 system.bit_ops%s
-D s-carun8.ads		20230707070819 a903718d system.compare_array_unsigned_8%s
-D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
-D s-exctab.ads		20230707070819 54135002 system.exception_table%s
-D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
-D s-finmas.ads		20230707070819 7811a767 system.finalization_masters%s
-D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
-D s-linux.ads		20230707070818 ed0b8aee system.linux%s
-D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
-D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
-D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
-D s-parame.ads		20230707070819 48ec542b system.parameters%s
-D s-pooglo.ads		20230707070819 ede33ef8 system.pool_global%s
-D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
-D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
-D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
-D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
-D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
-D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
-D s-stposu.ads		20230707070819 97a6219c system.storage_pools.subpools%s
-D s-stratt.ads		20230707070819 aedef97e system.stream_attributes%s
-D s-strhas.ads		20230707070819 269cd894 system.string_hash%s
-D s-strhas.adb		20230707070819 2e038444 system.string_hash%b
-D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
-D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
-D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
-D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
-D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
-D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
-D s-tasren.ads		20230707070818 a67a9949 system.tasking.rendezvous%s
-D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
-D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
-D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
-D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
-D s-wchcon.adb		20230707070819 974e87c5 system.wch_con%b
-D u.ads			20231125213339 d589ff05 u%s 84:regexredux.gnat
+D ada.ads		20240801081713 76789da1 ada%s
+D a-charac.ads		20240801081713 2d3ec45b ada.characters%s
+D a-chlat1.ads		20240801081713 e0d72e76 ada.characters.latin_1%s
+D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240801081713 bf4f806b ada.finalization%s
+D a-inteio.ads		20240801081713 f64b89a4 ada.integer_text_io%s
+D a-inteio.ads		20240801081713 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20240801081713 40018c65 ada.io_exceptions%s
+D a-reatim.ads		20240801081713 d11673fd ada.real_time%s
+D a-stream.ads		20240801081713 119b8fb3 ada.streams%s
+D a-string.ads		20240801081713 90ac6797 ada.strings%s
+D a-strmap.ads		20240801081713 1f91ebb6 ada.strings.maps%s
+D a-strmap.adb		20240801081713 da700cc5 ada.strings.maps%b
+D a-strsea.ads		20240801081713 2b7aab86 ada.strings.search%s
+D a-sttebu.ads		20240801081713 f1ad67a2 ada.strings.text_buffers%s
+D a-strunb.ads		20240801081713 98c60381 ada.strings.unbounded%s
+D a-strunb.adb		20240801081713 3b950306 ada.strings.unbounded%b
+D a-stunau.ads		20240801081713 76c9a2c5 ada.strings.unbounded.aux%s
+D a-stunau.adb		20240801081713 575529d5 ada.strings.unbounded.aux%b
+D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
+D a-textio.ads		20240801081713 34ef47de ada.text_io%s
+D a-tiinau.ads		20240801081713 3ca4fcff ada.text_io.integer_aux%s
+D a-tiinio.ads		20240801081713 76699c8f ada.text_io.integer_io%s
+D a-tiinio.adb		20240801081713 b79731f4 ada.text_io.integer_io%b
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20240801081713 c3a8ac65 ada.unchecked_deallocation%s
+D block_input.ads	20260703013920 72380614 block_input%s 464:regexredux.gnat
+D dna.ads		20260703013920 52a7078b dna%s 1:regexredux.gnat
+D dna-matching.ads	20260703013920 195ab426 dna.matching%s 164:regexredux.gnat
+D dna-replacing.ads	20260703013920 284f4efd dna.replacing%s 173:regexredux.gnat
+D gnat.ads		20240801081713 b5988c27 gnat%s
+D g-debuti.ads		20240801081713 407be69f gnat.debug_utilities%s
+D g-io.ads		20240801081713 9f0d3ab2 gnat.io%s
+D g-io.adb		20240801081713 1f94ff51 gnat.io%b
+D g-spitbo.ads		20240801081713 cd32cd2c gnat.spitbol%s
+D g-spitbo.adb		20240801081713 7ec74497 gnat.spitbol%b
+D g-spipat.ads		20240801081713 5f4210c0 gnat.spitbol.patterns%s
+D interfac.ads		20240801081713 9111f9c1 interfaces%s
+D i-c.ads		20240801081713 aac316ce interfaces.c%s
+D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
+D i-cstrea.adb		20240801081713 ede7ccf4 interfaces.c_streams%b
+D preprocessing.ads	20260703013920 c5014505 preprocessing%s 148:regexredux.gnat
+D regexredux.adb	20260703013920 a45e52f9 regexredux%b 87:regexredux.gnat
+D system.ads		20240801081714 14286b0f system%s
+D s-atacco.ads		20240801081713 5868e3ba system.address_to_access_conversions%s
+D s-atocou.ads		20240801081713 dc18efc3 system.atomic_counters%s
+D s-atocou.adb		20240801081713 6fe685de system.atomic_counters%b
+D s-atopri.ads		20240801081713 e19c1d89 system.atomic_primitives%s
+D s-atopri.adb		20240801081713 b4a64c17 system.atomic_primitives%b
+D s-bitops.ads		20240801081713 cdf3ac3c system.bit_ops%s
+D s-c_time.ads		20250315014742 400b4acf system.c_time%s
+D s-carun8.ads		20240801081713 90e69e63 system.compare_array_unsigned_8%s
+D s-crtl.ads		20240801081713 beb39b9e system.crtl%s
+D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240801081713 dc5161d4 system.file_control_block%s
+D s-finmas.ads		20240801081713 28987ac5 system.finalization_masters%s
+D s-finroo.ads		20240801081713 4ff27390 system.finalization_root%s
+D s-imageb.ads		20240801081713 3953e0e6 system.image_b%s
+D s-imagei.ads		20240801081713 5e131ce0 system.image_i%s
+D s-imagew.ads		20240801081713 9d2dd267 system.image_w%s
+D s-imgbiu.ads		20240801081713 0a8e1c41 system.img_biu%s
+D s-imgint.ads		20240801081713 67e4edfb system.img_int%s
+D s-imgllb.ads		20240801081713 47d0db9f system.img_llb%s
+D s-imglli.ads		20240801081713 d88f4f3b system.img_lli%s
+D s-imglllb.ads		20240801081713 30212eed system.img_lllb%s
+D s-imgllli.ads		20240801081713 404e72c5 system.img_llli%s
+D s-imglllw.ads		20240801081713 9e2b0560 system.img_lllw%s
+D s-imgllw.ads		20240801081713 bf9c9c15 system.img_llw%s
+D s-imgwiu.ads		20240801081713 912a95f2 system.img_wiu%s
+D s-linux.ads		20250315014742 96312dab system.linux%s
+D s-multip.ads		20240801081713 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250315014742 bf28ea52 system.os_constants%s
+D s-osinte.ads		20250315014742 a8f58951 system.os_interface%s
+D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
+D s-pooglo.ads		20240801081713 91708d21 system.pool_global%s
+D s-putima.ads		20240801081713 17291fe4 system.put_images%s
+D s-retsta.ads		20240801081713 0f6b06cb system.return_stack%s
+D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240801081713 df77073e system.soft_links%s
+D s-stache.ads		20240801081713 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20240801081713 5be75682 system.stack_usage%s
+D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240801081713 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20240801081713 a1861007 system.stream_attributes%s
+D s-strhas.ads		20240801081713 269cd894 system.string_hash%s
+D s-strhas.adb		20240801081713 398666ac system.string_hash%b
+D s-tasinf.ads		20240801081713 528dde74 system.task_info%s
+D s-taspri.ads		20240801081713 4ec891e7 system.task_primitives%s
+D s-taprop.ads		20240801081713 6eefbe12 system.task_primitives.operations%s
+D s-taskin.ads		20240801081713 ebc4edbe system.tasking%s
+D s-taprob.ads		20240801081713 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20240801081713 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20240801081713 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20240801081713 cca55c94 system.tasking.stages%s
+D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20240801081714 8bab724f system.val_int%s
+D s-vallli.ads		20240801081714 353103fd system.val_lli%s
+D s-valllli.ads		20240801081714 fb5526e1 system.val_llli%s
+D s-vallllu.ads		20240801081714 34470a29 system.val_lllu%s
+D s-valllu.ads		20240801081714 4134fa35 system.val_llu%s
+D s-valspe.ads		20240801081714 b0fcd073 system.val_spec%s
+D s-valuns.ads		20240801081714 f7ddb71d system.val_uns%s
+D s-valuei.ads		20240801081714 d9377ca5 system.value_i%s
+D s-vaispe.ads		20240801081714 8280550e system.value_i_spec%s
+D s-vaispe.adb		20240801081714 dbcabb05 system.value_i_spec%b
+D s-valueu.ads		20240801081714 a38d32a6 system.value_u%s
+D s-vauspe.ads		20240801081714 89269ba5 system.value_u_spec%s
+D s-vauspe.adb		20240801081714 8524adb4 system.value_u_spec%b
+D s-vs_int.ads		20240801081714 06b6b724 system.vs_int%s
+D s-vs_lli.ads		20240801081714 b945cf7d system.vs_lli%s
+D s-vsllli.ads		20240801081714 3a5ba700 system.vs_llli%s
+D s-vslllu.ads		20240801081714 678200a0 system.vs_lllu%s
+D s-vs_llu.ads		20240801081714 8f3536c5 system.vs_llu%s
+D s-vs_uns.ads		20240801081714 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20240801081714 d9032363 system.wch_con%s
+D s-wchcon.adb		20240801081714 2416a954 system.wch_con%b
+D u.ads			20260703013920 d589ff05 u%s 84:regexredux.gnat
 G a e
 G c Z b b [regexredux standard 99 11 none]
 G r c none [regexredux standard 99 11 none] [open_stdin block_input 469 14 none]
@@ -139,64 +174,64 @@ G r c none [regexredux standard 99 11 none] [count_matches dna__matching 168 14 
 G r c none [regexredux standard 99 11 none] [get dna__matching 170 13 none]
 G r c none [regexredux standard 99 11 none] [perform_replacements dna__replacing 177 14 none]
 X 1 ada.ads
-16K9*Ada 20e8 42|88r6 88r32 89r6 89r32 106r4
-X 7 a-inteio.ads
-18K13*Integer_Text_IO[22|46] 42|89w10 89r36 106m8
-X 15 a-strunb.ads
-95P9*String_Access(string) 42|102r54
-97U14*Free 42|122s9
-X 20 a-textio.ads
-57K13*Text_IO 727e16 42|88w10 88r36
-86I12*Field{integer}
-264U14*New_Line 42|131s7 139s4 141s4 143s4 145s4
-465U14*Put 42|129s7
-X 22 a-tiinio.ads
-48i4*Default_Width{20|86I12} 42|106m24[7|18]
-80U14*Put 42|130s7[7|18] 140s4[7|18] 142s4[7|18] 144s4[7|18]
-81i7 Item{integer} 42|130r12[7|18] 140r9[7|18] 142r9[7|18] 144r9[7|18]
-X 26 regexredux.gnat
-466K9*Block_Input 472e16 42|94w6 109r4 110r18 111r4
-468V13*Read{15|95P9} 42|110s30
-469U14*Open_Stdin 42|109s16
-470U14*Close_Stdin 42|111s16
-X 27 regexredux.gnat
-12K9*DNA 83e8 42|92r6 93r6 93r32 115r4 125r4 130r20 135r4
-14I12*Variant_Index{positive} 42|128r19
-15a4*Variant_Labels(34|51R12) 42|129r15
-82p4*Seq{15|95P9} 42|115m8 120r29 125r32
+16K9*Ada 20e8 44|88r6 88r32 89r6 89r32 106r4
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[24|46] 44|89w10 89r36 106m8
+X 16 a-strunb.ads
+100P9*String_Access(string) 44|102r54
+102U14*Free 44|122s9
+X 22 a-textio.ads
+58K13*Text_IO 785e16 44|88w10 88r36
+89I12*Field{integer}
+284U14*New_Line 44|131s7 139s4 141s4 143s4 145s4
+515U14*Put 44|129s7
+X 24 a-tiinio.ads
+50i4*Default_Width{22|89I12} 44|106m24[6|18]
+85U14*Put 44|130s7[6|18] 140s4[6|18] 142s4[6|18] 144s4[6|18]
+86i7 Item{integer} 44|130r12[6|18] 140r9[6|18] 142r9[6|18] 144r9[6|18]
 X 28 regexredux.gnat
-166K13*Matching 172e17 42|92w10 125r8 130r24
-168U14*Count_Matches 42|125s17
-168i52 Limit{positive} 42|125r37
-170V13*Get{natural} 42|130s33
+466K9*Block_Input 472e16 44|94w6 109r4 110r18 111r4
+468V13*Read{16|100P9} 44|110s30
+469U14*Open_Stdin 44|109s16
+470U14*Close_Stdin 44|111s16
 X 29 regexredux.gnat
-174K13*Replacing 180e18 42|93w10 135r8
-177U14*Perform_Replacements 42|135s18
-178i7 Limit{positive} 42|136r7
-179i7 New_Length{natural} 42|137r7
-X 30 gnat.ads
-34K9*GNAT 57e9 42|90r6 90r32
-X 34 g-spitbo.ads
-44K14*Spitbol 394e17 42|90w11 90r37
-56V13*S=57:36{string} 42|129s12
-X 41 regexredux.gnat
-150K9*Preprocessing 163e18 42|95w6 118r17
-156T14*Removal 161e15 42|118r31
-158Y13 Run 42|120s15
-158p18 Clean{15|95P9} 42|120r20
-159Y13 Done 42|121s15
-159i19 Last{natural} 42|121r21
-X 42 regexredux.gnat
+12K9*DNA 83e8 44|92r6 93r6 93r32 115r4 125r4 130r20 135r4
+14I12*Variant_Index{positive} 44|128r19
+15a4*Variant_Labels(36|51R12) 44|129r15
+82p4*Seq{16|100P9} 44|115m8 120r29 125r32
+X 30 regexredux.gnat
+166K13*Matching 172e17 44|92w10 125r8 130r24
+168U14*Count_Matches 44|125s17
+168i52 Limit{positive} 44|125r37
+170V13*Get{natural} 44|130s33
+X 31 regexredux.gnat
+174K13*Replacing 180e18 44|93w10 135r8
+177U14*Perform_Replacements 44|135s18
+178i7 Limit{positive} 44|136r7
+179i7 New_Length{natural} 44|137r7
+X 32 gnat.ads
+37K9*GNAT 60e9 44|90r6 90r32
+X 36 g-spitbo.ads
+44K14*Spitbol 394e17 44|90w11 90r37
+56V13*S=57:36{string} 44|129s12
+X 43 regexredux.gnat
+150K9*Preprocessing 163e18 44|95w6 118r17
+156T14*Removal 161e15 44|118r31
+158Y13 Run 44|120s15
+158p18 Clean{16|100P9} 44|120r20
+159Y13 Done 44|121s15
+159i19 Last{natural} 44|121r21
+X 44 regexredux.gnat
 99U11*Regexredux 99b11 147l5 147t15
 101i4 Initial_Length{natural} 113m4 115r32 140r17
 101i20 Code_Length{natural} 121m29 125r46 136r21 142r17
 101i33 Processed_Length{natural} 137m21 144r17
-102p4 Input_Text{15|95P9} 110m4 113r22 118r40 122m15 122r15
-118t7 Cleaner{41|156T14} 120r7 121r7
-128i8 Variant{27|14I12} 129r31 130r38
-X 63 s-stausa.ads
-208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
-273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
-X 85 regexredux.gnat
-86K9*U=86:31 42|97w6 102r52 122r7
+102p4 Input_Text{16|100P9} 110m4 113r22 118r40 122m15 122r15
+118t7 Cleaner{43|156T14} 120r7 121r7
+128i8 Variant{29|14I12} 129r31 130r38
+X 82 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
+X 120 regexredux.gnat
+86K9*U=86:31 44|97w6 102r52 122r7
 

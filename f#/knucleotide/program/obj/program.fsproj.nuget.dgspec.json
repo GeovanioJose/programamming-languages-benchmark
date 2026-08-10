@@ -1,43 +1,48 @@
 {
   "format": 1,
   "restore": {
-    "/home/neon/Downloads/programming-languages-benchmark/f#/knucleotide/program/program.fsproj": {}
+    "/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/knucleotide/program/program.fsproj": {}
   },
   "projects": {
-    "/home/neon/Downloads/programming-languages-benchmark/f#/knucleotide/program/program.fsproj": {
+    "/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/knucleotide/program/program.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/neon/Downloads/programming-languages-benchmark/f#/knucleotide/program/program.fsproj",
+        "projectUniqueName": "/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/knucleotide/program/program.fsproj",
         "projectName": "program",
-        "projectPath": "/home/neon/Downloads/programming-languages-benchmark/f#/knucleotide/program/program.fsproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/home/neon/Downloads/programming-languages-benchmark/f#/knucleotide/program/obj/",
+        "projectPath": "/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/knucleotide/program/program.fsproj",
+        "packagesPath": "/home/teste/.nuget/packages/",
+        "outputPath": "/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/knucleotide/program/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/teste/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/sdk/7.0.111/FSharp/library-packs": {},
+          "/home/teste/.dotnet/sdk/8.0.422/FSharp/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
-              "version": "[7.0.0, )",
+              "version": "[8.0.403, )",
               "generatePathProperty": true
             },
             "Microsoft.Experimental.Collections": {
@@ -62,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/teste/.dotnet/sdk/8.0.422/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

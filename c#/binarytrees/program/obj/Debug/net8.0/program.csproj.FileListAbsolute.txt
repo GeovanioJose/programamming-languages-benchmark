@@ -1,0 +1,15 @@
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/bin/Debug/net8.0/program
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/bin/Debug/net8.0/program.deps.json
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/bin/Debug/net8.0/program.runtimeconfig.json
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/bin/Debug/net8.0/program.dll
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/bin/Debug/net8.0/program.pdb
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.GeneratedMSBuildEditorConfig.editorconfig
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.AssemblyInfoInputs.cache
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.AssemblyInfo.cs
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.csproj.CoreCompileInputs.cache
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.sourcelink.json
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.dll
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/refint/program.dll
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.pdb
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/program.genruntimeconfig.cache
+/home/teste/langueges_benchmark/programamming-languages-benchmark/c#/binarytrees/program/obj/Debug/net8.0/ref/program.dll

@@ -1,0 +1,5 @@
+/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/mandelbrot/program/obj/Debug/net8.0/program.fsproj.AssemblyReference.cache
+/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/mandelbrot/program/obj/Debug/net8.0/program.AssemblyInfoInputs.cache
+/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/mandelbrot/program/obj/Debug/net8.0/program.AssemblyInfo.fs
+/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/mandelbrot/program/obj/Debug/net8.0/program.fsproj.CoreCompileInputs.cache
+/home/teste/langueges_benchmark/programamming-languages-benchmark/f#/mandelbrot/program/obj/Debug/net8.0/program.sourcelink.json

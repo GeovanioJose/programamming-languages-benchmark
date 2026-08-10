@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 M P W=b
 A -O3
 A -fomit-frame-pointer
@@ -25,30 +25,37 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
-RV SPARK_05
 RV MAX_SELECT_ALTERNATIVES=2
 RV MAX_TASK_ENTRIES=2
 RV MAX_TASKS=1+
 RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
 
-U spectralnorm%b	spectralnorm.adb	911a79d9 NE OO SU
+U spectralnorm%b	spectralnorm.adb	0b76f83d NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.command_line%s	a-comlin.adb		a-comlin.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.numerics%s	a-numeri.ads		a-numeri.ali
-Z ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+Z ada.numerics.aux_float%s  a-nuaufl.ads	a-nuaufl.ali
+Z ada.numerics.aux_generic_float%s
+Z ada.numerics.aux_long_float%s  a-nalofl.ads	a-nalofl.ali
+Z ada.numerics.aux_long_long_float%s  a-nallfl.ads  a-nallfl.ali
+Z ada.numerics.aux_short_float%s  a-nashfl.ads	a-nashfl.ali
 W ada.numerics.generic_elementary_functions%s
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
-Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z ada.text_io.float_aux%s  a-tiflau.adb		a-tiflau.ali
+Z ada.text_io.float_aux%s
 Z ada.text_io.float_io%s
+Z ada.text_io.generic_aux%s  a-tigeau.adb	a-tigeau.ali
 W spectral_utils%s	spectral_utils.adb	spectral_utils.ali
-Z system%s		system.ads		system.ali
-Z system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+W system%s		system.ads		system.ali
+Z system.exn_lflt%s	s-exnlfl.ads		s-exnlfl.ali
 Z system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
-Z system.img_int%s	s-imgint.adb		s-imgint.ali
-Z system.machine_code%s	s-maccod.ads		s-maccod.ali
+Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.img_lflt%s	s-imglfl.ads		s-imglfl.ali
+Z system.img_llf%s	s-imgllf.ads		s-imgllf.ali
+Z system.img_util%s	s-imguti.adb		s-imguti.ali
 Z system.parameters%s	s-parame.adb		s-parame.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
@@ -56,119 +63,175 @@ Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
-Z system.val_int%s	s-valint.adb		s-valint.ali
+Z system.val_flt%s	s-valflt.ads		s-valflt.ali
+Z system.val_int%s	s-valint.ads		s-valint.ali
+Z system.val_lflt%s	s-vallfl.ads		s-vallfl.ali
+Z system.val_llf%s	s-valllf.ads		s-valllf.ali
 
-D ada.ads		20230707070819 76789da1 ada%s
-D a-comlin.ads		20230707070819 4aa66568 ada.command_line%s
-D a-except.ads		20230707070819 a7106115 ada.exceptions%s
-D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
-D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
-D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
-D a-numaux.ads		20230707070819 243fe0b7 ada.numerics.aux%s
-D a-numaux.adb		20230707070819 ac46095f ada.numerics.aux%b
-D a-ngelfu.ads		20230707070819 55716239 ada.numerics.generic_elementary_functions%s
-D a-ngelfu.adb		20230707070819 a9022048 ada.numerics.generic_elementary_functions%b
-D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
-D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
-D a-tags.ads		20230707070819 491b781d ada.tags%s
-D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
-D a-tiflau.ads		20230707070819 c0393f21 ada.text_io.float_aux%s
-D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
-D a-tiflio.adb		20230707070819 fd9b1cfc ada.text_io.float_io%b
-D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20230707070819 5ab55268 interfaces%s
-D i-c.ads		20230707070819 5421119b interfaces.c%s
-D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
-D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
-D spectral_utils.ads	20231125213342 4bebdbd6 spectral_utils%s 52:spectralnorm.gnat
-D spectral_utils.adb	20231125213342 d7aa0a65 spectral_utils%b 93:spectralnorm.gnat
-D spectralnorm.adb	20231125213342 6bd27033 spectralnorm%b 1:spectralnorm.gnat
-D system.ads		20230707070819 4635ec04 system%s
-D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
-D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
-D s-exctab.ads		20230707070819 54135002 system.exception_table%s
-D s-exnllf.ads		20230707070819 bc7ebbdc system.exn_llf%s
-D s-fatgen.ads		20230707070819 49cbaf86 system.fat_gen%s
-D s-fatgen.adb		20230707070819 28cd35f5 system.fat_gen%b
-D s-fatlfl.ads		20230707070819 378cba9f system.fat_lflt%s
-D s-fatllf.ads		20230707070819 4d5c1475 system.fat_llf%s
-D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
-D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
-D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
-D s-linux.ads		20230707070818 ed0b8aee system.linux%s
-D s-maccod.ads		20230707070819 6d68a701 system.machine_code%s
-D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
-D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
-D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
-D s-parame.ads		20230707070819 48ec542b system.parameters%s
-D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
-D s-soflin.adb		20230707070819 f811fd3c system.soft_links%b
-D s-soliin.ads		20230707070819 f1a676b9 system.soft_links.initialize%s
-D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
-D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
-D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
-D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
-D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
-D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
-D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
-D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
-D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
-D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
-D s-tasren.ads		20230707070818 a67a9949 system.tasking.rendezvous%s
-D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
-D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
-D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
-D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
-D s-wchcon.adb		20230707070819 974e87c5 system.wch_con%b
+D ada.ads		20240801081713 76789da1 ada%s
+D a-assert.ads		20240801081713 ba465f5c ada.assertions%s
+D a-comlin.ads		20240801081713 4aa66568 ada.command_line%s
+D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240801081713 bf4f806b ada.finalization%s
+D a-ioexce.ads		20240801081713 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20240801081713 84bea7a3 ada.numerics%s
+D a-nuaufl.ads		20240801081713 d3e63031 ada.numerics.aux_float%s
+D a-nagefl.ads		20240801081713 53f456a7 ada.numerics.aux_generic_float%s
+D a-naliop.ads		20240801081713 6b421e5f ada.numerics.aux_linker_options%s
+D a-nalofl.ads		20240801081713 d6c95180 ada.numerics.aux_long_float%s
+D a-nallfl.ads		20240801081713 6ccf65a3 ada.numerics.aux_long_long_float%s
+D a-nashfl.ads		20240801081713 b54ed4fb ada.numerics.aux_short_float%s
+D a-nubinu.ads		20240801081713 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20240801081713 31ff4aa1 ada.numerics.big_numbers.big_integers_ghost%s
+D a-ngelfu.ads		20240801081713 5506716e ada.numerics.generic_elementary_functions%s
+D a-ngelfu.adb		20240801081713 2940142d ada.numerics.generic_elementary_functions%b
+D a-reatim.ads		20240801081713 d11673fd ada.real_time%s
+D a-stream.ads		20240801081713 119b8fb3 ada.streams%s
+D a-string.ads		20240801081713 90ac6797 ada.strings%s
+D a-sttebu.ads		20240801081713 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
+D a-textio.ads		20240801081713 34ef47de ada.text_io%s
+D a-tiflau.ads		20240801081713 40ab5f5e ada.text_io.float_aux%s
+D a-tiflau.adb		20240801081713 1a734a41 ada.text_io.float_aux%b
+D a-tiflio.ads		20240801081713 48a0360d ada.text_io.float_io%s
+D a-tiflio.adb		20240801081713 46ae63e6 ada.text_io.float_io%b
+D a-tigeau.ads		20240801081713 e643cdf3 ada.text_io.generic_aux%s
+D a-tigeau.adb		20240801081713 de5d87cc ada.text_io.generic_aux%b
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20240801081713 c3a8ac65 ada.unchecked_deallocation%s
+D interfac.ads		20240801081713 9111f9c1 interfaces%s
+D i-c.ads		20240801081713 aac316ce interfaces.c%s
+D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
+D i-cstrea.adb		20240801081713 ede7ccf4 interfaces.c_streams%b
+D spectral_utils.ads	20260703013922 4bebdbd6 spectral_utils%s 52:spectralnorm.gnat
+D spectral_utils.adb	20260703013922 d7aa0a65 spectral_utils%b 93:spectralnorm.gnat
+D spectralnorm.adb	20260703013922 6bd27033 spectralnorm%b 1:spectralnorm.gnat
+D system.ads		20240801081714 14286b0f system%s
+D s-atacco.ads		20240801081713 5868e3ba system.address_to_access_conversions%s
+D s-assert.ads		20240801081713 9c4520c7 system.assertions%s
+D s-atoope.ads		20240801081713 c7637a25 system.atomic_operations%s
+D s-aotase.ads		20240801081713 90cf94ab system.atomic_operations.test_and_set%s
+D s-aotase.adb		20240801081713 e581b407 system.atomic_operations.test_and_set%b
+D s-atopri.ads		20240801081713 e19c1d89 system.atomic_primitives%s
+D s-c_time.ads		20250315014742 400b4acf system.c_time%s
+D s-casuti.ads		20240801081713 cf13d755 system.case_util%s
+D s-crtl.ads		20240801081713 beb39b9e system.crtl%s
+D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
+D s-exnlfl.ads		20240801081713 3a76fe2b system.exn_lflt%s
+D s-exponr.ads		20240801081713 2127300b system.exponr%s
+D s-fatgen.ads		20240801081713 d28c6cfe system.fat_gen%s
+D s-fatgen.adb		20240801081713 6cc1fec9 system.fat_gen%b
+D s-fatlfl.ads		20240801081713 378cba9f system.fat_lflt%s
+D s-ficobl.ads		20240801081713 dc5161d4 system.file_control_block%s
+D s-fileio.ads		20240801081713 45ce2f0f system.file_io%s
+D s-fileio.adb		20240801081713 7d260832 system.file_io%b
+D s-finroo.ads		20240801081713 4ff27390 system.finalization_root%s
+D s-imagei.ads		20240801081713 5e131ce0 system.image_i%s
+D s-imager.ads		20240801081713 45c7157d system.image_r%s
+D s-imageu.ads		20240801081713 b0b50650 system.image_u%s
+D s-imageu.adb		20240801081713 adcee293 system.image_u%b
+D s-imgflt.ads		20240801081713 d12816b5 system.img_flt%s
+D s-imgint.ads		20240801081713 67e4edfb system.img_int%s
+D s-imglfl.ads		20240801081713 941be202 system.img_lflt%s
+D s-imgllf.ads		20240801081713 e85a7fe5 system.img_llf%s
+D s-imgllu.ads		20240801081713 55ba53d8 system.img_llu%s
+D s-imguns.ads		20240801081713 c4e23690 system.img_uns%s
+D s-imguti.ads		20240801081713 7719a4b9 system.img_util%s
+D s-linux.ads		20250315014742 96312dab system.linux%s
+D s-multip.ads		20240801081713 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250315014742 bf28ea52 system.os_constants%s
+D s-osinte.ads		20250315014742 a8f58951 system.os_interface%s
+D s-os_lib.ads		20240801081713 a2467c22 system.os_lib%s
+D s-os_lib.adb		20240801081713 e864377f system.os_lib%b
+D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
+D s-powflt.ads		20240801081713 a51ab9b8 system.powten_flt%s
+D s-powlfl.ads		20240801081713 ac0852c8 system.powten_lflt%s
+D s-powllf.ads		20240801081713 9b99e843 system.powten_llf%s
+D s-putima.ads		20240801081713 17291fe4 system.put_images%s
+D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240801081713 df77073e system.soft_links%s
+D s-soflin.adb		20240801081713 d38e2ecb system.soft_links%b
+D s-soliin.ads		20240801081713 f1a676b9 system.soft_links.initialize%s
+D s-stache.ads		20240801081713 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20240801081713 5be75682 system.stack_usage%s
+D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
+D s-string.ads		20240801081713 582aac7d system.strings%s
+D s-tasinf.ads		20240801081713 528dde74 system.task_info%s
+D s-taspri.ads		20240801081713 4ec891e7 system.task_primitives%s
+D s-taprop.ads		20240801081713 6eefbe12 system.task_primitives.operations%s
+D s-taskin.ads		20240801081713 ebc4edbe system.tasking%s
+D s-taprob.ads		20240801081713 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20240801081713 60ad3dae system.tasking.protected_objects.entries%s
+D s-tasren.ads		20240801081713 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20240801081713 cca55c94 system.tasking.stages%s
+D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
+D s-valflt.ads		20240801081714 78fc9326 system.val_flt%s
+D s-valint.ads		20240801081714 8bab724f system.val_int%s
+D s-vallfl.ads		20240801081714 944236a7 system.val_lflt%s
+D s-valllf.ads		20240801081714 03043e61 system.val_llf%s
+D s-valrea.ads		20240801081714 f0598c00 system.val_real%s
+D s-valspe.ads		20240801081714 b0fcd073 system.val_spec%s
+D s-valuns.ads		20240801081714 f7ddb71d system.val_uns%s
+D s-valuei.ads		20240801081714 d9377ca5 system.value_i%s
+D s-vaispe.ads		20240801081714 8280550e system.value_i_spec%s
+D s-vaispe.adb		20240801081714 dbcabb05 system.value_i_spec%b
+D s-valueu.ads		20240801081714 a38d32a6 system.value_u%s
+D s-vauspe.ads		20240801081714 89269ba5 system.value_u_spec%s
+D s-vauspe.adb		20240801081714 8524adb4 system.value_u_spec%b
+D s-vs_int.ads		20240801081714 06b6b724 system.vs_int%s
+D s-vs_llu.ads		20240801081714 8f3536c5 system.vs_llu%s
+D s-vs_uns.ads		20240801081714 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20240801081714 d9032363 system.wch_con%s
+D s-wchcon.adb		20240801081714 2416a954 system.wch_con%b
 G a e
 G c Z b b [spectralnorm standard 15 11 none]
 G r i none [spectralnorm standard 15 11 none] [spectral_utils standard 59 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 25|10r6 11r6 12r6 12r28 21r27 22r30 50r4
-X 2 a-comlin.ads
-36K13*Command_Line 144e21 25|12w10 12r32
-39V13*Argument_Count{natural} 25|28s7
-52V13*Argument{string} 25|29s27
-X 6 a-numeri.ads
-16K13*Numerics 32e17 25|11r10 22r34
-X 9 a-ngelfu.ads
-39k22*Generic_Elementary_Functions 205e46 25|11w19 22r43
-52V13 Sqrt<long_float> 25|49s24[22]
-X 14 a-textio.ads
-57K13*Text_IO 727e16 25|10w10 21r31 50r8
-86I12*Field{integer}
-264U14*New_Line 25|50s16
-X 16 a-tiflio.ads
-46k21*Float_IO 112e25 25|21r39
-82U14 Put 25|49s12[21]
-83f7 Item{25|17F9} 25|49r16[21]
-84i7 Fore{14|86I12} 25|49r38[21]
-85i7 Aft{14|86I12} 25|49r49[21]
-86i7 Exp{14|86I12} 25|49r59[21]
-X 23 spectralnorm.gnat
-56i4 No_Of_Tasks{positive} 25|34r16
-57i4 Matrix_Size{positive} 25|34r51
-59k9*Spectral_Utils 92e19 25|13w6 33r41
-61A9 Matrix(25|17F9)<integer> 25|37r11[33] 38r11[33]
-69U14 Eval_Ata_Times_U 25|41s10[33] 42s10[33]
-X 25 spectralnorm.gnat
+16K9*Ada 20e8 39|10r6 11r6 12r6 12r28 21r27 22r30 50r4
+X 3 a-comlin.ads
+36K13*Command_Line 144e21 39|12w10 12r32
+39V13*Argument_Count{natural} 39|28s7
+52V13*Argument{string} 39|29s27
+X 7 a-numeri.ads
+16K13*Numerics 35e17 39|11r10 22r34
+X 16 a-ngelfu.ads
+39k22*Generic_Elementary_Functions 208e46 39|11w19 22r43
+53V13 Sqrt<long_float> 39|49s24[22]
+X 24 a-textio.ads
+58K13*Text_IO 785e16 39|10w10 21r31 50r8
+89I12*Field{integer}
+284U14*New_Line 39|50s16
+X 27 a-tiflio.ads
+46k21*Float_IO 121e25 39|21r39
+88U14 Put 39|49s12[21]
+89f7 Item{39|17F9} 39|49r16[21]
+90i7 Fore{24|89I12} 39|49r38[21]
+91i7 Aft{24|89I12} 39|49r49[21]
+92i7 Exp{24|89I12} 39|49r59[21]
+X 37 spectralnorm.gnat
+56i4 No_Of_Tasks{positive} 39|34r16
+57i4 Matrix_Size{positive} 39|34r51
+59k9*Spectral_Utils 92e19 39|13w6 33r41
+61A9 Matrix(39|17F9)<integer> 39|37r11[33] 38r11[33]
+69U14 Eval_Ata_Times_U 39|41s10[33] 42s10[33]
+X 39 spectralnorm.gnat
 15U11*SpectralNorm 15b11 51l5 51t17
 17F9 Real<long_float> 21r48 22r72 26r14 34r10
 19N4 No_of_Cores_to_Use 34r31
-21K12 Real_IO[16|46] 49r4
-22K12 Real_Funcs[9|39] 23r8
+21K12 Real_IO[27|46] 49r4
+22K12 Real_Funcs[16|39] 23r8
 25i4 N{natural} 29m7 34r66
 26f4 Vbv{17F9} 45m10 45r17 49r29
 26f9 Vv{17F9} 46m10 46r17 49r33
-33K15 Spectral_Utilities[23|59] 35r11
-37a7 U{23|61A9[33]} 41r27 42m30 45r23
-38a7 V{23|61A9[33]} 41m30 42r27 44r16 45r30 46r23 46r30
+33K15 Spectral_Utilities[37|59] 35r11
+37a7 U{37|61A9[33]} 41r27 42m30 45r23
+38a7 V{37|61A9[33]} 41m30 42r27 44r16 45r30 46r23 46r30
 40i11 I{integer}
 44i11 I{integer} 45r25 45r32 46r25 46r32
-X 49 s-stausa.ads
-208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
-273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+X 87 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
 

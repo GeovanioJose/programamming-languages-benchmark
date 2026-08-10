@@ -4,16 +4,16 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/root/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/root/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/teste/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/teste/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.2</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.11.2</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/root/.nuget/packages/" />
+    <SourceRoot Include="/home/teste/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_Experimental_Collections Condition=" '$(PkgMicrosoft_Experimental_Collections)' == '' ">/root/.nuget/packages/microsoft.experimental.collections/1.0.6-e190117-3</PkgMicrosoft_Experimental_Collections>
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/root/.nuget/packages/fsharp.core/7.0.0</PkgFSharp_Core>
+    <PkgMicrosoft_Experimental_Collections Condition=" '$(PkgMicrosoft_Experimental_Collections)' == '' ">/home/teste/.nuget/packages/microsoft.experimental.collections/1.0.6-e190117-3</PkgMicrosoft_Experimental_Collections>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/teste/.nuget/packages/fsharp.core/8.0.403</PkgFSharp_Core>
   </PropertyGroup>
 </Project>

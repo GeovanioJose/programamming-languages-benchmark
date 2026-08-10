@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 A -O3
 A -fomit-frame-pointer
 A -gnatN
@@ -8,15 +8,14 @@ P ZX
 RN
 RV NO_FLOATING_POINT
 RV NO_IMPLEMENTATION_PRAGMAS
-RV SPARK_05
 
 U lcg_random%b		lcg_random.adb		d0b9191c NE OO PK GE
 
 U lcg_random%s		lcg_random.ads		a850355c BN EE NE OO PK GE
 
-D lcg_random.ads	20231125213337 a850355c lcg_random%s 268:fasta.gnat
-D lcg_random.adb	20231125213337 78e92c40 lcg_random%b 281:fasta.gnat
-D system.ads		20230707070819 4635ec04 system%s
+D lcg_random.ads	20260703013917 a850355c lcg_random%s 268:fasta.gnat
+D lcg_random.adb	20260703013917 78e92c40 lcg_random%b 281:fasta.gnat
+D system.ads		20240801081714 14286b0f system%s
 G a e
 G c Z s b [lcg_random standard 274 9 none]
 X 1 fasta.gnat

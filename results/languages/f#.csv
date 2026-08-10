@@ -1,0 +1,5 @@
+problems,avg_total,avg_package,avg_core,avg_uncore,avg_dram,avg_runtime,avg_watts,avg_max_memory,avg_cpu_temp
+binarytrees,476.69,457.61,448.67,0.0,19.07,23.78,20.05,2430.0,29.8
+fannkuchredux,897.41,892.79,887.16,0.0,4.62,19.97,44.94,30.0,29.8
+fasta,124.61,123.27,122.27,0.0,1.34,3.33,37.42,45.0,29.8
+knucleotide,194.94,193.41,192.03,0.0,1.53,4.8,40.61,184.0,29.8

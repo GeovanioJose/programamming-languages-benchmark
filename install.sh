@@ -360,7 +360,7 @@ for lang in $languages; do
       sudo luarocks-5.3 install lrexlib-pcre2
       ;;
     c#)
-      sudo apt install dotnet-sdk-7.0 -y
+      sudo apt install dotnet-sdk-8.0 -y
 
       cd c#
 

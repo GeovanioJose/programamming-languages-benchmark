@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 M P W=b
 A -O3
 A -fomit-frame-pointer
@@ -33,7 +33,6 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
-RV SPARK_05
 RV MAX_PROTECTED_ENTRIES=18
 RV MAX_SELECT_ALTERNATIVES=2
 RV MAX_TASK_ENTRIES=1
@@ -41,7 +40,7 @@ RV MAX_TASKS=1+
 RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
 RV MAX_ENTRY_QUEUE_LENGTH=1+
 
-U knucleotide%b		knucleotide.adb		6f16a29f NE OO SU
+U knucleotide%b		knucleotide.adb		773a9e7e NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.characters%s	a-charac.ads		a-charac.ali
 W ada.characters.latin_1%s  a-chlat1.ads	a-chlat1.ali
@@ -49,7 +48,7 @@ W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.real_time%s	a-reatim.adb		a-reatim.ali
-Z ada.tags%s		a-tags.adb		a-tags.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 Z ada.unchecked_conversion%s
 W data_input%s		data_input.adb		data_input.ali
@@ -59,11 +58,10 @@ W gnat.htable%s		g-htable.adb		g-htable.ali
 W string_fragments%s	string_fragments.adb	string_fragments.ali
 Z system%s		system.ads		system.ali
 Z system.parameters%s	s-parame.adb		s-parame.ali
-Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
 Z system.pool_size%s	s-poosiz.adb		s-poosiz.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
-Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_elements%s  s-stoele.ads	s-stoele.ali
 Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
 Z system.tasking%s	s-taskin.adb		s-taskin.ali
 Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
@@ -72,180 +70,233 @@ Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
 Z system.tasking.rendezvous%s  s-tasren.adb	s-tasren.ali
 Z system.tasking.stages%s  s-tassta.adb		s-tassta.ali
 
-D ada.ads		20230707070819 76789da1 ada%s
-D a-charac.ads		20230707070819 2d3ec45b ada.characters%s
-D a-chlat1.ads		20230707070819 66457d31 ada.characters.latin_1%s
-D a-except.ads		20230707070819 a7106115 ada.exceptions%s
-D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
-D a-flteio.ads		20230707070819 e18a47a0 ada.float_text_io%s
-D a-flteio.ads		20230707070819 e18a47a0 ada.float_text_io%s
-D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
-D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
-D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
-D a-reatim.ads		20230707070818 0240fc73 ada.real_time%s
-D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
-D a-tags.ads		20230707070819 491b781d ada.tags%s
-D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
-D a-tiflau.ads		20230707070819 c0393f21 ada.text_io.float_aux%s
-D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
-D a-tiflio.adb		20230707070819 fd9b1cfc ada.text_io.float_io%b
-D a-tiinau.ads		20230707070819 8114c8e4 ada.text_io.integer_aux%s
-D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
-D a-tiinio.adb		20230707070819 df9cd7af ada.text_io.integer_io%b
-D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
-D a-uncdea.ads		20230707070819 eff36322 ada.unchecked_deallocation%s
-D data_input.ads	20231125213338 a1e8190c data_input%s 488:knucleotide.gnat
-D gnat.ads		20230707070819 b5988c27 gnat%s
-D g-hesorg.ads		20230707070819 106922da gnat.heap_sort_g%s
-D g-hesorg.adb		20230707070819 33b32c5b gnat.heap_sort_g%b
-D g-htable.ads		20230707070819 4b643b8d gnat.htable%s
-D interfac.ads		20230707070819 5ab55268 interfaces%s
-D i-c.ads		20230707070819 5421119b interfaces.c%s
-D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
-D i-cstrea.adb		20230707070819 98747b85 interfaces.c_streams%b
-D knucleotide.adb	20231125213338 b08638e5 knucleotide%b 1:knucleotide.gnat
-D string_fragments.ads	20231125213338 ccd70d13 string_fragments%s 417:knucleotide.gnat
-D string_fragments.adb	20231125213338 037b275f string_fragments%b 431:knucleotide.gnat
-D system.ads		20230707070819 4635ec04 system%s
-D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
-D s-bitops.ads		20230707070819 0765e3a3 system.bit_ops%s
-D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
-D s-exctab.ads		20230707070819 54135002 system.exception_table%s
-D s-fatflt.ads		20230707070819 11beb392 system.fat_flt%s
-D s-fatgen.ads		20230707070819 49cbaf86 system.fat_gen%s
-D s-fatgen.adb		20230707070819 28cd35f5 system.fat_gen%b
-D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
-D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
-D s-htable.ads		20230707070819 84c2b3ea system.htable%s
-D s-htable.adb		20230707070819 34c239ad system.htable%b
-D s-intman.ads		20230707070818 47ba1e06 system.interrupt_management%s
-D s-linux.ads		20230707070818 ed0b8aee system.linux%s
-D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
-D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
-D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
-D s-osinte.adb		20230707070818 27f85edc system.os_interface%b
-D s-osprim.ads		20230707070819 07fd65f6 system.os_primitives%s
-D s-osprim.adb		20230707070819 c5b00444 system.os_primitives%b
-D s-optide.adb		20230707070819 93bfb1f2 system.os_primitives.timed_delay
-D s-parame.ads		20230707070819 48ec542b system.parameters%s
-D s-pooglo.ads		20230707070819 ede33ef8 system.pool_global%s
-D s-poosiz.ads		20230707070819 9d8c569f system.pool_size%s
-D s-restri.ads		20230707070819 1b9d0672 system.restrictions%s
-D s-restri.adb		20230707070819 0b93a92a system.restrictions%b
-D s-rident.ads		20230707070819 50efdf23 system.rident%s
-D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
-D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
-D s-soflin.adb		20230707070819 f811fd3c system.soft_links%b
-D s-soliin.ads		20230707070819 f1a676b9 system.soft_links.initialize%s
-D s-solita.ads		20230707070818 4e08c3ec system.soft_links.tasking%s
-D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
-D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
-D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
-D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20230707070819 ed88f8fb system.storage_elements%b
-D s-stopoo.ads		20230707070819 b16154c2 system.storage_pools%s
-D s-strhas.ads		20230707070819 269cd894 system.string_hash%s
-D s-strhas.adb		20230707070819 2e038444 system.string_hash%b
-D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
-D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
-D s-taprop.ads		20230707070818 1dd2e1b6 system.task_primitives.operations%s
-D s-taprop.adb		20230707070818 c5df8e9b system.task_primitives.operations%b
-D s-tpoaal.adb		20230707070819 0239874f system.task_primitives.operations.atcb_allocation
-D s-tpopmo.adb		20230707070819 cc8f58f7 system.task_primitives.operations.monotonic
-D s-tporft.adb		20230707070819 8f1c0d3c system.task_primitives.operations.register_foreign_thread
-D s-tpopsp.adb		20230707070819 43d7f309 system.task_primitives.operations.specific
-D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
-D s-tasdeb.ads		20230707070818 dfa965f6 system.tasking.debug%s
-D s-taenca.ads		20230707070818 da9410ac system.tasking.entry_calls%s
-D s-taenca.adb		20230707070818 64faeacf system.tasking.entry_calls%b
-D s-tasini.ads		20230707070818 45f51104 system.tasking.initialization%s
-D s-tasini.adb		20230707070818 4701a39c system.tasking.initialization%b
-D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
-D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
-D s-tpobop.ads		20230707070819 5f548bb3 system.tasking.protected_objects.operations%s
-D s-tpobop.adb		20230707070819 8c6cc446 system.tasking.protected_objects.operations%b
-D s-tasque.ads		20230707070818 b4c10749 system.tasking.queuing%s
-D s-tasque.adb		20230707070818 6ae2886d system.tasking.queuing%b
-D s-tasren.ads		20230707070818 a67a9949 system.tasking.rendezvous%s
-D s-tassta.ads		20230707070818 cca55c94 system.tasking.stages%s
-D s-tataat.ads		20230707070819 fbda52c1 system.tasking.task_attributes%s
-D s-tataat.adb		20230707070819 cd2fe432 system.tasking.task_attributes%b
-D s-tasuti.ads		20230707070818 4c20fd27 system.tasking.utilities%s
-D s-tasuti.adb		20230707070818 dc0a741e system.tasking.utilities%b
-D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
-D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
-D s-wchcon.adb		20230707070819 974e87c5 system.wch_con%b
+D ada.ads		20240801081713 76789da1 ada%s
+D a-assert.ads		20240801081713 ba465f5c ada.assertions%s
+D a-charac.ads		20240801081713 2d3ec45b ada.characters%s
+D a-chlat1.ads		20240801081713 e0d72e76 ada.characters.latin_1%s
+D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
+D a-finali.ads		20240801081713 bf4f806b ada.finalization%s
+D a-flteio.ads		20240801081713 e18a47a0 ada.float_text_io%s
+D a-flteio.ads		20240801081713 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20240801081713 f64b89a4 ada.integer_text_io%s
+D a-inteio.ads		20240801081713 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20240801081713 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20240801081713 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20240801081713 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20240801081713 31ff4aa1 ada.numerics.big_numbers.big_integers_ghost%s
+D a-reatim.ads		20240801081713 d11673fd ada.real_time%s
+D a-stream.ads		20240801081713 119b8fb3 ada.streams%s
+D a-string.ads		20240801081713 90ac6797 ada.strings%s
+D a-sttebu.ads		20240801081713 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
+D a-textio.ads		20240801081713 34ef47de ada.text_io%s
+D a-tiflau.ads		20240801081713 40ab5f5e ada.text_io.float_aux%s
+D a-tiflio.ads		20240801081713 48a0360d ada.text_io.float_io%s
+D a-tiflio.adb		20240801081713 46ae63e6 ada.text_io.float_io%b
+D a-tiinau.ads		20240801081713 3ca4fcff ada.text_io.integer_aux%s
+D a-tiinio.ads		20240801081713 76699c8f ada.text_io.integer_io%s
+D a-tiinio.adb		20240801081713 b79731f4 ada.text_io.integer_io%b
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D a-uncdea.ads		20240801081713 c3a8ac65 ada.unchecked_deallocation%s
+D data_input.ads	20260703013917 a1e8190c data_input%s 488:knucleotide.gnat
+D gnat.ads		20240801081713 b5988c27 gnat%s
+D g-hesorg.ads		20240801081713 106922da gnat.heap_sort_g%s
+D g-hesorg.adb		20240801081713 b2b1bfd0 gnat.heap_sort_g%b
+D g-htable.ads		20240801081713 7e0467ec gnat.htable%s
+D interfac.ads		20240801081713 9111f9c1 interfaces%s
+D i-c.ads		20240801081713 aac316ce interfaces.c%s
+D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
+D i-cstrea.adb		20240801081713 ede7ccf4 interfaces.c_streams%b
+D knucleotide.adb	20260703013917 b08638e5 knucleotide%b 1:knucleotide.gnat
+D string_fragments.ads	20260703013917 ccd70d13 string_fragments%s 417:knucleotide.gnat
+D string_fragments.adb	20260703013917 037b275f string_fragments%b 431:knucleotide.gnat
+D system.ads		20240801081714 14286b0f system%s
+D s-atacco.ads		20240801081713 5868e3ba system.address_to_access_conversions%s
+D s-assert.ads		20240801081713 9c4520c7 system.assertions%s
+D s-bitops.ads		20240801081713 cdf3ac3c system.bit_ops%s
+D s-c_time.ads		20250315014742 400b4acf system.c_time%s
+D s-crtl.ads		20240801081713 beb39b9e system.crtl%s
+D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
+D s-fatflt.ads		20240801081713 11beb392 system.fat_flt%s
+D s-fatgen.ads		20240801081713 d28c6cfe system.fat_gen%s
+D s-fatgen.adb		20240801081713 6cc1fec9 system.fat_gen%b
+D s-ficobl.ads		20240801081713 dc5161d4 system.file_control_block%s
+D s-finroo.ads		20240801081713 4ff27390 system.finalization_root%s
+D s-htable.ads		20240801081713 81d958eb system.htable%s
+D s-htable.adb		20240801081713 51a5f568 system.htable%b
+D s-imageb.ads		20240801081713 3953e0e6 system.image_b%s
+D s-imagei.ads		20240801081713 5e131ce0 system.image_i%s
+D s-imager.ads		20240801081713 45c7157d system.image_r%s
+D s-imageu.ads		20240801081713 b0b50650 system.image_u%s
+D s-imageu.adb		20240801081713 adcee293 system.image_u%b
+D s-imagew.ads		20240801081713 9d2dd267 system.image_w%s
+D s-imgbiu.ads		20240801081713 0a8e1c41 system.img_biu%s
+D s-imgflt.ads		20240801081713 d12816b5 system.img_flt%s
+D s-imgint.ads		20240801081713 67e4edfb system.img_int%s
+D s-imglfl.ads		20240801081713 941be202 system.img_lflt%s
+D s-imgllb.ads		20240801081713 47d0db9f system.img_llb%s
+D s-imgllf.ads		20240801081713 e85a7fe5 system.img_llf%s
+D s-imglli.ads		20240801081713 d88f4f3b system.img_lli%s
+D s-imglllb.ads		20240801081713 30212eed system.img_lllb%s
+D s-imgllli.ads		20240801081713 404e72c5 system.img_llli%s
+D s-imglllw.ads		20240801081713 9e2b0560 system.img_lllw%s
+D s-imgllu.ads		20240801081713 55ba53d8 system.img_llu%s
+D s-imgllw.ads		20240801081713 bf9c9c15 system.img_llw%s
+D s-imguns.ads		20240801081713 c4e23690 system.img_uns%s
+D s-imgwiu.ads		20240801081713 912a95f2 system.img_wiu%s
+D s-intman.ads		20240801081713 aa1eb6b4 system.interrupt_management%s
+D s-linux.ads		20250315014742 96312dab system.linux%s
+D s-multip.ads		20240801081713 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20250315014742 bf28ea52 system.os_constants%s
+D s-osinte.ads		20250315014742 a8f58951 system.os_interface%s
+D s-osprim.ads		20240801081713 07fd65f6 system.os_primitives%s
+D s-osprim.adb		20250315014742 a644fbf6 system.os_primitives%b
+D s-optide.adb		20250315014742 b77b40ab system.os_primitives.timed_delay
+D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
+D s-poosiz.ads		20240801081713 9d8c569f system.pool_size%s
+D s-powflt.ads		20240801081713 a51ab9b8 system.powten_flt%s
+D s-powlfl.ads		20240801081713 ac0852c8 system.powten_lflt%s
+D s-powllf.ads		20240801081713 9b99e843 system.powten_llf%s
+D s-putima.ads		20240801081713 17291fe4 system.put_images%s
+D s-restri.ads		20240801081713 f38f2845 system.restrictions%s
+D s-restri.adb		20240801081713 ba4d2da9 system.restrictions%b
+D s-rident.ads		20240801081713 5eec7ad4 system.rident%s
+D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240801081713 df77073e system.soft_links%s
+D s-soflin.adb		20240801081713 d38e2ecb system.soft_links%b
+D s-soliin.ads		20240801081713 f1a676b9 system.soft_links.initialize%s
+D s-solita.ads		20240801081713 4e08c3ec system.soft_links.tasking%s
+D s-stache.ads		20240801081713 0b81c1fe system.stack_checking%s
+D s-stausa.ads		20240801081713 5be75682 system.stack_usage%s
+D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
+D s-stopoo.ads		20240801081713 e9fa2dd8 system.storage_pools%s
+D s-strhas.ads		20240801081713 269cd894 system.string_hash%s
+D s-strhas.adb		20240801081713 398666ac system.string_hash%b
+D s-tasinf.ads		20240801081713 528dde74 system.task_info%s
+D s-taspri.ads		20240801081713 4ec891e7 system.task_primitives%s
+D s-taprop.ads		20240801081713 6eefbe12 system.task_primitives.operations%s
+D s-taprop.adb		20240801081713 83426eac system.task_primitives.operations%b
+D s-tpoaal.adb		20240801081713 0239874f system.task_primitives.operations.atcb_allocation
+D s-tpopmo.adb		20250315014742 5db32393 system.task_primitives.operations.monotonic
+D s-tporft.adb		20240801081713 4ba64bb9 system.task_primitives.operations.register_foreign_thread
+D s-tpopsp.adb		20240801081713 43d7f309 system.task_primitives.operations.specific
+D s-taskin.ads		20240801081713 ebc4edbe system.tasking%s
+D s-tasdeb.ads		20240801081713 a18505b7 system.tasking.debug%s
+D s-taenca.ads		20240801081713 da9410ac system.tasking.entry_calls%s
+D s-taenca.adb		20240801081713 d81614ca system.tasking.entry_calls%b
+D s-tasini.ads		20240801081713 45f51104 system.tasking.initialization%s
+D s-tasini.adb		20240801081713 e40dc30a system.tasking.initialization%b
+D s-taprob.ads		20240801081713 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20240801081713 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20240801081713 5f548bb3 system.tasking.protected_objects.operations%s
+D s-tpobop.adb		20240801081713 18d1e037 system.tasking.protected_objects.operations%b
+D s-tasque.ads		20240801081713 9bb7a402 system.tasking.queuing%s
+D s-tasque.adb		20240801081713 216cdd3f system.tasking.queuing%b
+D s-tasren.ads		20240801081713 a67a9949 system.tasking.rendezvous%s
+D s-tassta.ads		20240801081713 cca55c94 system.tasking.stages%s
+D s-tataat.ads		20240801081713 f6b301a1 system.tasking.task_attributes%s
+D s-tataat.adb		20240801081713 d137149a system.tasking.task_attributes%b
+D s-tasuti.ads		20240801081713 4c20fd27 system.tasking.utilities%s
+D s-tasuti.adb		20240801081713 5d4c31d7 system.tasking.utilities%b
+D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
+D s-valflt.ads		20240801081714 78fc9326 system.val_flt%s
+D s-valint.ads		20240801081714 8bab724f system.val_int%s
+D s-vallfl.ads		20240801081714 944236a7 system.val_lflt%s
+D s-valllf.ads		20240801081714 03043e61 system.val_llf%s
+D s-vallli.ads		20240801081714 353103fd system.val_lli%s
+D s-valllli.ads		20240801081714 fb5526e1 system.val_llli%s
+D s-vallllu.ads		20240801081714 34470a29 system.val_lllu%s
+D s-valllu.ads		20240801081714 4134fa35 system.val_llu%s
+D s-valrea.ads		20240801081714 f0598c00 system.val_real%s
+D s-valspe.ads		20240801081714 b0fcd073 system.val_spec%s
+D s-valuns.ads		20240801081714 f7ddb71d system.val_uns%s
+D s-valuei.ads		20240801081714 d9377ca5 system.value_i%s
+D s-vaispe.ads		20240801081714 8280550e system.value_i_spec%s
+D s-vaispe.adb		20240801081714 dbcabb05 system.value_i_spec%b
+D s-valueu.ads		20240801081714 a38d32a6 system.value_u%s
+D s-vauspe.ads		20240801081714 89269ba5 system.value_u_spec%s
+D s-vauspe.adb		20240801081714 8524adb4 system.value_u_spec%b
+D s-vs_int.ads		20240801081714 06b6b724 system.vs_int%s
+D s-vs_lli.ads		20240801081714 b945cf7d system.vs_lli%s
+D s-vsllli.ads		20240801081714 3a5ba700 system.vs_llli%s
+D s-vslllu.ads		20240801081714 678200a0 system.vs_lllu%s
+D s-vs_llu.ads		20240801081714 8f3536c5 system.vs_llu%s
+D s-vs_uns.ads		20240801081714 e7f47a27 system.vs_uns%s
+D s-wchcon.ads		20240801081714 d9032363 system.wch_con%s
+D s-wchcon.adb		20240801081714 2416a954 system.wch_con%b
 G a e
 G c Z b b [knucleotide standard 21 11 none]
 G r c none [knucleotide standard 21 11 none] [read data_input 498 13 none]
 G r i none [knucleotide standard 21 11 none] [string_fragments standard 422 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 32|10r6 11r6 12r6 13r6 14r6 328r22 329r22 336r22 338r19 344r13
+16K9*Ada 20e8 39|10r6 11r6 12r6 13r6 14r6 328r22 329r22 336r22 338r19 344r13
 . 347r13 347r30 348r13 377r13 377r34 378r15
-X 2 a-charac.ads
-16K13*Characters 18e19 32|10r10 347r34
-X 3 a-chlat1.ads
-18K24*Latin_1 296e27 32|10w21 347r45
-34e4*HT{character} 32|347r53
-X 4 a-except.ads
-48K13*Exceptions 335e19 32|14w10 378r19
-98V13*Exception_Information{string} 32|378s30
-X 7 a-flteio.ads
-20K13*Float_Text_IO[16|46] 32|12w10 329r26
-X 9 a-inteio.ads
-18K13*Integer_Text_IO[19|46] 32|11w10 344r17
-X 14 a-textio.ads
-57K13*Text_IO 727e16 32|13w10 328r26 336r26 338r23 347r17 348r17 377r17 377r38
-64P9*File_Type
-86I12*Field{integer}
-183V13*Current_Error{64P9} 32|377s46
-264U14*New_Line 32|336s34 338s31
-392U14*Put 32|347s25
-465U14*Put 32|328s34
-498U14*Put_Line 32|377s25
-508U14*Put_Line 32|348s25
-X 16 a-tiflio.ads
-82U14*Put 32|329s40[7|20]
-83f7 Item{float} 32|330r25[7|20]
-84i7 Fore{14|86I12} 32|333r25[7|20]
-85i7 Aft{14|86I12} 32|334r25[7|20]
-86i7 Exp{14|86I12} 32|335r25[7|20]
-X 19 a-tiinio.ads
-80U14*Put 32|344s33[9|18]
-81i7 Item{integer} 32|345r16[9|18]
-82i7 Width{14|86I12} 32|346r16[9|18]
-X 23 knucleotide.gnat
-494K9*Data_Input 500e15 32|17w6 27r32
-498V13*Read{string} 32|27s43
-X 24 gnat.ads
-34K9*GNAT 57e9 32|18r6 19r6 165r34 312r44
-X 25 g-hesorg.ads
-55U19 Move 32|313r22
-61V18 Lt{boolean} 32|314r22
-78k14*Heap_Sort_G 88e21 32|18w11 312r49
-81U14 Sort 32|324s29[312]
-X 27 g-htable.ads
-46K14*HTable 60e16 32|19w11 165r39
-56k20*Static_HTable 32|165r46
-X 32 knucleotide.gnat
+X 3 a-charac.ads
+16K13*Characters 18e19 39|10r10 347r34
+X 4 a-chlat1.ads
+16K24*Latin_1 294e27 39|10w21 347r45
+32e4*HT{character} 39|347r53
+X 5 a-except.ads
+44K13*Exceptions 309e19 39|14w10 378r19
+94V13*Exception_Information{string} 39|378s30
+X 8 a-flteio.ads
+20K13*Float_Text_IO[23|46] 39|12w10 329r26
+X 10 a-inteio.ads
+18K13*Integer_Text_IO[26|46] 39|11w10 344r17
+X 21 a-textio.ads
+58K13*Text_IO 785e16 39|13w10 328r26 336r26 338r23 347r17 348r17 377r17 377r38
+67P9*File_Type
+89I12*Field{integer}
+193V13*Current_Error{67P9} 39|377s46
+284U14*New_Line 39|336s34 338s31
+433U14*Put 39|347s25
+515U14*Put 39|328s34
+555U14*Put_Line 39|377s25
+565U14*Put_Line 39|348s25
+X 23 a-tiflio.ads
+88U14*Put 39|329s40[8|20]
+89f7 Item{float} 39|330r25[8|20]
+90i7 Fore{21|89I12} 39|333r25[8|20]
+91i7 Aft{21|89I12} 39|334r25[8|20]
+92i7 Exp{21|89I12} 39|335r25[8|20]
+X 26 a-tiinio.ads
+85U14*Put 39|344s33[10|18]
+86i7 Item{integer} 39|345r16[10|18]
+87i7 Width{21|89I12} 39|346r16[10|18]
+X 30 knucleotide.gnat
+494K9*Data_Input 500e15 39|17w6 27r32
+498V13*Read{string} 39|27s43
+X 31 gnat.ads
+37K9*GNAT 60e9 39|18r6 19r6 165r34 312r44
+X 32 g-hesorg.ads
+55U19 Move 39|313r22
+61V18 Lt{boolean} 39|314r22
+78k14*Heap_Sort_G 88e21 39|18w11 312r49
+81U14 Sort 39|324s29[312]
+X 34 g-htable.ads
+44K14*HTable 58e16 39|19w11 165r39
+54k20*Static_HTable 39|165r46
+X 39 knucleotide.gnat
 21U11*KNucleotide 21b11 416l5 416t16
 23I12 Fragment_Lengths{integer} 37r35 46r46 53r25 59r20 60r30 73r29 74r23
 . 74r57 79r30 97r35 117r49 192r49 354r29 364r53
 27a4 Buffer{string} 194r31 196r43
-33K20 Fragments[33|422] 38r35 38r57 47r46 47r68 98r35 98r57 100r14 146r42
+33K20 Fragments[40|422] 38r35 38r57 47r46 47r68 98r35 98r57 100r14 146r42
 . 172r30 281r35 355r29 357r14
 34k12 Work 33z20 50l8 50e12 86b17 381l8 381t12 400r29 401r29 402r29 403r29
 . 404r29 405r30 406r30
 36U17*Write 37>10 38>10 96b17 351l11 351t16 370s16
-37i10 Nucleotide_Length{23I12} 59r13[400] 97b10 279r38 339r36 349r30
-38a10 Nucleotide_Fragment{33|424A12[33]} 98b10 281r13 345r51 348r35
+37i10 Nucleotide_Length{23I12} 59r13[406] 97b10 279r38 339r36 349r30
+38a10 Nucleotide_Fragment{40|424A12[33]} 98b10 281r13 345r51 348r35
 40t12*Writer 353b17 379l11 379t17 409r14[400] 410r15[405] 411r15[406] 412r14[404]
 . 413r14[401] 414r14[403] 415r14[402]
 46Y16 Set 46>21 47>21 364b23 369l20 369t23 409s21[400] 410s22[405] 411s22[406]
 . 412s21[404] 413s21[401] 414s21[403] 415s21[402]
 46i21 Nucleotide_Length{23I12} 367r39
-47a21 Nucleotide_Fragment{33|424A12[33]} 368r39
+47a21 Nucleotide_Fragment{40|424A12[33]} 368r39
 53A9 Order(boolean)<integer> 63r14
 55w14 Printer 68b19 84l8 84t15 326r19 339r19 343r13 349r13
 59Y13 Seize 73b13 77l11 77t16 326r27 343r21
@@ -262,33 +313,33 @@ X 32 knucleotide.gnat
 117U23 Get_Frequencies 117>40 192b23 209l17 209t32 279s21
 117i40 Length{23I12} 192b40 194r45 196r59
 121V22 Number_Counted{natural} 121>38 218b22 226l17 226t31 345s35
-121a38 Nucleotide_Fragment{33|424A12[33]} 218b38 219r68
+121a38 Nucleotide_Fragment{40|424A12[33]} 218b38 219r68
 125V22 Get_First{111P18} 229b22 232l17 232t26 318s42
 129V22 Get_Next{111P18} 241b22 244l17 244t25 321s45
 133V22 Count_Of{natural} 133>32 142r28 212b22 215l17 215t25 302s35 304s35
 . 331s56
 133p32 Element{111P18} 212b32 214r23
-134V22 Fragment_Of{33|424A12[33]} 134>35 142r38 260b22 263l17 263t28 328s50
+134V22 Fragment_Of{40|424A12[33]} 134>35 142r38 260b22 263l17 263t28 328s50
 134p35 Element{111P18} 260b35 262r23
 139U23 Get_Totals 139<35 139<56 247b23 257l17 257t27 286s27
 139i35 Total{natural} 247b35 250m16 253m19 253r34 287r19
 139i56 Count{natural} 247b56 251m16 254m19 254r34 288r19
 145i16 Count{natural} 200m37 200r72 202m54 214r35 222r42 253r58
-146a16 Key{33|424A12[33]} 203m54 237r29 262r35
+146a16 Key{40|424A12[33]} 203m54 237r29 262r35
 147p16 Next{111P18} 204m54 267r29 272m22
 153i13 Log_Table_Size{natural} 154r55 180r52 187r29 188r48
 154i13 Table_Size{natural} 156r53
 156I21 Hash_Type{natural} 158r51 166r30 178r51 179r31 180r31 188r23
 158V22 Hash{156I21} 158>28 163r28 171r30 178b22 189l17 189t21
-158a28 Key{33|424A12[33]} 178b28 182r45 182r50 184r25 184r42 185r39
+158a28 Key{40|424A12[33]} 178b28 182r45 182r50 184r25 184r42 185r39
 159U23 Set_Next 159>33 159>53 163r34 173r30 270b23 273l17 273t25
 159p33 E{111P18} 270b33 272r16
 159p53 Next{111P18} 270b53 272r30
 160V22 Next{111P18} 160>28 163r44 174r30 265b22 268l17 268t21
 160p28 E{111P18} 265b28 267r23
-161V22 Get_Key{33|424A12[33]} 161>31 163r50 175r30 235b22 238l17 238t24
+161V22 Get_Key{40|424A12[33]} 161>31 163r50 175r30 235b22 238l17 238t24
 161p31 E{111P18} 235b31 237r23
-165K21 Table[45|168] 197r59 202r25 219r57 231r23 243r23 248r48 255r34
+165K21 Table[54|166] 197r59 202r25 219r57 231r23 243r23 248r48 255r34
 181M21 Uns_32 182r20
 182m16 H{181M21} 185m19 185r50 185r61 187m16 187r22 187r49 188r39
 184i20 J{integer} 185r44
@@ -309,26 +360,26 @@ X 32 knucleotide.gnat
 295V28 Less_Then{boolean} 295>39 295>44 297r40 299b28 305l23 305t32 314r30
 295i39 Op1{natural} 299b39 302r51
 295i44 Op2{natural} 299b44 304r51
-312K27 Heap_Sort[25|78] 324r19
+312K27 Heap_Sort[32|78] 324r19
 320i23 I{integer} 321r28
 327i23 I{integer} 328r69 331r72
 354i10 Current_Length{23I12} 367m19 370r23
-355a10 Current_Fragment{33|424A12[33]} 368m19 370r39
+355a10 Current_Fragment{40|424A12[33]} 368m19 370r39
 364i28 Nucleotide_Length{23I12}
-365a28 Nucleotide_Fragment{33|424A12[33]}
-376r15 E{4|57R9} 378r52
-384K12 Fragments_1[33|422] 400r35
-385K12 Fragments_2[33|422] 401r35
-386K12 Fragments_3[33|422] 394r27 394r51 402r35
-387K12 Fragments_4[33|422] 395r27 395r51 403r35
-388K12 Fragments_6[33|422] 396r27 396r51 404r35
-389K12 Fragments_12[33|422] 397r27 397r52 405r36
-390K12 Fragments_18[33|422] 398r27 398r52 406r36
-394a4 Fragment_3{33|424A12[386]} 415r26 415r45
-395a4 Fragment_4{33|424A12[387]} 414r26 414r45
-396a4 Fragment_6{33|424A12[388]} 412r26 412r45
-397a4 Fragment_12{33|424A12[389]} 410r27 410r47
-398a4 Fragment_18{33|424A12[390]} 411r27 411r47
+365a28 Nucleotide_Fragment{40|424A12[33]}
+376r15 E{5|53R9} 378r52
+384K12 Fragments_1[40|422] 400r35
+385K12 Fragments_2[40|422] 401r35
+386K12 Fragments_3[40|422] 394r27 394r51 402r35
+387K12 Fragments_4[40|422] 395r27 395r51 403r35
+388K12 Fragments_6[40|422] 396r27 396r51 404r35
+389K12 Fragments_12[40|422] 397r27 397r52 405r36
+390K12 Fragments_18[40|422] 398r27 398r52 406r36
+394a4 Fragment_3{40|424A12[386]} 415r26 415r45
+395a4 Fragment_4{40|424A12[387]} 414r26 414r45
+396a4 Fragment_6{40|424A12[388]} 412r26 412r45
+397a4 Fragment_12{40|424A12[389]} 410r27 410r47
+398a4 Fragment_18{40|424A12[390]} 411r27 411r47
 400K12 Work_On_1[34] 409r4
 401K12 Work_On_2[34] 413r4
 402K12 Work_On_3[34] 415r4
@@ -336,34 +387,34 @@ X 32 knucleotide.gnat
 404K12 Work_On_6[34] 412r4
 405K12 Work_On_12[34] 410r4
 406K12 Work_On_18[34] 411r4
-X 33 knucleotide.gnat
-422k9*String_Fragments 32|16w6 33r37 384r31 385r31 386r31 387r31 388r31 389r32
-. 390r32 33|430e21
-424A12 Fragment{string}<integer> 32|38r45[33] 47r56[33] 98r45[33] 121r60[33]
+X 40 knucleotide.gnat
+422k9*String_Fragments 39|16w6 33r37 384r31 385r31 386r31 387r31 388r31 389r32
+. 390r32 40|430e21
+424A12 Fragment{string}<integer> 39|38r45[33] 47r56[33] 98r45[33] 121r60[33]
 . 134r77[33] 146r24[33] 153r63[33] 158r34[33] 161r67[33] 170r30[33] 178r34[33]
 . 218r60[33] 235r67[33] 260r77[33] 355r39[33] 365r53[33] 394r39[386] 395r39[387]
 . 396r39[388] 397r40[389] 398r40[390]
-426V13 To_Fragment{424A12[32|386]} 32|394s63[386] 395s63[387] 396s63[388]
+426V13 To_Fragment{424A12[39|386]} 39|394s63[386] 395s63[387] 396s63[388]
 . 397s65[389] 398s65[390]
-427V13 Null_Fragment{424A12[32|33]} 32|38s67[33] 47s78[33] 98s67[33] 146s52[33]
+427V13 Null_Fragment{424A12[39|33]} 39|38s67[33] 47s78[33] 98s67[33] 146s52[33]
 . 281s45[33] 365s65[33]
-428V14 "="{boolean} 32|172r41[33]
-X 45 s-htable.ads
-138I12 Header_Num 32|166r16
-141+12 Element 32|167r16
-151+12 Elmt_Ptr 32|168r16
-155*7 Null_Ptr{151+12} 32|169r16
-158U22 Set_Next 32|173r16
-159V22 Next{151+12} 32|174r16
-163+12 Key 32|170r16
-164V21 Get_Key{163+12} 32|175r16
-165V21 Hash{138I12} 32|171r16
-166V21 Equal{boolean} 32|172r16
-179U17 Set 32|202s31[165]
-182V16 Get{32|111P18} 32|197s65[165] 219s63[165]
-198V16 Get_First{32|111P18} 32|231s29[165] 248s54[165]
-203V16 Get_Next{32|111P18} 32|243s29[165] 255s40[165]
-X 68 s-stausa.ads
-208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
-273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+428V14 "="{boolean} 39|172r41[33]
+X 54 s-htable.ads
+136I12 Header_Num 39|166r16
+139+12 Element 39|167r16
+149+12 Elmt_Ptr 39|168r16
+153*7 Null_Ptr{149+12} 39|169r16
+156U22 Set_Next 39|173r16
+157V22 Next{149+12} 39|174r16
+161+12 Key 39|170r16
+162V21 Get_Key{161+12} 39|175r16
+163V21 Hash{136I12} 39|171r16
+164V21 Equal{boolean} 39|172r16
+177U17 Set 39|202s31[165]
+180V16 Get{39|111P18} 39|197s65[165] 219s63[165]
+196V16 Get_First{39|111P18} 39|231s29[165] 248s54[165]
+201V16 Get_Next{39|111P18} 39|243s29[165] 255s40[165]
+X 99 s-stausa.ads
+207U14*Initialize 208i<c,__gnat_stack_usage_initialize>22
+272U14*Output_Results 276i<c,__gnat_stack_usage_output_results>22
 

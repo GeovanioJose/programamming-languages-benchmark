@@ -14,6 +14,7 @@ fi
 for (( i=0 ; i<${#problems[@]} ; i++ ))
 do
     cd ${problems[$i]}
+    mkdir -p out
     #header
     echo timestamp,total,package,core,uncore,dram,cpu_temp > out/${problems[$i]}_out.csv
     echo runtime,cpu_usage,memory > out/runtime.csv

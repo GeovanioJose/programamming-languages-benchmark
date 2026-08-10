@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 A -O3
 A -fomit-frame-pointer
 A -gnatN
@@ -11,7 +11,6 @@ RV NO_SELECT_STATEMENTS
 RV NO_TASKING
 RV NO_TERMINATE_ALTERNATIVES
 RV NO_IMPLEMENTATION_PRAGMAS
-RV SPARK_05
 RV MAX_SELECT_ALTERNATIVES=2
 RV MAX_TASK_ENTRIES=2
 
@@ -19,9 +18,9 @@ U spectral_utils%b	spectral_utils.adb	9c41d1b3 NE OO PK GE
 
 U spectral_utils%s	spectral_utils.ads	4bebdbd6 BN EE NE OO PK GE
 
-D spectral_utils.ads	20231125213342 4bebdbd6 spectral_utils%s 52:spectralnorm.gnat
-D spectral_utils.adb	20231125213342 d7aa0a65 spectral_utils%b 93:spectralnorm.gnat
-D system.ads		20230707070819 4635ec04 system%s
+D spectral_utils.ads	20260703013922 4bebdbd6 spectral_utils%s 52:spectralnorm.gnat
+D spectral_utils.adb	20260703013922 d7aa0a65 spectral_utils%b 93:spectralnorm.gnat
+D system.ads		20240801081714 14286b0f system%s
 G a e
 G c Z s b [spectral_utils standard 59 9 none]
 X 1 spectralnorm.gnat

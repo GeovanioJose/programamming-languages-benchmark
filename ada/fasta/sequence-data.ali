@@ -1,4 +1,4 @@
-V "GNAT Lib v10"
+V "GNAT Lib v14"
 A -O3
 A -fomit-frame-pointer
 A -gnatN
@@ -8,14 +8,13 @@ P ZX
 RN
 RV NO_FLOATING_POINT
 RV NO_IMPLEMENTATION_PRAGMAS
-RV SPARK_05
 
 U sequence.data%s	sequence-data.ads	dee22ad7 NE OO PU PK
 W sequence%s		sequence.ads		sequence.ali
 
-D sequence.ads		20231125213337 a2434cc7 sequence%s 80:fasta.gnat
-D sequence-data.ads	20231125213337 7ca16610 sequence.data%s 27:fasta.gnat
-D system.ads		20230707070819 4635ec04 system%s
+D sequence.ads		20260703013917 a2434cc7 sequence%s 80:fasta.gnat
+D sequence-data.ads	20260703013917 7ca16610 sequence.data%s 27:fasta.gnat
+D system.ads		20240801081714 14286b0f system%s
 G a e
 X 1 fasta.gnat
 81K9*Sequence 98e13 2|28r9 51r5

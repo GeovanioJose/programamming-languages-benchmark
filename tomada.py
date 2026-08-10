@@ -10,7 +10,7 @@ from kasa import Discover
 # CONFIGURAÇÕES
 # =========================
 
-IP = "192.168.0.1" # IP da tomada inteligente
+IP = "192.168.1.107" # IP da tomada inteligente
 
 INTERVALO = 300  # 5 minutos
 
@@ -37,8 +37,8 @@ async def main():
 
     device = await Discover.discover_single(
         IP,
-        username="exemplo@email.com", # email cadastrado na tomada
-        password="123456", # senha da tomada
+        username="geovanio.silva@ufape.edu.br", # email cadastrado na tomada
+        password="Ufape@2023", # senha da tomada
     )
 
     await device.update()
